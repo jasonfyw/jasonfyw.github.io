@@ -12,9 +12,10 @@
     color: #4C566A;
 }
 .intro .links {
+    padding-top: 0.75rem;
     color: #4C566A;
 }
-.intro .links .page-link:hover {
+.intro .links .down-carat:hover {
     cursor: pointer;
 }
 .intro .links .logo-instagram, .intro .links .mail-outline {
