@@ -33,7 +33,7 @@
 .intro .links .page-link:hover {
     cursor: pointer;
 }
-.intro .links .logo-instagram {
+.intro .links .logo-instagram, .intro .links .mail-outline {
     position: relative;
     width: 1.75rem;
 }

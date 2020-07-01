@@ -4,7 +4,7 @@ import ParticlesBg from 'particles-bg';
 import './Intro.css';
 import LogoGithub from 'react-ionicons/lib/LogoGithub';
 import IosArrowDown from 'react-ionicons/lib/IosArrowDown';
-import LogoInstagram from '../media/LogoInstagram';
+import { LogoInstagram, MailOutline } from '../media/Ionicons';
 
 function Intro(props) {
     return (
@@ -15,10 +15,16 @@ function Intro(props) {
                 An aspiring Computer Scientist with an interest in Software Engineering and Machine Learning
                         </h4>
             <p className="links">
-                <a href="https://github.com/jasonfyw" target="_blank" rel="noopener noreferrer"><LogoGithub fontSize='1.75rem' /></a>
+                <a href="https://github.com/jasonfyw" target="_blank" rel="noopener noreferrer">
+                    <LogoGithub fontSize='1.75rem' />
+                </a>
                 &nbsp;&nbsp;
                 <a href="https://instagram.com/jason_fyw" target="_blank" rel="noopener noreferrer">
                     <LogoInstagram />
+                </a>
+                &nbsp;&nbsp;
+                <a href="mailto:jasonwang0610@gmail.com">
+                    <MailOutline />
                 </a>
             </p>
             <p className="links" style={{ 'marginTop': '2rem' }}>
