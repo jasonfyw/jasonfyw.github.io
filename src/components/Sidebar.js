@@ -5,6 +5,7 @@ import './Sidebar.css';
 
 const NavHeader = styled.h1`
     margin: 1rem;
+    margin-bottom: 3rem;
 
     font-family: 'Source Code Pro', monospace;
     font-weight: 600;
@@ -26,7 +27,11 @@ const NavSection = styled.button`
     background: #434C5E;
     font-size: 1rem;
     margin: 1.5rem;
-    padding: 1.25rem;
+    margin-top: 0.25rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
     border: ${props => props.active ? "2px solid #E5E9F0" : "0"};
     outline: none;
     border-radius: 5px;
