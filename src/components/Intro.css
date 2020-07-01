@@ -33,6 +33,10 @@
 .intro .links .page-link:hover {
     cursor: pointer;
 }
+.intro .links .logo-instagram {
+    position: relative;
+    width: 1.75rem;
+}
 
 .intro canvas {
     background-color: #ECEFF4;
