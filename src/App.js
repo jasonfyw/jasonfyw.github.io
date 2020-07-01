@@ -1,13 +1,24 @@
 import React from 'react';
+import ParticlesBg from 'particles-bg';
+import LogoGithub from 'react-ionicons/lib/LogoGithub';
+
 import './App.css';
 
 function App() {
     return (
         <div className="App">
-            <h1>Jason</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+            <div className="intro">
+                <h1 className="title">Jason Wang</h1>
+                <h4 className="subtitle"><span role="img" aria-label="countries">🇨🇦 🇨🇳 🇨🇿</span></h4>
+                <h4 className="subtitle">
+                    An aspiring Computer Scientist with an interest in Software Engineering and Artificial Intelligence
+                </h4>
+                <p className="links">
+                    <a href="https://github.com/jasonfyw" target="_blank" rel="noopener noreferrer"><LogoGithub fontSize='1.75rem' /></a>
+                </p>
+                {/* 'cobweb' good default, 'circle' would be good with custom colours */}
+                <ParticlesBg type="cobweb" color="#5E81AC" bg={true} />
+            </div>
         </div>
     );
 }

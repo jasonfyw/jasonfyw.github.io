@@ -1,0 +1,29 @@
+.intro {
+    height: 100%;
+    padding-top: 30vh;
+    padding-left: 25vh;
+    padding-right: 25vh;
+
+    text-align: center;
+}
+
+.intro .title {
+    margin-bottom: 0px;
+    font-size: 4rem;
+    color: #3B4252;
+}
+.intro .subtitle {
+    margin: 0;
+    padding: 0.5rem;
+
+    font-size: 1.75rem;
+    font-weight: 400;
+    color: #4C566A;
+}
+.intro .links {
+    color: #4C566A;
+}
+
+.intro canvas {
+    background-color: #ECEFF4;
+}
