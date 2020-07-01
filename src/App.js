@@ -4,6 +4,7 @@ import ReactPageScroller from 'react-page-scroller';
 import './App.css';
 import Sidebar from './components/Sidebar';
 import Intro from './components/Intro';
+import About from './components/About';
 
 class App extends Component {
     state = {
@@ -25,9 +26,7 @@ class App extends Component {
                         customPageNumber={this.state.currentPage}
                     >
                         <Intro handlePageChange={this.handlePageChange} />
-                        <div className="about">
-                            <h1>ABOUT ME</h1>
-                        </div>
+                        <About />
                         <div className="projects">
                             <h1>PROJECTS</h1>
                         </div>

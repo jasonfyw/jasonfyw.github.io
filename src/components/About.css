@@ -1,0 +1,22 @@
+
+.about .section-heading h1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vh;
+    padding-top: 2.25rem;
+    transform-origin: 0 0;
+    transform: translateY(100%) rotate(-90deg);
+
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #ECEFF4;
+}

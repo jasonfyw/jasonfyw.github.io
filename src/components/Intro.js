@@ -8,7 +8,7 @@ import { LogoInstagram, MailOutline } from '../media/Ionicons';
 
 function Intro(props) {
     return (
-        <div className="intro">
+        <div className="intro section">
             <h1 className="title">Jason Wang</h1>
             <h4 className="subtitle"><span role="img" aria-label="countries">🇨🇦 🇨🇳 🇨🇿</span></h4>
             <h4 className="subtitle">

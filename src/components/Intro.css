@@ -1,19 +1,3 @@
-.intro {
-    height: 100vh;
-    width: 85vw;
-    padding-top: 30vh;
-    position: relative;
-    right: 0; 
-
-    text-align: center;
-}
-@media (min-width: 600px) {
-    .intro {
-        padding-left: 25vh;
-        padding-right: 25vh;
-    }
-}
-
 .intro .title {
     margin-bottom: 0px;
     font-size: 4rem;

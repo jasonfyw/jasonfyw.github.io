@@ -9,6 +9,11 @@
     text-align: left;
     color: #E5E9F0;
 }
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}
 
 .sidebar .footer {
     position: absolute;
