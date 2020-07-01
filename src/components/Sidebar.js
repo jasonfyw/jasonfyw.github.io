@@ -4,8 +4,12 @@ import styled from 'styled-components';
 import './Sidebar.css';
 
 const NavHeader = styled.h1`
+    padding: 0.5rem;
     margin: 1rem;
     margin-bottom: 3rem;
+    border: ${props => props.active ? "2px solid #E5E9F0" : "0"};
+    border-radius: 5px;
+    outline: none;
 
     font-family: 'Source Code Pro', monospace;
     font-weight: 600;
