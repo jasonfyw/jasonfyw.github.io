@@ -1,34 +1,19 @@
-.intro {
-    height: 100%;
+.App {
     width: 100%;
-    margin-top: 30vh;
+    margin: 0;
+}
+
+.content {
+    width: 85vw;
+    position: absolute;
+    right: 0;
+    overflow-x: hidden;
+}
+
+.projects {
+    height: 100vh;
+    width: 85vw;
+    position: relative;
 
     text-align: center;
-}
-@media (min-width: 600px) {
-    .intro {
-        padding-left: 25vh;
-        padding-right: 25vh;
-    }
-}
-
-.intro .title {
-    margin-bottom: 0px;
-    font-size: 4rem;
-    color: #3B4252;
-}
-.intro .subtitle {
-    margin: 0;
-    padding: 0.5rem;
-
-    font-size: 1.75rem;
-    font-weight: 400;
-    color: #4C566A;
-}
-.intro .links {
-    color: #4C566A;
-}
-
-.intro canvas {
-    background-color: #ECEFF4;
 }
