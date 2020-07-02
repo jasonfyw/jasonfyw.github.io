@@ -43,6 +43,7 @@ const NavSection = styled.button`
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     border: ${props => props.active ? "2px solid #E5E9F0" : "0"};
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
     outline: none;
     border-radius: 5px;
     transition: 0.2s;
