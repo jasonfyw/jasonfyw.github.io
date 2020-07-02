@@ -16,19 +16,19 @@ function Intro(props) {
             </h4>
             <p className="links">
                 <a href="https://github.com/jasonfyw" target="_blank" rel="noopener noreferrer">
-                    <LogoGithub fontSize='1.75rem' />
+                    <LogoGithub fontSize='1.75rem' color="#3B4252" />
                 </a>
                 &nbsp;&nbsp;
                 <a href="https://instagram.com/jason_fyw" target="_blank" rel="noopener noreferrer">
-                    <LogoInstagram />
+                    <LogoInstagram color="#3B4252" />
                 </a>
                 &nbsp;&nbsp;
                 <a href="mailto:jasonwang0610@gmail.com">
-                    <MailOutline />
+                    <MailOutline color="#3B4252" />
                 </a>
             </p>
             <p className="links" style={{ 'marginTop': '2rem' }}>
-                <IosArrowDown className="down-carat" fontSize='1.75rem' onClick={() => props.handlePageChange(1)}  />
+                <IosArrowDown className="down-carat" fontSize='1.75rem' color="#3B4252" onClick={() => props.handlePageChange(1)}  />
             </p>
             {/* 'cobweb' good default, 'circle' would be good with custom colours */}
             <ParticlesBg type="cobweb" color="#5E81AC" bg={true} />
