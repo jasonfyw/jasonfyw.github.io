@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactPageScroller from 'react-page-scroller';
 
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Sidebar from './components/Sidebar';
 import Intro from './components/Intro';
 import About from './components/About';

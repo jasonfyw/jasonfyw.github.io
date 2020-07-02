@@ -1,20 +1,6 @@
 .about {
     color: #3B4252;
-    padding-top:10vh;
-}
-
-.about .section-heading h1 {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100vh;
-    padding-top: 2.25rem;
-    transform-origin: 0 0;
-    transform: translateY(100%) rotate(-90deg);
-
-    font-size: 4rem;
-    text-align: center;
-    text-transform: uppercase;
+    padding-top: 12vh;
 }
 
 .about canvas {

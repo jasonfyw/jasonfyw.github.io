@@ -39,6 +39,25 @@
     }
 }
 
+.section .section-heading h1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vh;
+    padding-top: 2.25rem;
+    transform-origin: 0 0;
+    transform: translateY(100%) rotate(-90deg);
+
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+@media(max-width: 600px) {
+    .section .section-heading h1 {
+        display: none;
+    }
+}
+
 .projects {
     height: 100vh;
     width: 85vw;
