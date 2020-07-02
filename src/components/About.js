@@ -9,7 +9,10 @@ import Photo2 from '../media/DSC01215.jpg';
 
 const Img = styled.img`
     width: 100%;
-    padding: 1.25rem;
+    margin: 1.25rem;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+
 
     @media (max-width: 600px) {
         display: none;

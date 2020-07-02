@@ -3,6 +3,10 @@
     padding-top: 12vh;
 }
 
+.about p {
+    padding: 0.5rem;
+}
+
 .about canvas {
     position: absolute;
     top: 0;
