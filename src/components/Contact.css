@@ -1,0 +1,53 @@
+.contact {
+    color: #3B4252;
+    padding-top: 25vh;
+    z-index: 10;
+}
+
+.contact .logo-instagram, .contact .mail-outline {
+    position: relative;
+    width: 4rem;
+    color: #3B4252;
+}
+
+.contact .social-link {
+    padding: 4vh;
+    text-align: right;
+}
+.contact .social-link h2 {
+    margin-left: 3rem;
+    padding-top: 0.75rem;
+    text-align: left;
+    transition: 0.2s;
+
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+.contact .social-link h2:hover {
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+    .contact .social-link {
+        padding: 4vh;
+        text-align: center;
+    }
+    .contact .social-link h2 {
+        margin-left: 0;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .contact .social-link h2:hover {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+.contact canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #ECEFF4;
+}

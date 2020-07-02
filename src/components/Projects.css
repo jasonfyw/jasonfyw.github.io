@@ -1,6 +1,7 @@
 .projects {
     color: #3B4252;
     padding-top: 16vh;
+    z-index: 0;
 }
 
 /* for some reason media query doesnt work with .section in App.css */

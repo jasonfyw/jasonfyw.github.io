@@ -7,11 +7,12 @@ import Sidebar from './components/Sidebar';
 import Intro from './components/Intro';
 import About from './components/About';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 class App extends Component {
     state = {
         currentPage: null,
-        sections: ['intro', 'about', 'projects']
+        sections: ['intro', 'about', 'projects', 'contact']
     }
 
     handlePageChange = number => {
@@ -30,6 +31,7 @@ class App extends Component {
                         <Intro handlePageChange={this.handlePageChange} />
                         <About />
                         <Projects />
+                        <Contact />
                     </ReactPageScroller>
                 </div>
             </div>
