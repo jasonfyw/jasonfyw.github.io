@@ -1,22 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.4cf7e981.chunk.css",
-    "main.js": "/static/js/main.fe6bf09a.chunk.js",
-    "main.js.map": "/static/js/main.fe6bf09a.chunk.js.map",
+    "main.css": "/static/css/main.39170777.chunk.css",
+    "main.js": "/static/js/main.23aead7c.chunk.js",
+    "main.js.map": "/static/js/main.23aead7c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a0e6cbd4.js",
     "runtime-main.js.map": "/static/js/runtime-main.a0e6cbd4.js.map",
-    "static/js/2.3e768936.chunk.js": "/static/js/2.3e768936.chunk.js",
-    "static/js/2.3e768936.chunk.js.map": "/static/js/2.3e768936.chunk.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.c40eb042.chunk.js": "/static/js/2.c40eb042.chunk.js",
+    "static/js/2.c40eb042.chunk.js.map": "/static/js/2.c40eb042.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.de1d1c39615415d5a4928f9b0e528f37.js": "/precache-manifest.de1d1c39615415d5a4928f9b0e528f37.js",
+    "precache-manifest.e9c220f875ae9293fffea9000cefa480.js": "/precache-manifest.e9c220f875ae9293fffea9000cefa480.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.4cf7e981.chunk.css.map": "/static/css/main.4cf7e981.chunk.css.map",
-    "static/js/2.3e768936.chunk.js.LICENSE.txt": "/static/js/2.3e768936.chunk.js.LICENSE.txt"
+    "static/css/2.af3c1da9.chunk.css.map": "/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.39170777.chunk.css.map": "/static/css/main.39170777.chunk.css.map",
+    "static/js/2.c40eb042.chunk.js.LICENSE.txt": "/static/js/2.c40eb042.chunk.js.LICENSE.txt",
+    "static/media/DSC01215.jpg": "/static/media/DSC01215.011d6ddc.jpg",
+    "static/media/DSC0279.JPG": "/static/media/DSC0279.b2447176.JPG",
+    "static/media/charitlon_snapshot.png": "/static/media/charitlon_snapshot.9d8693f6.png",
+    "static/media/plismun_snapshot.png": "/static/media/plismun_snapshot.5771354f.png",
+    "static/media/portfolio_snapshot.png": "/static/media/portfolio_snapshot.bcfc7930.png",
+    "static/media/starformation_snapshot.png": "/static/media/starformation_snapshot.31272a4a.png",
+    "static/media/timeuntil_snapshot.png": "/static/media/timeuntil_snapshot.7cc907ed.png",
+    "static/media/viralspread_snapshot.png": "/static/media/viralspread_snapshot.29fb4fb8.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a0e6cbd4.js",
-    "static/js/2.3e768936.chunk.js",
-    "static/css/main.4cf7e981.chunk.css",
-    "static/js/main.fe6bf09a.chunk.js"
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.c40eb042.chunk.js",
+    "static/css/main.39170777.chunk.css",
+    "static/js/main.23aead7c.chunk.js"
   ]
 }
