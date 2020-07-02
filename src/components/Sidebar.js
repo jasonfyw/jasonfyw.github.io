@@ -23,6 +23,9 @@ const NavHeader = styled.h1`
         cursor: pointer;
         color: #D8DEE9;
     }
+    &:focus {
+        outline: none;
+    }
 `;
 
 const NavSection = styled.button`
@@ -44,6 +47,9 @@ const NavSection = styled.button`
     &:hover {
         cursor: pointer;
         background: #4C566A;
+    }
+    &:focus {
+        outline: none;
     }
 `;
 
