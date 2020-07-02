@@ -1,6 +1,11 @@
 .about {
     color: #3B4252;
-    padding-top: 12vh;
+    padding-top: 8vh;
+}
+@media (max-height: 900px) {
+    .about {
+        padding-top: 6vh;
+    }
 }
 
 .about p {

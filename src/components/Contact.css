@@ -11,11 +11,12 @@
 }
 
 .contact .social-link {
-    padding: 4vh;
+    margin: 4vh;
     text-align: right;
 }
 .contact .social-link h2 {
     margin-left: 3rem;
+    padding: 0.5rem;
     padding-top: 0.75rem;
     text-align: left;
     transition: 0.2s;
