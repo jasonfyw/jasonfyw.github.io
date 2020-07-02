@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Sidebar from './components/Sidebar';
 import Intro from './components/Intro';
 import About from './components/About';
+import Projects from './components/Projects';
 
 class App extends Component {
     state = {
@@ -28,9 +29,7 @@ class App extends Component {
                     >
                         <Intro handlePageChange={this.handlePageChange} />
                         <About />
-                        <div className="projects">
-                            <h1>PROJECTS</h1>
-                        </div>
+                        <Projects />
                     </ReactPageScroller>
                 </div>
             </div>
