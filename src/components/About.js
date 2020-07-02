@@ -43,7 +43,7 @@ function About(props) {
                 </Row>
             </Container>
             
-            <ParticlesBg type="square" color="#81A1C1" bg={false} />
+            <ParticlesBg type="circle" color="#D3D9E4" bg={false} />
         </div>
      );
 }

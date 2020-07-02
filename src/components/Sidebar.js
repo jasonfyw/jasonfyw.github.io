@@ -91,10 +91,17 @@ class Sidebar extends Component {
                             My projects
                         </NavSection>
                     </li>
+                    <li>
+                        <NavSection
+                            active={this.activeSection('contact')}
+                            onClick={() => this.props.handlePageChange(3)}
+                        >
+                            Contact
+                        </NavSection>
+                    </li>
                 </Nav>
 
                 <div className="footer">
-                    {/* <p>© 2020 Jason Wang – made with <IosHeart color='#BF616A' fontSize="1rem" /> using ReactJS</p> */}
                     <p>
                         © 2020 Jason Wang – made with&nbsp;
                         <svg class="heart" viewBox="0 0 32 29.6">

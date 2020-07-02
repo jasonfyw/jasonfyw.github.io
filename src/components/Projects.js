@@ -136,7 +136,7 @@ class Projects extends Component {
 
                 </Carousel>
                 
-                <ParticlesBg type="circle" color="#D8DEE9" bg={false} />
+                <ParticlesBg type="cobweb" color="#81A1C1" bg={false} />
             </div>
         );
     }
