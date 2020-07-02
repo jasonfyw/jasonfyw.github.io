@@ -3,6 +3,13 @@
     padding-top: 16vh;
 }
 
+/* for some reason media query doesnt work with .section in App.css */
+@media (max-width: 600px) {
+    .projects {
+        width: 100vw;
+    }
+}
+
 .projects canvas {
     position: absolute;
     top: 0;
