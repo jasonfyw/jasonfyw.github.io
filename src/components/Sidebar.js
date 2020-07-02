@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import GitHubCalendar from 'react-github-calendar';
 
 import './Sidebar.css';
+import LogoGithub from 'react-ionicons/lib/LogoGithub';
+import { LogoInstagram, MailOutline } from '../media/Ionicons';
 
 const NavHeader = styled.h1`
     padding: 0.5rem;
@@ -59,6 +62,16 @@ const Nav = styled.ul`
     margin: 0;
 `;
 
+const gitHubCalendarTheme = {
+    background: 'transparent',
+    text: '#E5E9F0',
+    grade4: 'hsl(354.3,42.3%,56.5%)',
+    grade3: 'hsl(354.3,42.3%,66.5%)',
+    grade2: 'hsl(354.3,42.3%,76.5%)',
+    grade1: 'hsl(354.3,42.3%,86.5%)',
+    grade0: '#4C566A',
+}
+
 class Sidebar extends Component {
 
     activeSection = (sectionName) => {
@@ -101,7 +114,24 @@ class Sidebar extends Component {
                     </li>
                 </Nav>
 
+                <div className="github-calendar">
+                    <GitHubCalendar username="jasonfyw" theme={gitHubCalendarTheme} showTotalCount={true} />
+                </div>
+
                 <div className="footer">
+                    <p className="links">
+                        <a href="https://github.com/jasonfyw" target="_blank" rel="noopener noreferrer">
+                            <LogoGithub fontSize='1rem' color="#E5E9F0" />
+                        </a>
+                        &nbsp;&nbsp;
+                        <a href="https://instagram.com/jason_fyw" target="_blank" rel="noopener noreferrer">
+                            <LogoInstagram color="#E5E9F0" />
+                        </a>
+                        &nbsp;&nbsp;
+                        <a href="mailto:jasonwang0610@gmail.com">
+                            <MailOutline color="#E5E9F0" />
+                        </a>
+                    </p>
                     <p>
                         © 2020 Jason Wang – made with&nbsp;
                         <svg class="heart" viewBox="0 0 32 29.6">

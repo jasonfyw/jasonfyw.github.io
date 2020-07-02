@@ -15,11 +15,44 @@
     }
 }
 
+.sidebar .github-calendar {
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    position: absolute;
+    left: 0;;
+    bottom: 0;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+    transition: 0.2s;
+}
+@media (max-height: 650px) {
+    .sidebar .github-calendar { display: none; }
+}
+@media (min-height: 700px) {
+    .sidebar .github-calendar { width: 30vh; }
+}
+@media (min-height: 900px) {
+    .sidebar .github-calendar { width: 45vh; }
+}
+.sidebar .github-calendar .react-github-calendar__loading {
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+
 .sidebar .footer {
     position: absolute;
     bottom: 0;
 
     font-size: 0.75rem;
+}
+
+.sidebar .footer .links {
+    padding-left: 0.5rem;
+}
+.sidebar .footer .links .logo-instagram, .sidebar .footer .links .mail-outline {
+    position: relative;
+    width: 1rem;
 }
 .sidebar .footer .heart {
     fill: #BF616A;
