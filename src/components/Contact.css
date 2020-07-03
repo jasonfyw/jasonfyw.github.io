@@ -29,21 +29,42 @@
     font-size: 3rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
+    .contact {
+        padding-top: 7.5vh;
+    }
     .contact .social-link {
         padding: 4vh;
         text-align: center;
     }
     .contact .social-link h2 {
         margin-left: 0;
-        font-size: 1.25rem;
+        font-size: 1rem;
         text-align: center;
     }
     .contact .social-link h2:hover {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    .contact .email h2 {
+        font-size: 1rem !important;
+    }
+    .contact .email h2:hover {
+        font-size: 1.25rem !important;
+    }
+}
+@media (max-width: 1260px) {
+    .contact .social-link h2 {
+        margin-left: 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .contact .social-link h2:hover {
+        font-size: 2.25rem;
         text-align: center;
     }
 }
+
 
 .contact canvas {
     position: absolute;

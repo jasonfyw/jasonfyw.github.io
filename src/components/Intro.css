@@ -1,3 +1,9 @@
+@media (max-width: 1000px) {
+    .intro {
+        padding-top: 20vh;
+    }
+}
+
 .intro .title {
     margin-bottom: 0px;
     font-size: 4rem;

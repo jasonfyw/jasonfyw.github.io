@@ -29,6 +29,10 @@ const NavHeader = styled.h1`
     &:focus {
         outline: none;
     }
+
+    @media (max-width: 1400px) {
+        font-size: 1.5rem;
+    }
 `;
 
 const NavSection = styled.button`
@@ -56,6 +60,10 @@ const NavSection = styled.button`
     }
     &:focus {
         outline: none;
+    }
+
+    @media (max-width: 1400px) {
+        font-size: 0.65rem;
     }
 `;
 

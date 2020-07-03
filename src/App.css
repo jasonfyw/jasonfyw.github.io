@@ -11,7 +11,7 @@
     right: 0;
     overflow-x: hidden;
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .content {
         width: 100vw;
     }
@@ -26,13 +26,13 @@
 
     text-align: center;
 }
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
     .section {
         padding-left: 25vh;
         padding-right: 25vh;
     }
 }
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .section {
         width: 100vw;
         padding-top: 10vh;
@@ -52,7 +52,7 @@
     text-align: center;
     text-transform: uppercase;
 }
-@media(max-width: 600px) {
+@media(max-width: 1000px) {
     .section .section-heading h1 {
         display: none;
     }

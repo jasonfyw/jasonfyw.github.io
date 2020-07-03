@@ -32,10 +32,10 @@ function Contact(props) {
             <Container>
                 <SocialLink href="https://github.com/jasonfyw/" target="_blank">
                     <Row className="social-link">
-                        <Col md={4}>
+                        <Col md={3}>
                             <LogoGithub fontSize="4rem" color="#3B4252" />
                         </Col>
-                        <Col md={8}>
+                        <Col md={9}>
                             <h2>/jasonfyw</h2>
                         </Col>
                     </Row>
@@ -43,21 +43,21 @@ function Contact(props) {
 
                 <SocialLink href="https://www.instagram.com/jason_fyw/" target="_blank">
                     <Row className="social-link">
-                        <Col md={4}>
+                        <Col md={3}>
                             <LogoInstagram color="#3B4252" />
                         </Col>
-                        <Col md={8}>
+                        <Col md={9}>
                             <h2>@jason_fyw</h2>
                         </Col>
                     </Row>
                 </SocialLink>
 
                 <SocialLink href="mailto:jasonwang0610@gmail.com">
-                    <Row className="social-link">
-                        <Col md={4}>
+                    <Row className="social-link email">
+                        <Col md={3}>
                             <MailOutline color="#3B4252" />
                         </Col>
-                        <Col md={8}>
+                        <Col md={9}>
                             <h2>jasonwang0610@gmail.com</h2>
                         </Col>
                     </Row>
