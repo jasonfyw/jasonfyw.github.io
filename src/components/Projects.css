@@ -43,3 +43,9 @@
   padding: 20px;
   cursor: pointer;
 }
+
+.projects .chevron-back, .projects .chevron-forward {
+    width: 1.75rem;
+    padding: 0;
+    margin: 0;
+}

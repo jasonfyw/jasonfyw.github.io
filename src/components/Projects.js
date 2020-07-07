@@ -4,6 +4,7 @@ import { Carousel } from 'react-bootstrap';
 import styled from 'styled-components';
 
 import './Projects.css';
+import { ChevronBack, ChevronForward } from '../media/Ionicons';
 import PLISMUNSnapshot from '../media/projects/plismun_snapshot.png';
 import CharitlonSnapshot from '../media/projects/charitlon_snapshot.png';
 import PortfolioSnapshot from '../media/projects/portfolio_snapshot.png';
@@ -27,6 +28,20 @@ const CarouselLink = styled.a`
         text-decoration: none;
     }
 `;
+const NavIcon = styled.div`
+    padding: 0px;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgba(229,233,240, 0.9);
+    display: table;
+
+    text-align: center;
+`;
+const NavIconInnerWrapper = styled.div`
+    display: table-cell;
+    vertical-align: middle;
+`;
 
 
 class Projects extends Component {
@@ -47,6 +62,12 @@ class Projects extends Component {
                             'boxShadow': '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
                     
                         }
+                    }
+                    nextIcon = {
+                        <NavIcon><NavIconInnerWrapper><ChevronForward color="#2E3440" /></NavIconInnerWrapper></NavIcon>
+                    }
+                    prevIcon = {
+                        <NavIcon><NavIconInnerWrapper><ChevronBack color="#2E3440" /></NavIconInnerWrapper></NavIcon>
                     }
                 >
 

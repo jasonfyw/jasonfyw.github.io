@@ -11,3 +11,15 @@ export function MailOutline(props) {
         <svg className="mail-outline" viewBox='0 0 512 512'><rect x='48' y='96' width='416' height='320' rx='40' ry='40' style={{ 'fill': 'none', 'stroke': props.color, 'strokeLinecap': 'round', 'strokeLinejoin': 'round', 'strokeWidth': '32px' }} /><polyline points='112 160 256 272 400 160' style={{ 'fill': 'none', 'stroke': props.color, 'strokeLinecap': 'round', 'strokeLinejoin': 'round', 'strokeWidth': '32px' }} /></svg>
     )
 }
+
+export function ChevronBack(props) {
+    return (
+        <svg className="chevron-back" viewBox='0 0 512 512'><polyline points='328 112 184 256 328 400' style={{ 'fill': 'none', 'stroke': props.color,'strokeLinecap': 'round', 'strikeLinejoin': 'round', 'strokeWidth': '48px' }} /></svg>
+    )
+}
+
+export function ChevronForward(props) {
+    return (
+        <svg className="chevron-forward" viewBox='0 0 512 512'><polyline points='184 112 328 256 184 400' style={{ 'fill': 'none', 'stroke': props.color, 'strokeLinecap': 'round', 'strikeLinejoin': 'round', 'strokeWidth': '48px' }} /></svg>
+    )
+}
