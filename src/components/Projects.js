@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ParticlesBg from 'particles-bg';
-import { Carousel } from 'react-bootstrap';
+import { Carousel, Badge } from 'react-bootstrap';
 import styled from 'styled-components';
 
 import './Projects.css';
@@ -43,6 +43,23 @@ const NavIconInnerWrapper = styled.div`
     vertical-align: middle;
 `;
 
+const PillPHP = styled(Badge)`
+    background-color: #B48EAD;
+    color: #ECEFF4;
+`;
+const PillJS = styled(Badge)`
+    background-color: #EBCB8B;
+    color: #ECEFF4;
+`;
+const PillPython = styled(Badge)`
+    background-color: #A3BE8C;
+    color: #ECEFF4;
+`;
+const PillReact = styled(Badge)`
+    background-color: #D08770;
+    color: #ECEFF4;
+`;
+
 
 class Projects extends Component {
 
@@ -75,12 +92,13 @@ class Projects extends Component {
                         <CarouselImg
                             // className="d-block w-100"
                             src={PLISMUNSnapshot}
-                            alt="PLISMUN"
+                            alt="PLISMUN Screenshot"
                         />
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
                                 <CarouselLink href="https://plismun.com" target="_blank">PLISMUN <MdOpen /></CarouselLink>
                                 <p>The official website for Park Lane International School MUN where information regarding the conference is found, as well as a service to login and register to participate. Also contains administrative tools to manage the secure user database</p>
+                                <p><PillPHP pill>PHP</PillPHP> <PillJS pill>JavaScript</PillJS></p>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -89,12 +107,13 @@ class Projects extends Component {
                         <CarouselImg
                             className="d-block w-100"
                             src={TimeuntilSnapshot}
-                            alt="Third slide"
+                            alt="TimeUntil Screenshot"
                         />
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
                                 <CarouselLink href="http://timeuntil.imadethis.site/" target="_blank">TimeUntil <MdOpen /></CarouselLink>
                                 <p>A simplistic web application displaying the time and custom event countdowns with scenic screensavers from Apple. Designed to be a browser start page</p>
+                                <p><PillReact pill>ReactJS</PillReact></p>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -103,12 +122,13 @@ class Projects extends Component {
                         <CarouselImg
                             className="d-block w-100"
                             src={PortfolioSnapshot}
-                            alt="Third slide"
+                            alt="Personal portfolio"
                         />
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
                                 <CarouselLink href="https://jasonfyw.github.io" target="_blank">Personal Portfolio <MdOpen /></CarouselLink>
                                 <p>My personal portfolio website you are viewing right now. Built from scratch using ReactJS.</p>
+                                <p><PillReact pill>ReactJS</PillReact></p>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -117,12 +137,13 @@ class Projects extends Component {
                         <CarouselImg
                             className="d-block w-100"
                             src={StarFormationSnapshot}
-                            alt="Third slide"
+                            alt="Start Formation Screenshot"
                         />
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
                                 <CarouselLink href="https://github.com/jasonfyw/py_physics_sim" target="_blank">Star Formation Simulation <MdOpen /></CarouselLink>
                                 <p>Using a custom Python module, I built a series of physics simulations using core concepts. One of which simulates the interactions of celestial bodies in space, aimed at replicating the formation of stars through the accumulation of mass</p>
+                                <p><PillPython pill>Python</PillPython></p>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -131,12 +152,13 @@ class Projects extends Component {
                         <CarouselImg
                             className="d-block w-100"
                             src={ViralspreadSnapshot}
-                            alt="Third slide"
+                            alt="Viral Spread Screenshot"
                         />
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
                                 <CarouselLink href="https://github.com/jasonfyw/viralspread" target="_blank">Viral spread simulation <MdOpen /></CarouselLink>
                                 <p>Utilising a custom physics module simulating particle movement, these simulations model the exponential nature of the spread of an infectious disease throughout a randomly moving population</p>
+                                <p><PillPython pill>Python</PillPython></p>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -145,12 +167,13 @@ class Projects extends Component {
                         <CarouselImg
                             className="d-block w-100"
                             src={CharitlonSnapshot}
-                            alt="Third slide"
+                            alt="Charitlon Screenshot"
                         />
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
                                 <CarouselLink href="http://prototype.charitlon.cz/" target="_blank">Charitlon <MdOpen /></CarouselLink>
                                 <p>An upcoming website designed for an upcoming charity fundraiser event that I'm organising to place in spring of 2021</p>
+                                <p><PillReact pill>ReactJS</PillReact></p>
                             </div>
                         </Carousel.Caption>
                     </Carousel.Item>
