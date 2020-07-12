@@ -1,5 +1,6 @@
 import React from 'react';
 import ParticlesBg from 'particles-bg';
+import ReactTypingEffect from 'react-typing-effect';
 
 import './Intro.css';
 import LogoGithub from 'react-ionicons/lib/LogoGithub';
@@ -9,7 +10,7 @@ import { LogoInstagram, MailOutline } from '../media/Ionicons';
 function Intro(props) {
     return (
         <div className="intro section">
-            <h1 className="title">Jason Wang</h1>
+            <ReactTypingEffect text="Jason Wang" className="title" speed="65" eraseDelay="1000000" typingDelay="200" cursor="_" />
             <h4 className="subtitle"><span role="img" aria-label="countries">🇨🇦 🇨🇳 🇨🇿</span></h4>
             <h4 className="subtitle">
                 An aspiring Computer Scientist with an interest in Software Engineering and Machine Learning
