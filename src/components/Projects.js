@@ -8,7 +8,7 @@ import { ChevronBack, ChevronForward } from '../media/Ionicons';
 import PLISMUNSnapshot from '../media/projects/plismun_snapshot.png';
 import CharitlonSnapshot from '../media/projects/charitlon_snapshot.png';
 import PortfolioSnapshot from '../media/projects/portfolio_snapshot.png';
-import StarFormationSnapshot from '../media/projects/starformation_snapshot.png';
+import OrbitalsimSnapshot from '../media/projects/orbitalsim_snapshot.png';
 import TimeuntilSnapshot from '../media/projects/timeuntil_snapshot.png';
 import ViralspreadSnapshot from '../media/projects/viralspread_snapshot.png';
 import MdOpen from 'react-ionicons/lib/MdOpen';
@@ -97,7 +97,7 @@ class Projects extends Component {
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
                                 <CarouselLink href="https://plismun.com" target="_blank">PLISMUN <MdOpen /></CarouselLink>
-                                <p>The official website for Park Lane International School MUN where information regarding the conference is found, as well as a service to login and register to participate. Also contains administrative tools to manage the secure user database</p>
+                                <p>The official platform for the Park Lane International School MUN where delegates and delegations can apply for committees, as well as providing tools for chairs and administration. Custom-built administrative database tools are available for use by the organiserse.</p>
                                 <p><PillPHP pill>PHP</PillPHP> <PillJS pill>JavaScript</PillJS></p>
                             </div>
                         </Carousel.Caption>
@@ -112,7 +112,7 @@ class Projects extends Component {
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
                                 <CarouselLink href="http://timeuntil.imadethis.site/" target="_blank">TimeUntil <MdOpen /></CarouselLink>
-                                <p>A simplistic web application displaying the time and custom event countdowns with scenic screensavers from Apple. Designed to be a browser start page</p>
+                                <p>A simplistic web application displaying the time with scenic screensavers from Apple. Customised countdowns can also be set and displayed. Designed to be a browser start page.</p>
                                 <p><PillReact pill>ReactJS</PillReact></p>
                             </div>
                         </Carousel.Caption>
@@ -127,7 +127,7 @@ class Projects extends Component {
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
                                 <CarouselLink href="https://jasonfyw.github.io" target="_blank">Personal Portfolio <MdOpen /></CarouselLink>
-                                <p>My personal portfolio website you are viewing right now. Built from scratch using ReactJS.</p>
+                                <p>My current portfolio page! Designed and built in React by me with the help of some components.</p>
                                 <p><PillReact pill>ReactJS</PillReact></p>
                             </div>
                         </Carousel.Caption>
@@ -136,13 +136,13 @@ class Projects extends Component {
                     <Carousel.Item>
                         <CarouselImg
                             className="d-block w-100"
-                            src={StarFormationSnapshot}
+                            src={OrbitalsimSnapshot}
                             alt="Start Formation Screenshot"
                         />
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
-                                <CarouselLink href="https://github.com/jasonfyw/py_physics_sim" target="_blank">Star Formation Simulation <MdOpen /></CarouselLink>
-                                <p>Using a custom Python module, I built a series of physics simulations using core concepts. One of which simulates the interactions of celestial bodies in space, aimed at replicating the formation of stars through the accumulation of mass</p>
+                                <CarouselLink href="https://github.com/jasonfyw/orbitalsim" target="_blank">Orbital Simulation<MdOpen /></CarouselLink>
+                                <p>A customisable and interactive Python simulation build over PyGame that models the orbits of celestial bodies in 2D space using Newton’s law of universal gravitation! Available to download and use with just a few clicks as a PyPI package!</p>
                                 <p><PillPython pill>Python</PillPython></p>
                             </div>
                         </Carousel.Caption>
@@ -172,7 +172,7 @@ class Projects extends Component {
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
                                 <CarouselLink href="http://prototype.charitlon.cz/" target="_blank">Charitlon <MdOpen /></CarouselLink>
-                                <p>An upcoming website designed for an upcoming charity fundraiser event that I'm organising to place in spring of 2021</p>
+                                <p>An upcoming website designed for an upcoming charity fundraiser event that I'm organising to place in spring of 2021 to raise funds for a local orphanage</p>
                                 <p><PillReact pill>ReactJS</PillReact></p>
                             </div>
                         </Carousel.Caption>
