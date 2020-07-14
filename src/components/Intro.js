@@ -10,7 +10,7 @@ import { LogoInstagram, MailOutline } from '../media/Ionicons';
 function Intro(props) {
     return (
         <div className="intro section">
-            <ReactTypingEffect text="Jason Wang" className="title" speed="65" eraseDelay="1000000" typingDelay="200" cursor="_" />
+            <ReactTypingEffect text="Jason Wang" className="title" speed="85" eraseDelay="1000000" typingDelay="650" cursor="_" />
             <h4 className="subtitle"><span role="img" aria-label="countries">🇨🇦 🇨🇳 🇨🇿</span></h4>
             <h4 className="subtitle">
                 An aspiring Computer Scientist with an interest in Software Engineering and Machine Learning

@@ -15,7 +15,12 @@
 }
 @media (max-width: 600px), (max-height: 800px) {
     .about p {
-        font-size: 0.75rem;
+        font-size: 0.95rem;
+    }
+}
+@media (max-width: 600px), (max-height: 740px) {
+    .about p {
+        font-size: 0.85rem;
     }
 }
 

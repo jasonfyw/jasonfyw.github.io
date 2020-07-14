@@ -24,7 +24,7 @@ const NavHeader = styled.h1`
 
     &:hover {
         cursor: pointer;
-        color: #D8DEE9;
+        color: #D5DBE6;
     }
     &:focus {
         outline: none;
@@ -63,7 +63,7 @@ const NavSection = styled.button`
     }
 
     @media (max-width: 1400px) {
-        font-size: 0.65rem;
+        font-size: 0.75rem;
     }
 `;
 

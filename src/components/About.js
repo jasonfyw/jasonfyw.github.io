@@ -38,7 +38,7 @@ function About(props) {
                         <Img src={Photo2} alt="About me – Jason " />
                         <p>Throughout high school I’ve been passionate about programming. I enjoy creating both frontend and backend applications, while also exploring data science and machine learning.</p>
                         <p>Python and Javascript are my languages of choice, while I also have experience with PHP and R.</p>
-                        <p>Aside from programming, I’m passionate about music and guitar as well as being interested in photography, the stock market and cryptocurrency.</p>
+                        <p>Aside from programming, I’m passionate about music and guitar as well as being interested in photography, the stock market, cryptocurrency and a bunch of other stuff!</p>
                     </Col>
                 </Row>
             </Container>
