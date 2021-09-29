@@ -41,13 +41,13 @@ function Contact(props) {
                     </Row>
                 </SocialLink>
 
-                <SocialLink href="https://www.instagram.com/jason_fyw/" target="_blank">
+                <SocialLink href="https://www.instagram.com/jasonfyw/" target="_blank">
                     <Row className="social-link">
                         <Col md={3}>
                             <LogoInstagram color="#3B4252" />
                         </Col>
                         <Col md={9}>
-                            <h2>@jason_fyw</h2>
+                            <h2>@jasonfyw</h2>
                         </Col>
                     </Row>
                 </SocialLink>
