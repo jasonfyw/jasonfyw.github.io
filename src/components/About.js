@@ -21,7 +21,7 @@ const Img = styled.img`
 
 function About(props) {
     return (
-        <div className="about section">
+        <div className="about section" name="about">
             <div className="section-heading">
                 <h1>About me</h1>
             </div>

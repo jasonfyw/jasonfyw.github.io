@@ -24,7 +24,7 @@ const SocialLink = styled.a`
 
 function Contact(props) {
     return (
-        <div className="contact section">
+        <div className="contact section" name="contact">
             <div className="section-heading">
                 <h1>Contact me!</h1>
             </div>

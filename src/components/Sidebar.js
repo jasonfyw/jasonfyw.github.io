@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import GitHubCalendar from 'react-github-calendar';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 import './Sidebar.css';
 import LogoGithub from 'react-ionicons/lib/LogoGithub';
@@ -42,7 +43,7 @@ const NavSection = styled.button`
     padding-bottom: 0.75rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-    border: ${props => props.active ? "2px solid #E5E9F0" : "0"};
+    border: 0;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
     outline: none;
     border-radius: 5px;
@@ -102,44 +103,35 @@ const gitHubCalendarThemeOrange = {
 }
 
 class Sidebar extends Component {
-
-    activeSection = (sectionName) => {
-        return this.props.activeSection === sectionName ? true : false;
-    }
-
     render() {
         return (
             <div className="sidebar">
                 <NavHeader
-                    active={this.activeSection('intro')}
-                    onClick={() => this.props.handlePageChange(0)}
+                    onClick={() => scroll.scrollToTop()}
                 >
                     Jason Wang
                 </NavHeader>
                 <Nav>
                     <li>
-                        <NavSection 
-                            active={this.activeSection('about')} 
-                            onClick={() => this.props.handlePageChange(1)}
-                        >
-                            About me
-                        </NavSection>
+                        <Link activeClass="active" to="about" spy={true} smooth={true} duration={500}>
+                            <NavSection>
+                                About me
+                            </NavSection>
+                        </Link>
                     </li>
                     <li>
-                        <NavSection 
-                            active={this.activeSection('projects')} 
-                            onClick={() => this.props.handlePageChange(2)}
-                        >
-                            My projects
-                        </NavSection>
+                        <Link activeClass="active" to="projects" spy={true} smooth={true} duration={500}>
+                            <NavSection>
+                                My projects
+                            </NavSection>
+                        </Link>
                     </li>
                     <li>
-                        <NavSection
-                            active={this.activeSection('contact')}
-                            onClick={() => this.props.handlePageChange(3)}
-                        >
-                            Contact
-                        </NavSection>
+                        <Link activeClass="active" to="contact" spy={true} smooth={true} duration={500}>
+                            <NavSection>
+                                Contact
+                            </NavSection>
+                        </Link>
                     </li>
                 </Nav>
 

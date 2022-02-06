@@ -70,7 +70,7 @@ class Projects extends Component {
 
     render() {
         return (
-            <div className="projects section">
+            <div className="projects section" name="projects">
                 <div className="section-heading">
                     <h1>My projects</h1>
                 </div>

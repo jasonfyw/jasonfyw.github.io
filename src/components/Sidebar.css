@@ -2,9 +2,10 @@
     width: 15vw;
     height: 100vh;
     background-color: #434C5E;
-    position: absolute;
+    position: fixed;
     left: 0;
     padding: 1rem;
+    z-index: 100000;
 
     text-align: left;
     color: #E5E9F0;
