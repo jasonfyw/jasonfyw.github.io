@@ -29,7 +29,7 @@ function About(props) {
             <Container>
                 <Row>
                     <Col sm={4} >
-                        <p>Hi, my name’s Jason and I’m a high school senior current studying in the Czech Republic.</p>
+                        <p>Hi, my name’s Jason and I’m a student at the University of Toronto with a prospective Double Major in Computer Science and Mathematics.</p>
 
                         <p>This is my personal site with my bio and some of the stuff I’ve worked on over the past few years</p>
                         <Img src={Photo1} alt="About me – Jason" />
