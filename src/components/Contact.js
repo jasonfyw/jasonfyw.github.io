@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import './Contact.css';
 import LogoGithub from 'react-ionicons/lib/LogoGithub';
-import { LogoInstagram, MailOutline } from '../media/Ionicons';
+import { LogoInstagram, LogoLinkedIn, MailOutline } from '../media/Ionicons';
 
 const SocialLink = styled.a`
     margin-bottom: 10rem;
@@ -30,6 +30,17 @@ function Contact(props) {
             </div>
 
             <Container>
+                <SocialLink href="https://linkedin.com/in/jasonfyw" target="_blank">
+                    <Row className="social-link linkedin">
+                        <Col md={3}>
+                            <LogoLinkedIn size="64px" color="#3B4252" />
+                        </Col>
+                        <Col md={9}>
+                            <h2>/in/linkedin</h2>
+                        </Col>
+                    </Row>
+                </SocialLink>
+
                 <SocialLink href="https://github.com/jasonfyw/" target="_blank">
                     <Row className="social-link">
                         <Col md={3}>
@@ -62,6 +73,7 @@ function Contact(props) {
                         </Col>
                     </Row>
                 </SocialLink>
+                
 
 
 
