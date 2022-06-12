@@ -77,29 +77,29 @@ const Nav = styled.ul`
 const gitHubCalendarThemeRed = {
     background: 'transparent',
     text: '#E5E9F0',
-    grade4: 'hsl(354.3,42.3%,56.5%)',
-    grade3: 'hsl(354.3,42.3%,66.5%)',
-    grade2: 'hsl(354.3,42.3%,73.5%)',
-    grade1: 'hsl(354.3,42.3%,86.5%)',
-    grade0: '#4C566A',
+    level4: 'hsl(354.3,42.3%,56.5%)',
+    level3: 'hsl(354.3,42.3%,66.5%)',
+    level2: 'hsl(354.3,42.3%,73.5%)',
+    level1: 'hsl(354.3,42.3%,86.5%)',
+    level0: '#4C566A',
 }
 const gitHubCalendarThemeGreen = {
     background: 'transparent',
     text: '#E5E9F0',
-    grade4: 'hsl(92.4,27.8%,54.7%)',
-    grade3: 'hsl(92.4,27.8%,66.7%)',
-    grade2: 'hsl(92.4,27.8%,78.7%)',
-    grade1: 'hsl(92.4,27.8%,90.7%)',
-    grade0: '#4C566A',
+    level4: 'hsl(92.4,27.8%,54.7%)',
+    level3: 'hsl(92.4,27.8%,66.7%)',
+    level2: 'hsl(92.4,27.8%,78.7%)',
+    level1: 'hsl(92.4,27.8%,90.7%)',
+    level0: '#4C566A',
 }
 const gitHubCalendarThemeOrange = {
     background: 'transparent',
     text: '#E5E9F0',
-    grade4: 'hsl(14.4,50.5%,52.7%)',
-    grade3: 'hsl(14.4,50.5%,62.7%)',
-    grade2: 'hsl(14.4,50.5%,72.7%)',
-    grade1: 'hsl(14.4,50.5%,82.7%)',
-    grade0: '#4C566A',
+    level4: 'hsl(14.4,50.5%,52.7%)',
+    level3: 'hsl(14.4,50.5%,62.7%)',
+    level2: 'hsl(14.4,50.5%,72.7%)',
+    level1: 'hsl(14.4,50.5%,82.7%)',
+    level0: '#4C566A',
 }
 
 class Sidebar extends Component {
@@ -136,7 +136,7 @@ class Sidebar extends Component {
                 </Nav>
 
                 <div className="github-calendar">
-                    <GitHubCalendar username="jasonfyw" theme={gitHubCalendarThemeRed} showTotalCount={true} />
+                    <GitHubCalendar username="jasonfyw" theme={gitHubCalendarThemeRed} blockRadius={1} blockMargin={2} />
                 </div>
 
                 <div className="footer">
