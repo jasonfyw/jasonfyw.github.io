@@ -11,7 +11,7 @@ import PortfolioSnapshot from '../media/projects/portfolio_snapshot.png';
 import OrbitalsimSnapshot from '../media/projects/orbitalsim_snapshot.png';
 import TimeuntilSnapshot from '../media/projects/timeuntil_snapshot.png';
 import ViralspreadSnapshot from '../media/projects/viralspread_snapshot.png';
-import MdOpen from 'react-ionicons/lib/MdOpen';
+import { OpenOutline } from 'react-ionicons';
 
 
 const CarouselImg = styled.img`
@@ -29,7 +29,7 @@ const CarouselLink = styled.a`
         text-decoration: none;
     }
 `;
-const LinkIcon = styled(MdOpen)`
+const LinkIcon = styled(OpenOutline)`
     font-size: 1.1rem;
     margin-bottom: 3px;
 `;
@@ -101,7 +101,7 @@ class Projects extends Component {
                         />
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
-                                <CarouselLink href="https://plismun.com" target="_blank">PLISMUN <MdOpen fontSize='1.2rem' style={{'marginBottom': '4px'}} /></CarouselLink>
+                                <CarouselLink href="https://plismun.com" target="_blank">PLISMUN <OpenOutline fontSize='1.2rem' style={{'marginBottom': '4px'}} /></CarouselLink>
                                 <p>The official platform for the Park Lane International School MUN where delegates and delegations can apply for committees, as well as providing tools for chairs and administration. Custom-built administrative database tools are available for use by the organiserse.</p>
                                 <p><PillPHP pill>PHP</PillPHP> <PillJS pill>JavaScript</PillJS></p>
                             </div>
@@ -116,7 +116,7 @@ class Projects extends Component {
                         />
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
-                                <CarouselLink href="http://timeuntil.imadethis.site/" target="_blank">TimeUntil <MdOpen fontSize='1.2rem' style={{ 'marginBottom': '4px' }} /></CarouselLink>
+                                <CarouselLink href="http://timeuntil.imadethis.site/" target="_blank">TimeUntil <OpenOutline fontSize='1.2rem' style={{ 'marginBottom': '4px' }} /></CarouselLink>
                                 <p>A simplistic web application displaying the time with scenic screensavers from Apple. Customised countdowns can also be set and displayed. Designed to be a browser start page.</p>
                                 <p><PillReact pill>ReactJS</PillReact></p>
                             </div>
@@ -131,7 +131,7 @@ class Projects extends Component {
                         />
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
-                                <CarouselLink href="https://jasonfyw.github.io" target="_blank">Personal Portfolio <MdOpen fontSize='1.2rem' style={{ 'marginBottom': '4px' }} /></CarouselLink>
+                                <CarouselLink href="https://jasonfyw.github.io" target="_blank">Personal Portfolio <OpenOutline fontSize='1.2rem' style={{ 'marginBottom': '4px' }} /></CarouselLink>
                                 <p>My current portfolio page! Designed and built in React by me with the help of some components.</p>
                                 <p><PillReact pill>ReactJS</PillReact></p>
                             </div>
@@ -146,7 +146,7 @@ class Projects extends Component {
                         />
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
-                                <CarouselLink href="https://github.com/jasonfyw/orbitalsim" target="_blank">Orbital Simulation <MdOpen fontSize='1.2rem' style={{ 'marginBottom': '4px' }} /></CarouselLink>
+                                <CarouselLink href="https://github.com/jasonfyw/orbitalsim" target="_blank">Orbital Simulation <OpenOutline fontSize='1.2rem' style={{ 'marginBottom': '4px' }} /></CarouselLink>
                                 <p>A customisable and interactive Python simulation build over PyGame that models the orbits of celestial bodies in 2D space using Newton’s law of universal gravitation! Available to download and use with just a few clicks as a PyPI package!</p>
                                 <p><PillPython pill>Python</PillPython></p>
                             </div>
@@ -161,7 +161,7 @@ class Projects extends Component {
                         />
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
-                                <CarouselLink href="https://github.com/jasonfyw/viralspread" target="_blank">Viral spread simulation <MdOpen fontSize='1.2rem' style={{ 'marginBottom': '4px' }} /></CarouselLink>
+                                <CarouselLink href="https://github.com/jasonfyw/viralspread" target="_blank">Viral spread simulation <OpenOutline fontSize='1.2rem' style={{ 'marginBottom': '4px' }} /></CarouselLink>
                                 <p>Utilising a custom physics module simulating particle movement, these simulations model the exponential nature of the spread of an infectious disease throughout a randomly moving population</p>
                                 <p><PillPython pill>Python</PillPython></p>
                             </div>
@@ -176,7 +176,7 @@ class Projects extends Component {
                         />
                         <Carousel.Caption>
                             <div className="carousel-caption-text">
-                                <CarouselLink href="http://prototype.charitlon.cz/" target="_blank">Charitlon <MdOpen fontSize='1.2rem' style={{ 'marginBottom': '4px' }} /></CarouselLink>
+                                <CarouselLink href="http://prototype.charitlon.cz/" target="_blank">Charitlon <OpenOutline fontSize='1.2rem' style={{ 'marginBottom': '4px' }} /></CarouselLink>
                                 <p>An upcoming website designed for an upcoming charity fundraiser event that I'm organising to place in spring of 2021 to raise funds for a local orphanage</p>
                                 <p><PillReact pill>ReactJS</PillReact></p>
                             </div>
