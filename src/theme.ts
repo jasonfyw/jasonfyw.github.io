@@ -20,7 +20,7 @@ const customTheme = extendTheme({
         global: {
             'html, body': {
                 fontFamily: 'mundial, sans-serif',
-                fontWeight: 400,
+                fontWeight: 300,
                 fontStyle: 'normal'
             }
         }
