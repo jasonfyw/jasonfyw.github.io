@@ -7,16 +7,16 @@ import {
   VStack,
   Code,
   Grid,
-  theme,
 } from "@chakra-ui/react"
+import theme from "./theme"
 import Nav from "./components/Nav"
 
 export const App = () => (
     <ChakraProvider theme={theme}>
         <Nav />
         <Box textAlign="center" fontSize="xl">
-            <Grid minH="100vh" p={3}>
-                
+            <Grid minH="1000vh" p={3}>
+                Hello there, please contact me at the following address
             </Grid>
         </Box>
     </ChakraProvider>
