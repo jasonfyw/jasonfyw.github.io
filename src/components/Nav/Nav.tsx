@@ -2,16 +2,9 @@ import { ReactNode, FC } from 'react';
 import {
     Box,
     Flex,
-    Avatar,
     HStack,
     Link,
     IconButton,
-    Button,
-    Menu,
-    MenuButton,
-    MenuList,
-    MenuItem,
-    MenuDivider,
     useDisclosure,
     useColorModeValue,
     Stack,
@@ -40,7 +33,7 @@ const Nav: FC = () => {
 
     return (
         <>
-            <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+            <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} position={'fixed'} top={0} width={'100vw'}>
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <IconButton
                         size={'md'}
