@@ -21,7 +21,7 @@ const Intro: FC = () => {
     }
 
     return (
-        <Container maxW={'6xl'} p={6.75} pt={'27.5vh'} height={'100vh'}>
+        <Container maxW={'6xl'} p={6.75} pt={'35vh'} height={'100vh'}>
             <VStack>
                 <Heading
                     fontSize={'3.5rem'}
