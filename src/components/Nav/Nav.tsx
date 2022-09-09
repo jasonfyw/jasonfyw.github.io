@@ -44,7 +44,7 @@ const Nav: FC = () => {
                     />
                     <Flex alignItems={'center'} pl={4} >
                         <NavLink href={'https://jasonfyw.com'}>
-                            <Box>Jason Wang</Box>
+                            <Box fontWeight={600}>Jason Wang</Box>
                         </NavLink>
                     </Flex>
                     <HStack spacing={8} alignItems={'center'} >
