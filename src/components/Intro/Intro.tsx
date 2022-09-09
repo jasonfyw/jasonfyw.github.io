@@ -12,13 +12,6 @@ import ReactTypingEffect from 'react-typing-effect';
 import Socials from './Socials';
 
 const Intro: FC = () => {
-    const colorMode = useColorModeValue('light', 'dark')
-    const colors = {
-        subtitle: {
-            light: '#5a657c' ,
-            dark: '#9199a9'
-        }
-    }
 
     return (
         <Container maxW={'6xl'} p={6.75} pt={'35vh'} height={'100vh'}>
@@ -37,12 +30,12 @@ const Intro: FC = () => {
                 <Text
                     fontSize={'1.5rem'}
                     fontWeight={300}
-                    color={colors.subtitle[colorMode]}
+                    color={useColorModeValue('#5a657c', '#9199a9')}
                     textAlign='center'
                 >
                     Computer Science + Cognitive Science @ University of Toronto '25
                 </Text>
-                <Socials color={colors.subtitle[colorMode]} />
+                <Socials color={useColorModeValue('#5a657c', '#9199a9')} />
             </VStack>
             <ParticlesBg type="cobweb" num={250} color="#5E81AC" bg={true} /> 
         </Container>
