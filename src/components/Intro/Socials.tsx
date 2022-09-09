@@ -38,7 +38,9 @@ const Socials: FC<SocialsProps> = (props) => {
         <HStack spacing={6} p={4}>
             {
                 socialsData.map((social) => (
-                    <Link aria-label={social.aria} href={social.href} fontSize={'1.5rem'} color={props.color}>{social.icon}</Link>
+                    <Link aria-label={social.aria} href={social.href} fontSize={'1.5rem'} color={props.color} isExternal>
+                        {social.icon}
+                    </Link>
                 ))
             }
         </HStack>
