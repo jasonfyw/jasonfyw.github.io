@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react';
+import { FC, ReactElement } from 'react';
 import {
     Box,
     useColorModeValue,
@@ -6,15 +6,18 @@ import {
     Stack,
     Heading,
     Text,
-    HStack
+    HStack,
+    Flex,
+    Spacer
 } from '@chakra-ui/react';
 
 interface ProjectCardProps {
     name: string,
     type: string,
-    tags: Array<ReactNode>,
+    tags: Array<ReactElement>,
     imageSrc: string,
-    description: string
+    description: string,
+    links: Array<ReactElement>
 }
 
 const ProjectCard: FC<ProjectCardProps> = (props) => {
@@ -53,19 +56,26 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                 >
                     {props.type}
                 </Text>
-                <Heading
-                    color={useColorModeValue('gray.700', 'white')}
-                    fontSize={'2xl'}
-                    fontFamily={'body'}
-                >
-                    {props.name}
-                </Heading>
+                <Flex>
+                    <Heading
+                        color={useColorModeValue('gray.700', 'white')}
+                        fontSize={'2xl'}
+                        fontFamily={'body'}
+                    >
+                        {props.name}
+                    </Heading>
+                    <Spacer />
+                    <HStack>
+                        {props.links}
+                    </HStack>
+                </Flex>
                 <HStack>
                     {props.tags}
                 </HStack>
                 <Text color={'gray.500'}>
                     {props.description}
                 </Text>
+                
             </Stack>
         </Box>
     );
