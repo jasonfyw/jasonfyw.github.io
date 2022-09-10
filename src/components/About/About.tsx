@@ -29,7 +29,7 @@ const About: FC = () => {
                             Having worked in a diverse range of professional environments from event planning to startups, I am experienced in full-stack web development - particularly with Javascript and Python. 
                         </Text>
                         <Text>
-                            In addition to a passion for SWE, I am fascinated by machine learning, namely NLP and computational linguistics.
+                            In addition to SWE, I am also interested in machine learning, namely NLP and computational linguistics.
                         </Text>
                     </VStack>
                 </Flex>
