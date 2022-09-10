@@ -32,6 +32,7 @@ const Intro: FC = () => {
                     fontWeight={300}
                     color={useColorModeValue('#5a657c', '#9199a9')}
                     textAlign='center'
+                    letterSpacing={1.1}
                 >
                     Computer Science + Cognitive Science @ University of Toronto '25
                 </Text>
