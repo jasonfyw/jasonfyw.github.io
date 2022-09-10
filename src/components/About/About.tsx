@@ -21,7 +21,7 @@ const About: FC = () => {
                         src='https://raw.githubusercontent.com/jasonfyw/jasonfyw/main/media/headshot.png'
                         border={`3px solid ${useColorModeValue('#1E2428', '#ECEFF4')}`}
                     />
-                    <VStack spacing={4} p={4} pl={50} textAlign='justify'>
+                    <VStack spacing={4} p={4} pl={50}>
                         <Text>
                             Hi, I'm Jason and I'm an undergraduate student at the University of Toronto pursuing a Specialist in Computer Science and Major in Cognitive Science, graduating class of 2025.
                         </Text>
