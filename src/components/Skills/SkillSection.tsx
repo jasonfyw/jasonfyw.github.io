@@ -1,8 +1,7 @@
 import { FC, ReactNode } from 'react';
 import {
     Flex,
-    Heading,
-    VStack
+    Heading
 } from '@chakra-ui/react';
 
 interface SkillSectionProps {

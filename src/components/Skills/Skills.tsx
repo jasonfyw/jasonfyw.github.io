@@ -2,7 +2,7 @@ import { FC } from 'react';
 import {
     Container,
     VStack,
-    HStack,
+    Stack,
     Heading,
     StackDivider,
     useColorModeValue
@@ -33,7 +33,8 @@ const Skills: FC = () => {
             <Container maxW={'5xl'} p={6.75} mt={20}>
                 <VStack spacing={8}>
                     <Heading as='h2'>Skills</Heading>
-                    <HStack
+                    <Stack
+                        direction={['column', 'row']}
                         divider={
                             <StackDivider borderColor={useColorModeValue('gray.300', 'gray.600')} />
                         }
@@ -63,7 +64,7 @@ const Skills: FC = () => {
                             <SkillItem icon={SiDocker} name='Docker' />
                             <SkillItem icon={SiVisualstudiocode} name='VS Code' />
                         </SkillSection>
-                    </HStack>
+                    </Stack>
                 </VStack>
             </Container>
         </Element>
