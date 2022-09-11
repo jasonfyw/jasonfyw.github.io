@@ -10,22 +10,31 @@ import {
     Stack,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import { ColorModeSwitcher } from "../../ColorModeSwitcher"
 
 const Links = ['About me', 'Skills', 'Projects', 'Resume', 'Contact'];
 
-const NavLink = ({ children, href }: { children: ReactNode, href: string }) => (
-    <Link
+const NavLink = ({ children, to }: { children: ReactNode, to: string }) => (
+    <Box 
         px={2}
         py={1}
         rounded={'md'}
         _hover={{
             textDecoration: 'none',
             bg: useColorModeValue('gray.200', 'gray.700'),
+            cursor: 'pointer'
         }}
-        href={href}>
-        {children}
-    </Link>
+    >
+        <ScrollLink
+            to={to}
+            spy={true}
+            smooth={true}
+            duration={500}
+        >
+            {children}
+        </ScrollLink>
+    </Box>
 );
 
 const Nav: FC = () => {
@@ -43,14 +52,22 @@ const Nav: FC = () => {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <Flex alignItems={'center'} pl={4} >
-                        <NavLink href={'https://jasonfyw.com'}>
+                        <Link
+                            px={2}
+                            py={1}
+                            rounded={'md'}
+                            _hover={{
+                                textDecoration: 'none',
+                                bg: useColorModeValue('gray.200', 'gray.700'),
+                            }}
+                            href={'https://jasonfyw.com'}>
                             <Box fontWeight={600}>Jason Wang</Box>
-                        </NavLink>
+                        </Link>
                     </Flex>
                     <HStack spacing={8} alignItems={'center'} >
                         <HStack as={'nav'} spacing={6} display={{ base: 'none', md: 'flex' }}>
                             {Links.map((link) => (
-                                <NavLink key={link} href={'#'}>{link}</NavLink>
+                                <NavLink key={link} to={link.toLowerCase().replace(/\s/g, '')}>{link}</NavLink>
                             ))}
                         </HStack>
                         <ColorModeSwitcher justifySelf="flex-end" />
@@ -61,7 +78,7 @@ const Nav: FC = () => {
                     <Box pb={4} display={{ md: 'none' }}>
                         <Stack as={'nav'} spacing={4}>
                             {Links.map((link) => (
-                                <NavLink key={link} href={'#'}>{link}</NavLink>
+                                <NavLink key={link} to={link.toLowerCase().replace(/\s/g, '')}>{link}</NavLink>
                             ))}
                         </Stack>
                     </Box>

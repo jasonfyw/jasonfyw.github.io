@@ -17,6 +17,7 @@ import {
 } from './TechBadges';
 import LinkIconButton from './LinkIconButton';
 import { FiGithub, FiLink } from 'react-icons/fi';
+import { Element } from 'react-scroll';
 
 const projectData = [
     {
@@ -75,6 +76,7 @@ const projectData = [
 
 const Projects: FC = () => {
     return (
+        <Element name='projects'>
         <Container maxW={'10xl'} p={6.75} mt={20}>
             <VStack spacing={8}>
                 <Heading as='h2'>Projects</Heading>
@@ -98,6 +100,7 @@ const Projects: FC = () => {
                
             </VStack>
         </Container>
+        </Element>
     );
 };
 
