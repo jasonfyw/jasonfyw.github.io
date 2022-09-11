@@ -1,5 +1,6 @@
 import { FC, ReactNode } from 'react';
 import {
+    Flex,
     Heading,
     VStack
 } from '@chakra-ui/react';
@@ -11,10 +12,10 @@ interface SkillSectionProps {
 
 const SkillSection: FC<SkillSectionProps> = (props) => {
     return (
-        <VStack>
-            <Heading as='h4'>{ props.title }</Heading>
+        <Flex flexDirection={'column'} top={0}>
+            <Heading as='h4' fontSize={'1.4rem'} mb={2}>{ props.title }</Heading>
             { props.children }
-        </VStack>
+        </Flex>
     );
 };
 
