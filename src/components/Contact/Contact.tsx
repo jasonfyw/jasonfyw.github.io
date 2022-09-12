@@ -26,7 +26,6 @@ const Contact: FC = () => {
                         boxShadow={'xl'}
                         rounded={'md'}
                         p={6}
-                        pt={8}
                         pb={8}
                         overflow={'hidden'}
                     >
