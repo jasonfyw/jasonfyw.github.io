@@ -8,6 +8,7 @@ import Footer from "./components/Footer"
 import Projects from "./components/Projects"
 import Skills from "./components/Skills"
 import Resume from "./components/Resume"
+import Contact from "./components/Contact"
 
 export const App = () => (
     <ChakraProvider theme={theme}>
@@ -17,6 +18,7 @@ export const App = () => (
         <Skills />
         <Projects />
         <Resume />
+        <Contact />
 
         <Footer />
     </ChakraProvider>
