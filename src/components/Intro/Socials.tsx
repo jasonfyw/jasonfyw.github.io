@@ -31,7 +31,7 @@ const Socials: FC<SocialsProps> = (props) => {
         {
             aria: 'Email',
             icon: <FiMail />,
-            href: 'mailto:jasonwang0610@gmail.com'
+            href: 'mailto:jason@jasonfyw.com'
         }
     ]
     return (
