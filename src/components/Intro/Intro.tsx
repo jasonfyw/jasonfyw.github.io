@@ -5,7 +5,8 @@ import {
     HStack,
     Text,
     VStack,
-    useColorModeValue
+    useColorModeValue,
+    Box
 } from '@chakra-ui/react';
 import ParticlesBg from 'particles-bg';
 import ReactTypingEffect from 'react-typing-effect';
@@ -36,7 +37,9 @@ const Intro: FC = () => {
                 >
                     Computer Science + Cognitive Science @ University of Toronto '25
                 </Text>
-                <Socials color={useColorModeValue('#5a657c', '#9199a9')} />
+                <Box p={4}>
+                    <Socials color={useColorModeValue('#5a657c', '#9199a9')} />
+                </Box>
             </VStack>
             <ParticlesBg type="cobweb" num={250} color="#5E81AC" bg={true} /> 
         </Container>

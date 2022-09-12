@@ -8,7 +8,8 @@ import {
 } from 'react-icons/fi'
 
 interface SocialsProps {
-    color: string
+    color: string,
+    size?: string
 }
 
 const Socials: FC<SocialsProps> = (props) => {
@@ -35,10 +36,10 @@ const Socials: FC<SocialsProps> = (props) => {
         }
     ]
     return (
-        <HStack spacing={6} p={4}>
+        <HStack spacing={6}>
             {
                 socialsData.map((social) => (
-                    <Link aria-label={social.aria} href={social.href} fontSize={'1.5rem'} color={props.color} isExternal>
+                    <Link aria-label={social.aria} href={social.href} fontSize={props.size ? props.size : '1.5rem'} color={props.color} isExternal>
                         {social.icon}
                     </Link>
                 ))
