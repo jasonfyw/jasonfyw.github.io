@@ -2,8 +2,7 @@ import { FC } from 'react';
 import {
     Container,
     VStack,
-    Heading,
-    Box
+    Heading
 } from '@chakra-ui/react';
 import { Element } from 'react-scroll'
 
