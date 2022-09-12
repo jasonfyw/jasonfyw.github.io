@@ -14,7 +14,7 @@ const Footer: FC = () => {
     return (
         <Box w={'100%'} p={'2rem'} mt={20} bg={useColorModeValue('gray.100', 'gray.900')} textAlign='left'>
             <Flex alignItems={'center'} px={2}>
-                <Text>
+                <Text mr={2}>
                     © {new Date().getFullYear()} Jason Wang – made with &nbsp;<Icon as={FaHeart} fontSize={'0.65rem'} color={'#BF616A'} />&nbsp; using ReactJS 
                 </Text>
                 <Spacer/>

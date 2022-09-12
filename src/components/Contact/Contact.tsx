@@ -20,8 +20,8 @@ const Contact: FC = () => {
                 <VStack spacing={8}>
                     <Heading as='h2'>Contact me</Heading>
                     <Box
-                        maxW={'40vw'}
-                        w={'full'}
+                        maxW={'85vw'}
+                        w={'xl'}
                         bg={useColorModeValue('white', 'gray.900')}
                         boxShadow={'xl'}
                         rounded={'md'}
