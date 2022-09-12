@@ -10,7 +10,7 @@ import {
     Stack,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import { ColorModeSwitcher } from "../../ColorModeSwitcher"
 
 const Links = ['About me', 'Skills', 'Projects', 'Resume', 'Contact'];
