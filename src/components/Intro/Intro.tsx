@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react';
 import ParticlesBg from 'particles-bg';
 import ReactTypingEffect from 'react-typing-effect';
-import Socials from './Socials';
+import Socials from '../global/Socials';
 
 const Intro: FC = () => {
 

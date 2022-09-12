@@ -8,7 +8,7 @@ import {
     Spacer
 } from '@chakra-ui/react';
 import { FaHeart } from 'react-icons/fa';
-import Socials from '../Intro/Socials';
+import Socials from '../global/Socials';
 
 const Footer: FC = () => {
     return (
