@@ -1,6 +1,7 @@
 {
   "name": "jasonfyw.github.io",
   "version": "0.1.0",
+  "homepage": "https://jasonfyw.com",
   "private": true,
   "dependencies": {
     "@chakra-ui/icons": "^2.0.9",
@@ -15,10 +16,11 @@
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
     "framer-motion": "^6.5.1",
+    "gh-pages": "^4.0.0",
     "particles-bg": "^2.5.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^3.11.0",
+    "react-icons": "^4.6.0",
     "react-pdf": "^5.7.2",
     "react-reveal": "^1.2.2",
     "react-scripts": "5.0.1",
@@ -30,6 +32,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
