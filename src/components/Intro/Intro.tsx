@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import ParticlesBg from 'particles-bg';
 import ReactTypingEffect from 'react-typing-effect';
+import Fade from 'react-reveal/Fade'
 import Socials from '../global/Socials';
 
 const Intro: FC = () => {
@@ -28,18 +29,20 @@ const Intro: FC = () => {
                 <HStack spacing={6}>
                     {['🇨🇦', '🇨🇳', '🇨🇿'].map((c) => <Heading fontSize={'1.75rem'}>{c}</Heading>)}
                 </HStack>
-                <Text
-                    fontSize={'1.5rem'}
-                    fontWeight={300}
-                    color={useColorModeValue('#5a657c', '#9199a9')}
-                    textAlign='center'
-                    letterSpacing={1.1}
-                >
-                    Computer Science + Cognitive Science @ University of Toronto '25
-                </Text>
-                <Box p={4}>
-                    <Socials color={useColorModeValue('#5a657c', '#9199a9')} />
-                </Box>
+                <Fade bottom cascade>
+                    <Text
+                        fontSize={'1.5rem'}
+                        fontWeight={300}
+                        color={useColorModeValue('#5a657c', '#9199a9')}
+                        textAlign='center'
+                        letterSpacing={1.1}
+                    >
+                        Computer Science + Cognitive Science @ University of Toronto '25
+                    </Text>
+                    <Box p={4}>
+                        <Socials color={useColorModeValue('#5a657c', '#9199a9')} />
+                    </Box>
+                </Fade>
             </VStack>
             <ParticlesBg type="cobweb" num={250} color="#5E81AC" bg={true} /> 
         </Container>
