@@ -13,13 +13,16 @@ import {
 } from '@chakra-ui/react';
 import { Element } from 'react-scroll';
 import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 
 const Contact: FC = () => {
     return (
         <Element name='contact'>
             <Container maxW={'8xl'} p={6.75} mt={10}>
                 <VStack spacing={8}>
-                    <Heading as='h2'>Contact me</Heading>
+                    <Fade>
+                        <Heading as='h2'>Contact me</Heading>
+                    </Fade>
                     <Flip bottom>
                         <Box
                             maxW={'85vw'}

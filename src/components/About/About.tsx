@@ -16,7 +16,9 @@ const About: FC = () => {
         <Element name='aboutme'>
             <Container maxW={'5xl'} p={6.75}>
                 <VStack spacing={8}>
-                    <Heading as='h2'>About me</Heading>
+                    <Fade>
+                        <Heading as='h2'>About me</Heading>
+                    </Fade>
                     <Flex position='relative' alignItems='center'>
                         <Image
                             borderRadius='full'

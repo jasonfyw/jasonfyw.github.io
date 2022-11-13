@@ -33,7 +33,9 @@ const Skills: FC = () => {
         <Element name='skills'>
             <Container maxW={'5xl'} p={6.75} mt={20}>
                 <VStack spacing={8}>
-                    <Heading as='h2'>Skills</Heading>
+                    <Fade>
+                        <Heading as='h2'>Skills</Heading>
+                    </Fade>
                     <Fade bottom cascade>
                         <Stack
                             direction={['column', 'row']}

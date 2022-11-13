@@ -18,6 +18,7 @@ import {
 import LinkIconButton from './LinkIconButton';
 import { FiGithub, FiLink } from 'react-icons/fi';
 import { Element } from 'react-scroll';
+import Fade from 'react-reveal/Fade';
 
 const projectData = [
     {
@@ -79,7 +80,9 @@ const Projects: FC = () => {
         <Element name='projects'>
         <Container maxW={'10xl'} p={6.75} mt={20}>
             <VStack spacing={8}>
-                <Heading as='h2'>Projects</Heading>
+                <Fade>
+                    <Heading as='h2'>Projects</Heading>
+                </Fade>
                 <Wrap spacing='20px' justify='center' pb={10}>
                     {
                         projectData.map((data) => (
