@@ -15,11 +15,11 @@ const Resume: FC = () => {
                     <Fade>
                         <Heading as='h2'>Resume</Heading>
                     </Fade>
-                    <Fade bottom>
-                        <Container>
+                    <Container>
+                        <Fade bottom>
                             <iframe src="https://drive.google.com/file/d/1LzFSi9dW5B8Y-eSltcjgCHV0QV0XsRTE/preview" width="100%" height="480" allow="autoplay" title="Resume"></iframe>
-                        </Container>
-                    </Fade>
+                        </Fade>
+                    </Container>
                 </VStack>
             </Container>
         </Element>
