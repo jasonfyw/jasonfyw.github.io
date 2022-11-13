@@ -24,7 +24,7 @@ import {
     SiDocker,
     SiScikitlearn,
     SiGo,
-    SiNodedotjs,
+    SiNodeDotJs,
     SiPostgresql
 } from 'react-icons/si';
 import { Element } from 'react-scroll';
@@ -50,7 +50,6 @@ const Skills: FC = () => {
                             align={'flex-start'}
                         >
                             <SkillSection title={'Languages'}>
-                                <SkillSection title={'Languages'}>
                                 <SkillItem icon={SiPython} name='Python' />
                                 <SkillItem icon={SiTypescript} name='Typescript' />
                                 <SkillItem icon={SiJava} name='Java' />
@@ -60,7 +59,7 @@ const Skills: FC = () => {
                             </SkillSection>
                             <SkillSection title={'Frameworks'}>
                                 <SkillItem icon={SiReact} name='ReactJS' />
-                                <SkillItem icon={SiNodedotjs} name='NodeJS' />
+                                <SkillItem icon={SiNodeDotJs} name='NodeJS' />
                                 <SkillItem icon={SiScikitlearn} name='Scikit-learn' />
                                 <SkillItem icon={SiFlask} name='Flask' />
                                 <SkillItem icon={SiBootstrap} name='Bootstrap' />
