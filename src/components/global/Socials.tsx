@@ -3,7 +3,6 @@ import React, { FC } from 'react';
 import {
     FiLinkedin,
     FiGithub,
-    FiInstagram,
     FiMail
 } from 'react-icons/fi'
 
