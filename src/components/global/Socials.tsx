@@ -25,11 +25,6 @@ const Socials: FC<SocialsProps> = (props) => {
             href: 'https://github.com/jasonfyw'
         },
         {
-            aria: 'Instagram',
-            icon: <FiInstagram />,
-            href: 'https://instagram.com/jasonfyw'
-        },
-        {
             aria: 'Email',
             icon: <FiMail />,
             href: 'mailto:jason@jasonfyw.com'
