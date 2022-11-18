@@ -2,7 +2,7 @@ import { FC } from 'react';
 import {
     Container,
     Heading,
-    Flex,
+    Stack,
     Image,
     VStack,
     Text,
@@ -19,7 +19,7 @@ const About: FC = () => {
                     <Fade>
                         <Heading as='h2'>About me</Heading>
                     </Fade>
-                    <Flex position='relative' alignItems='center'>
+                    <Stack position='relative' alignItems='center' direction={['column', 'row']}>
                         <Image
                             borderRadius='full'
                             boxSize='150px'
@@ -38,7 +38,7 @@ const About: FC = () => {
                                     </Text>
                                 </Fade>
                             </VStack>
-                    </Flex>
+                    </Stack>
                 </VStack>
             </Container>
         </Element>
