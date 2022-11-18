@@ -34,7 +34,7 @@ const About: FC = () => {
                                 </Fade>
                             <Fade bottom cascade duration={500}>
                                     <Text>
-                                        Having worked in a diverse range of professional environments from event planning to startups, I am experienced in full-stack web development - particularly with Javascript and Python. In addition to SWE, I am also interested in machine learning, namely NLP and computational linguistics.
+                                        I'm experienced in full-stack web development - particularly with Typescript and Python. React is my frontend of choice and I've worked in backend with Java, Python, and Golang. In addition to Software Engineering, I am also interested in machine learning and the confluence of artificial intelligence and cognitive science.
                                     </Text>
                                 </Fade>
                             </VStack>

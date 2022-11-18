@@ -64,7 +64,7 @@ const projectData = [
         ]
     },
     {
-        name: 'CSC207 Blog',
+        name: 'Blogging Application',
         type: 'Web app',
         tags: [<JavaBadge/>],
         imageSrc: '/blogging-app.png',
