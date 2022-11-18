@@ -27,12 +27,12 @@ const About: FC = () => {
                             border={`3px solid ${useColorModeValue('#1E2428', '#ECEFF4')}`}
                         />
                             <VStack spacing={4} p={4} pl={50}>
-                                <Fade bottom cascade>
+                                <Fade bottom cascade duration={500}>
                                     <Text>
                                         Hi, I'm Jason and I'm an undergraduate student at the University of Toronto pursuing a Specialist in Computer Science and Major in Cognitive Science, graduating class of 2025.
                                     </Text>
                                 </Fade>
-                                <Fade bottom cascade>
+                            <Fade bottom cascade duration={500}>
                                     <Text>
                                         Having worked in a diverse range of professional environments from event planning to startups, I am experienced in full-stack web development - particularly with Javascript and Python. In addition to SWE, I am also interested in machine learning, namely NLP and computational linguistics.
                                     </Text>

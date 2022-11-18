@@ -40,7 +40,7 @@ const Skills: FC = () => {
                     <Fade>
                         <Heading as='h2'>Skills</Heading>
                     </Fade>
-                    <Fade bottom cascade>
+                    <Fade bottom cascade duration={500}>
                         <Stack
                             direction={['column', 'row']}
                             divider={

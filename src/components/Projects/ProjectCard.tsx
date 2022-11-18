@@ -23,7 +23,7 @@ interface ProjectCardProps {
 
 const ProjectCard: FC<ProjectCardProps> = (props) => {
     return (
-        <Fade bottom>
+        <Fade bottom duration={500}>
             <Box 
                 maxW={'325px'}
                 w={'full'}
