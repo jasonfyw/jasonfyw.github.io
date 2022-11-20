@@ -8,7 +8,8 @@ import {
     Text,
     HStack,
     Flex,
-    Spacer
+    Spacer,
+    Link
 } from '@chakra-ui/react';
 import Fade from 'react-reveal/Fade';
 
@@ -18,7 +19,8 @@ interface ProjectCardProps {
     tags: Array<ReactElement>,
     imageSrc: string,
     description: string,
-    links: Array<ReactElement>
+    links: Array<ReactElement>,
+    headerLink: string
 }
 
 const ProjectCard: FC<ProjectCardProps> = (props) => {
@@ -41,12 +43,14 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                     mx={-6}
                     mb={6}
                     pos={'relative'}>
-                    <Image
-                        src={props.imageSrc}
-                        height={'175px'}
-                        width={'100%'}
-                        fit={'cover'}
-                    />
+                    <Link href={props.headerLink} isExternal>
+                        <Image
+                            src={props.imageSrc}
+                            height={'175px'}
+                            width={'100%'}
+                            fit={'cover'}
+                        />
+                    </Link>
                 </Box>
                 <Stack>
                     <Text
