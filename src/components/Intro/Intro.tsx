@@ -45,7 +45,11 @@ const Intro: FC = () => {
                         <Socials color={useColorModeValue('#5a657c', '#9199a9')} />
                     </Box>
                 </Fade>
-                <Link href={'/Resume_Jason_Wang.pdf'} isExternal>
+                <Link
+                    href={'/Resume_Jason_Wang.pdf'}
+                    isExternal
+                    _hover={{ 'textDecor': 'none' }}
+                >
                     <Button
                         variant={'outline'}
                         colorScheme={'cyan'}
