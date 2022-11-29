@@ -14,6 +14,7 @@ import ParticlesBg from 'particles-bg';
 import ReactTypingEffect from 'react-typing-effect';
 import Fade from 'react-reveal/Fade';
 import Socials from '../global/Socials';
+import { ExternalLinkIcon } from '@chakra-ui/icons';
 
 const Intro: FC = () => {
 
@@ -54,7 +55,9 @@ const Intro: FC = () => {
                         variant={'outline'}
                         colorScheme={'cyan'}
                         aria-label={'View Resume'}
+                        rightIcon={<ExternalLinkIcon fontSize={15} mt={0.5}/>}
                         rounded={'full'}
+                        border={'2px'}
                         pb={1}
                     >
                         Resume
