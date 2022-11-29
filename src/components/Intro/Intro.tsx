@@ -6,7 +6,9 @@ import {
     Text,
     VStack,
     useColorModeValue,
-    Box
+    Box,
+    Button,
+    Link
 } from '@chakra-ui/react';
 import ParticlesBg from 'particles-bg';
 import ReactTypingEffect from 'react-typing-effect';
@@ -43,6 +45,17 @@ const Intro: FC = () => {
                         <Socials color={useColorModeValue('#5a657c', '#9199a9')} />
                     </Box>
                 </Fade>
+                <Link href={'/Resume_Jason_Wang.pdf'} isExternal>
+                    <Button
+                        variant={'outline'}
+                        colorScheme={'cyan'}
+                        aria-label={'View Resume'}
+                        rounded={'full'}
+                        pb={1}
+                    >
+                        Resume
+                    </Button>
+                </Link>
             </VStack>
             <ParticlesBg type="cobweb" num={250} color="#5E81AC" bg={true} /> 
         </Container>
