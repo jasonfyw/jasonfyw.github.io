@@ -15,6 +15,7 @@ import ReactTypingEffect from 'react-typing-effect';
 import Fade from 'react-reveal/Fade';
 import Socials from '../global/Socials';
 import { ExternalLinkIcon } from '@chakra-ui/icons';
+import DownArrow from './DownArrow';
 
 const Intro: FC = () => {
 
@@ -65,6 +66,9 @@ const Intro: FC = () => {
                     </Button>
                 </Link>
             </VStack>
+            <Box mt={[10, 40]}>
+                <DownArrow/>
+            </Box>
             <ParticlesBg type="cobweb" num={250} color="#5E81AC" bg={true} /> 
         </Container>
     );
