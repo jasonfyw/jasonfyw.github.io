@@ -59,6 +59,7 @@ const Intro: FC = () => {
                         rounded={'full'}
                         border={'2px'}
                         pb={1}
+                        mt={2}
                     >
                         Resume
                     </Button>
