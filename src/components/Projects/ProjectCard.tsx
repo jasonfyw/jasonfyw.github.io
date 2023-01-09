@@ -30,6 +30,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                 maxW={'325px'}
                 w={'full'}
                 bg={useColorModeValue('white', 'gray.900')}
+                opacity={0.9}
                 boxShadow={'xl'}
                 rounded={'md'}
                 p={6}
