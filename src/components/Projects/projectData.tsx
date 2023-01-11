@@ -2,6 +2,7 @@ import {
     JavaBadge,
     MongoBadge,
     MySQLBadge,
+    NodeBadge,
     PHPBadge,
     PythonBadge,
     ReactBadge
@@ -67,5 +68,17 @@ export const projectData = [
             <LinkIconButton href="https://github.com/jasonfyw/csc207-blogging-app" icon={<FiGithub />} />
         ],
         headerLink: 'https://github.com/jasonfyw/csc207-blogging-app'
+    },
+    {
+        name: 'Linky',
+        type: 'Web app',
+        tags: [<ReactBadge />, <NodeBadge />, <MongoBadge />],
+        imageSrc: '/linky.png',
+        description: 'A lightweight and simple to use link shortener web app with a NodeJS REST API and a frontend built with ChakraUI. Features additional functions like QR codes and alternative URL formats.',
+        links: [
+            <LinkIconButton href="https://github.com/jasonfyw/linky" icon={<FiGithub />} />,
+            <LinkIconButton href="https://lnky.to" icon={<FiLink />} />
+        ],
+        headerLink: 'https://lnky.to'
     }
 ]

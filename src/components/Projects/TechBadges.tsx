@@ -23,3 +23,7 @@ export const MySQLBadge = () => {
 export const MongoBadge = () => {
     return <Badge colorScheme={'green'}>MongoDB</Badge>
 }
+
+export const NodeBadge = () => {
+    return <Badge colorScheme={'green'}>NodeJS</Badge>
+}
