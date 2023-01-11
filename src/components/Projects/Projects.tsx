@@ -15,32 +15,32 @@ import { projectData } from './projectData';
 const Projects: FC = () => {
     return (
         <Element name='projects'>
-        <Container maxW={'10xl'} p={6.75} mt={20}>
-            <VStack spacing={8}>
-                <Fade>
-                    <Heading as='h2'>Projects</Heading>
-                </Fade>
-                <Wrap spacing='20px' justify='center' pb={10}>
-                    {
-                        projectData.map((data) => (
-                            <WrapItem p={5}>
-                                <ProjectCard
-                                    name={data.name}
-                                    type={data.type}
-                                    tags={data.tags}
-                                    imageSrc={data.imageSrc}
-                                    description={data.description}
-                                    links={data.links}
-                                    headerLink={data.headerLink}
-                                />
-                            </WrapItem>
-                        ))
-                    }
+            <Container maxW={'10xl'} p={6.75} mt={20}>
+                <VStack spacing={8}>
+                    <Fade>
+                        <Heading as='h2'>Projects</Heading>
+                    </Fade>
+                    <Wrap spacing='20px' justify='center' pb={10}>
+                        {
+                            projectData.map((data) => (
+                                <WrapItem p={5}>
+                                    <ProjectCard
+                                        name={data.name}
+                                        type={data.type}
+                                        tags={data.tags}
+                                        imageSrc={data.imageSrc}
+                                        description={data.description}
+                                        links={data.links}
+                                        headerLink={data.headerLink}
+                                    />
+                                </WrapItem>
+                            ))
+                        }
 
-                </Wrap>
-               
-            </VStack>
-        </Container>
+                    </Wrap>
+                
+                </VStack>
+            </Container>
         </Element>
     );
 };
