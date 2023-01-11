@@ -58,7 +58,15 @@ const Nav: FC = () => {
 
     return (
         <>
-            <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} position={'fixed'} top={0} width={'100vw'} zIndex={100} ref={ref}>
+            <Box
+                bg={useColorModeValue('gray.100', 'gray.900')}
+                px={4}
+                position={'fixed'}
+                top={0}
+                width={'100vw'}
+                zIndex={100}
+                ref={ref}
+            >
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <IconButton
                         size={'md'}
@@ -83,7 +91,13 @@ const Nav: FC = () => {
                     <HStack spacing={8} alignItems={'center'} >
                         <HStack as={'nav'} spacing={6} display={{ base: 'none', md: 'flex' }}>
                             {Links.map((link) => (
-                                <NavLink key={link} to={link.toLowerCase().replace(/\s/g, '')} onClose={onClose}>{link}</NavLink>
+                                <NavLink
+                                    key={link}
+                                    to={link.toLowerCase().replace(/\s/g, '')}
+                                    onClose={onClose}
+                                >
+                                    { link }
+                                </NavLink>
                             ))}
                         </HStack>
                         <ColorModeSwitcher justifySelf="flex-end" />
@@ -94,7 +108,13 @@ const Nav: FC = () => {
                     <Box pb={4} display={{ md: 'none' }}>
                         <Stack as={'nav'} spacing={4}>
                             {Links.map((link) => (
-                                <NavLink key={link} to={link.toLowerCase().replace(/\s/g, '')} onClose={onClose}>{link}</NavLink>
+                                <NavLink
+                                    key={link}
+                                    to={link.toLowerCase().replace(/\s/g, '')}
+                                    onClose={onClose}
+                                >
+                                    { link }
+                                </NavLink>
                             ))}
                         </Stack>
                     </Box>
