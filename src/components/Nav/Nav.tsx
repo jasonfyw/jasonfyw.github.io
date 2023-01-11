@@ -3,11 +3,11 @@ import {
     Box,
     Flex,
     HStack,
-    Link,
     IconButton,
     useDisclosure,
     useColorModeValue,
     Stack,
+    Text
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { Link as ScrollLink } from 'react-scroll';
@@ -78,17 +78,13 @@ const Nav: FC = () => {
                         onClick={isOpen ? onClose : onOpen}
                     />
                     <Flex alignItems={'center'} pl={4} >
-                        <Link
-                            px={2}
-                            py={1}
-                            rounded={'md'}
-                            _hover={{
-                                textDecoration: 'none',
-                                bg: useColorModeValue('gray.200', 'gray.700'),
-                            }}
-                            href={'https://jasonfyw.com'}>
-                            <Box fontWeight={600}>Jason Wang</Box>
-                        </Link>
+                        <NavLink
+                            to={'home'}
+                            onClose={onClose}
+                        >
+                            {/* <Box fontWeight={600}>Jason Wang</Box> */}
+                            <Text fontWeight={600}>Jason Wang</Text>
+                        </NavLink>
                     </Flex>
                     <HStack spacing={8} alignItems={'center'} >
                         <HStack as={'nav'} spacing={6} display={{ base: 'none', md: 'flex' }}>
