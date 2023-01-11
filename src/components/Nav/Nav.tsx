@@ -15,6 +15,7 @@ import { ColorModeSwitcher } from "../../ColorModeSwitcher"
 
 const Links = ['About me', 'Skills', 'Projects', 'Resume', 'Contact'];
 
+
 const NavLink = ({ children, to, onClose }: { children: ReactNode, to: string, onClose: () => void }) => (
     <Box 
         px={2}
@@ -38,16 +39,17 @@ const NavLink = ({ children, to, onClose }: { children: ReactNode, to: string, o
     </Box>
 );
 
+
 const Nav: FC = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
     const ref = useRef<any>(null);
 
+    // lifecycle hook to close mobile navbar when there is a mousedown event
+    // outside of the navbar
     useEffect(() => {
         function handleClickOutside(event) {
-            if (ref.current && !ref.current.contains(event.target)) {
-                onClose();
-            }
+            if (ref.current && !ref.current.contains(event.target)) onClose()
         }
 
         document.addEventListener("mousedown", handleClickOutside);
