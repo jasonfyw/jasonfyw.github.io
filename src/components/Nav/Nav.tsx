@@ -1,4 +1,4 @@
-import { ReactNode, FC } from 'react';
+import { ReactNode, FC, useEffect, useRef } from 'react';
 import {
     Box,
     Flex,
@@ -15,7 +15,8 @@ import { ColorModeSwitcher } from "../../ColorModeSwitcher"
 
 const Links = ['About me', 'Skills', 'Projects', 'Resume', 'Contact'];
 
-const NavLink = ({ children, to }: { children: ReactNode, to: string }) => (
+
+const NavLink = ({ children, to, onClose }: { children: ReactNode, to: string, onClose: () => void }) => (
     <Box 
         px={2}
         py={1}
@@ -31,18 +32,43 @@ const NavLink = ({ children, to }: { children: ReactNode, to: string }) => (
             spy={true}
             smooth={true}
             duration={500}
+            onClick={onClose}
         >
             {children}
         </ScrollLink>
     </Box>
 );
 
+
 const Nav: FC = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
 
+    const ref = useRef<any>(null);
+
+    // lifecycle hook to close mobile navbar when there is a mousedown event
+    // outside of the navbar
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (ref.current && !ref.current.contains(event.target)) onClose()
+        }
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [onClose, ref]);
+
     return (
         <>
-            <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} position={'fixed'} top={0} width={'100vw'} zIndex={100}>
+            <Box
+                bg={useColorModeValue('gray.100', 'gray.900')}
+                px={4}
+                position={'fixed'}
+                top={0}
+                width={'100vw'}
+                zIndex={100}
+                ref={ref}
+            >
                 <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
                     <IconButton
                         size={'md'}
@@ -67,7 +93,13 @@ const Nav: FC = () => {
                     <HStack spacing={8} alignItems={'center'} >
                         <HStack as={'nav'} spacing={6} display={{ base: 'none', md: 'flex' }}>
                             {Links.map((link) => (
-                                <NavLink key={link} to={link.toLowerCase().replace(/\s/g, '')}>{link}</NavLink>
+                                <NavLink
+                                    key={link}
+                                    to={link.toLowerCase().replace(/\s/g, '')}
+                                    onClose={onClose}
+                                >
+                                    { link }
+                                </NavLink>
                             ))}
                         </HStack>
                         <ColorModeSwitcher justifySelf="flex-end" />
@@ -78,7 +110,13 @@ const Nav: FC = () => {
                     <Box pb={4} display={{ md: 'none' }}>
                         <Stack as={'nav'} spacing={4}>
                             {Links.map((link) => (
-                                <NavLink key={link} to={link.toLowerCase().replace(/\s/g, '')}>{link}</NavLink>
+                                <NavLink
+                                    key={link}
+                                    to={link.toLowerCase().replace(/\s/g, '')}
+                                    onClose={onClose}
+                                >
+                                    { link }
+                                </NavLink>
                             ))}
                         </Stack>
                     </Box>
