@@ -29,17 +29,17 @@ const About: FC = () => {
                             <VStack spacing={4} p={4} pl={50}>
                                 <Fade bottom cascade duration={500}>
                                     <Text>
-                                        Hi, I'm Jason and I'm an undergraduate co-op student at the University of Toronto with a passion for Software Engineering and all things technology.
+                                        Hi, I'm Jason and I'm a second year co-op student at the <b>University of Toronto</b> with a passion for <b>Software Engineering</b> and all things technology.
                                     </Text>
                                 </Fade>
                                 <Fade bottom cascade duration={500}>
                                     <Text>
-                                        I'm currently pursuing a Specialist in Computer Science (ASIP co-op) and Major in Cognitive Science, graduating class of 2025.
+                                        I'm currently pursuing a <b>Specialist in Computer Science (ASIP co-op)</b> and <b>Major in Cognitive Science</b>, graduating class of 2025.
                                     </Text>
                                 </Fade>
                                 <Fade bottom cascade duration={500}>
                                     <Text>
-                                        I'm experienced in full-stack web development - particularly with Typescript and Python. React is my frontend tool of choice and I've worked in backend with Node, Java, Python, and Golang. 
+                                    I'm experienced in full-stack web development - particularly with <b>Typescript</b> and <b>Python</b>. React is my frontend tool of choice and I've worked in backend with <b>Node, Java, Python,</b> and <b>Golang</b>. 
                                     </Text>
                                 </Fade>
                                 <Fade bottom cascade duration={500}>
