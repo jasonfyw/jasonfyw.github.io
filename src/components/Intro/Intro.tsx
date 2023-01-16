@@ -22,7 +22,7 @@ const Intro: FC = () => {
 
     return (
         <Element name='home'>
-            <Container maxW={'6xl'} p={6.75} pt={['25vh', '35vh']} height={'100vh'}>
+            <Container maxW={'6xl'} p={6.75} pt={['25vh', '35vh']} h={'100vh'}>
                 <VStack>
                     <Heading
                         fontSize={'3.5rem'}
@@ -68,7 +68,7 @@ const Intro: FC = () => {
                         </Button>
                     </Link>
                 </VStack>
-                <Box mt={[10, 40]}>
+                <Box mt={[10, '10vh']}>
                     <DownArrow/>
                 </Box>
                 <ParticlesBg type="cobweb" num={250} color="#5E81AC" bg={true} /> 
