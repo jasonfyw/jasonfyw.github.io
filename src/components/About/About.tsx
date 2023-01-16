@@ -19,7 +19,7 @@ const About: FC = () => {
                     <Fade>
                         <Heading as='h2'>About me</Heading>
                     </Fade>
-                    <Stack position='relative' alignItems='center' direction={['column', 'row']} textAlign={['justify', 'left']}>
+                    <Stack position='relative' alignItems='center' direction={['column', 'row']} textAlign={{base: 'left',  sm: 'justify', lg: 'left'}}>
                         <Image
                             borderRadius='full'
                             boxSize='150px'
