@@ -14,7 +14,7 @@ import Fade from 'react-reveal/Fade';
 const About: FC = () => {
     return (
         <Element name='aboutme'>
-            <Container maxW={'5xl'} p={6.75}>
+            <Container maxW={'5xl'} p={6.75} mt={[20, 10]}>
                 <VStack spacing={8}>
                     <Fade>
                         <Heading as='h2'>About me</Heading>
