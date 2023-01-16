@@ -19,14 +19,14 @@ const About: FC = () => {
                     <Fade>
                         <Heading as='h2'>About me</Heading>
                     </Fade>
-                    <Stack position='relative' alignItems='center' direction={['column', 'row']}>
+                    <Stack position='relative' alignItems='center' direction={['column', 'row']} textAlign={['justify', 'left']}>
                         <Image
                             borderRadius='full'
                             boxSize='150px'
                             src='https://raw.githubusercontent.com/jasonfyw/jasonfyw/main/media/headshot.png'
                             border={`3px solid ${useColorModeValue('#1E2428', '#ECEFF4')}`}
                         />
-                            <VStack spacing={4} p={4} pl={50}>
+                            <VStack spacing={4} p={[10, 4]} pl={[10, 50]}>
                                 <Fade bottom cascade duration={500}>
                                     <Text>
                                         Hi, I'm Jason and I'm a second year co-op student at the <b>University of Toronto</b> with a passion for <b>Software Engineering</b> and all things technology.
