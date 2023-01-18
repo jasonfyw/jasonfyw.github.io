@@ -33,6 +33,7 @@ const NavLink = ({ children, to, onClose }: { children: ReactNode, to: string, o
             smooth={true}
             duration={500}
             onClick={onClose}
+            offset={-80}
         >
             {children}
         </ScrollLink>
