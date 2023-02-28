@@ -27,3 +27,7 @@ export const MongoBadge = () => {
 export const NodeBadge = () => {
     return <Badge colorScheme={'green'}>NodeJS</Badge>
 }
+
+export const FirebaseBadge = () => {
+    return <Badge colorScheme={'orange'}>Firebase</Badge>
+}
