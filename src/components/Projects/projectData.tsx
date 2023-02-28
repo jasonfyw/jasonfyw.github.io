@@ -1,4 +1,5 @@
 import {
+    FirebaseBadge,
     JavaBadge,
     MongoBadge,
     MySQLBadge,
@@ -80,5 +81,16 @@ export const projectData = [
             <LinkIconButton href="https://lnky.to" icon={<FiLink />} />
         ],
         headerLink: 'https://lnky.to'
+    },
+    {
+        name: 'Street Savvy',
+        type: 'Web app',
+        tags: [<ReactBadge />, <FirebaseBadge />, <PythonBadge />],
+        imageSrc: '/street-savvy.png',
+        description: 'A web app that suggests places to visit in Toronto based on your preferences using a custom recommendation engine and data from the Google Places API. Submitted to UofTHacks X.',
+        links: [
+            <LinkIconButton href="https://github.com/jasonfyw/street-savvy" icon={<FiGithub />} />
+        ],
+        headerLink: 'https://github.com/jasonfyw/street-savvy'
     }
 ]
