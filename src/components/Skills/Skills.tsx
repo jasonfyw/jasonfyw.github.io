@@ -26,7 +26,9 @@ import {
     SiScikitlearn,
     SiGo,
     SiNodedotjs,
-    SiPostgresql
+    SiPostgresql,
+    SiC,
+    SiFirebase
 } from 'react-icons/si';
 import { Element } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
@@ -64,6 +66,7 @@ const Skills: FC = () => {
                                         <SkillItem icon={SiPhp} name='PHP' />
                                         <SkillItem icon={SiHtml5} name='HTML/CSS' />
                                         <SkillItem icon={SiGo} name='Golang' />
+                                        <SkillItem icon={SiC} name='C' />
                                     </SkillSection>
                                     <SkillSection title={'Frameworks'}>
                                         <SkillItem icon={SiReact} name='ReactJS' />
@@ -90,6 +93,7 @@ const Skills: FC = () => {
                                         <SkillItem icon={SiMysql} name='MySQL' />
                                         <SkillItem icon={SiPostgresql} name='PostgreSQL' />
                                         <SkillItem icon={SiMongodb} name='MongoDB' />
+                                        <SkillItem icon={SiFirebase} name='Firestore' />
                                     </SkillSection>
                                     <SkillSection title={'Other tools'}>
                                         <SkillItem icon={SiGit} name='Git' />
