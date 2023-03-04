@@ -10,11 +10,24 @@ import {
 } from '../components/Projects/TechBadges';
 import LinkIconButton from '../components/Projects/LinkIconButton';
 import { FiGithub, FiLink } from 'react-icons/fi';
+import { ReactElement } from 'react';
 
 
-export const projectData = [
+export interface ProjectT {
+    name?: string,
+    id?: string,
+    type?: string,
+    tags?: ReactElement[],
+    imageSrc?: string,
+    description?: string,
+    links?: ReactElement[],
+    headerLink?: string
+}
+
+export const projectData: ProjectT[] = [
     {
         name: 'Twitter Geo-Sentiment',
+        id: 'twitter-geo-sentiment',
         type: 'Web app',
         tags: [<PythonBadge />, <ReactBadge />, <MongoBadge />],
         imageSrc: '/twitter-geo-sentiment.png',
@@ -26,6 +39,7 @@ export const projectData = [
     },
     {
         name: 'Orbital Simulation',
+        id: 'orbital-sim',
         type: 'Physics simulation',
         tags: [<PythonBadge />],
         imageSrc: '/orbital-sim.png',
@@ -37,6 +51,7 @@ export const projectData = [
     },
     {
         name: 'Street Savvy',
+        id: 'street-savvy',
         type: 'Web app',
         tags: [<ReactBadge />, <FirebaseBadge />, <PythonBadge />],
         imageSrc: '/street-savvy.png',
@@ -48,6 +63,7 @@ export const projectData = [
     },
     {
         name: 'Fourier Series Animation',
+        id: 'fourier-series',
         type: 'Web app',
         tags: [<ReactBadge />],
         imageSrc: '/fourier-series.png',
@@ -60,6 +76,7 @@ export const projectData = [
     },
     {
         name: 'PLISMUN',
+        id: 'plismun',
         type: 'Website',
         tags: [<PHPBadge />, <MySQLBadge />],
         imageSrc: '/plismun.png',
@@ -72,6 +89,7 @@ export const projectData = [
     },
     {
         name: 'Blogging Application',
+        id: 'blogging-app',
         type: 'Web app',
         tags: [<JavaBadge />],
         imageSrc: '/blogging-app.png',
@@ -83,6 +101,7 @@ export const projectData = [
     },
     {
         name: 'Linky',
+        id: 'linky',
         type: 'Web app',
         tags: [<ReactBadge />, <NodeBadge />, <MongoBadge />],
         imageSrc: '/linky.png',

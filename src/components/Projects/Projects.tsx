@@ -25,13 +25,13 @@ const Projects: FC = () => {
                             projectData.map((data) => (
                                 <WrapItem p={5}>
                                     <ProjectCard
-                                        name={data.name}
-                                        type={data.type}
-                                        tags={data.tags}
-                                        imageSrc={data.imageSrc}
-                                        description={data.description}
-                                        links={data.links}
-                                        headerLink={data.headerLink}
+                                        name={data['name'] || ''}
+                                        type={data['type'] || ''}
+                                        tags={data['tags'] || []}
+                                        imageSrc={data['imageSrc'] || ''}
+                                        description={data['description'] || ''}
+                                        links={data['links'] || []}
+                                        headerLink={data['headerLink'] || ''}
                                     />
                                 </WrapItem>
                             ))
