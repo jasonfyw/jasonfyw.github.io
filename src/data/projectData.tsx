@@ -7,8 +7,8 @@ import {
     PHPBadge,
     PythonBadge,
     ReactBadge
-} from './TechBadges';
-import LinkIconButton from './LinkIconButton';
+} from '../components/Projects/TechBadges';
+import LinkIconButton from '../components/Projects/LinkIconButton';
 import { FiGithub, FiLink } from 'react-icons/fi';
 
 

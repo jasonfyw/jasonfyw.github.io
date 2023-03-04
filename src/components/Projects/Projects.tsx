@@ -9,7 +9,7 @@ import {
 import ProjectCard from './ProjectCard';
 import { Element } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
-import { projectData } from './projectData';
+import { projectData } from '../../data/projectData';
 
 
 const Projects: FC = () => {
