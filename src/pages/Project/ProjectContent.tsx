@@ -11,12 +11,16 @@ import {
     HStack,
     Button,
     LinkOverlay,
-    LinkBox
+    LinkBox,
+    Breadcrumb,
+    BreadcrumbItem,
+    BreadcrumbLink
 } from "@chakra-ui/react";
 
 import { ProjectT } from '../../data/projectData'
 import { FiGithub } from "react-icons/fi";
 import MarkdownRender from "./MarkdownRender";
+import { ChevronRightIcon } from "@chakra-ui/icons";
 
 
 interface ProjectContentProps {
@@ -59,8 +63,25 @@ const ProjectContent = (props: ProjectContentProps) => {
                     />
                 </Link>
             </Box>
-            <Container pt={4} minH={'100vh'}>
+            <Container pt={0} minH={'100vh'}>
                 <Stack>
+                    <Breadcrumb
+                        spacing='8px'
+                        mb={8}
+                        separator={<ChevronRightIcon color='gray.500' />}
+                    >
+                        <BreadcrumbItem>
+                            <BreadcrumbLink href='#'>Home</BreadcrumbLink>
+                        </BreadcrumbItem>
+
+                        <BreadcrumbItem>
+                            <BreadcrumbLink href='#/projects'>Projects</BreadcrumbLink>
+                        </BreadcrumbItem>
+
+                        <BreadcrumbItem isCurrentPage>
+                            <BreadcrumbLink href='#'>Contact</BreadcrumbLink>
+                        </BreadcrumbItem>
+                    </Breadcrumb>
                     <Text
                         color={'blue.200'}
                         textTransform={'uppercase'}
