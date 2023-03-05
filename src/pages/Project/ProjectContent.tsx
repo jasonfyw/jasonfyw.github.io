@@ -21,6 +21,7 @@ import { ProjectT } from '../../data/projectData'
 import { FiGithub } from "react-icons/fi";
 import MarkdownRender from "./MarkdownRender";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+import Blockquote from "./Blockquote";
 
 
 interface ProjectContentProps {
@@ -59,7 +60,6 @@ const ProjectContent = (props: ProjectContentProps) => {
                         fit={'cover'}
                         backgroundPosition={'30px top'}
                         style={{filter: 'blur(2px)'}}
-                        zIndex={1000}
                     />
                 </Link>
             </Box>
@@ -84,6 +84,7 @@ const ProjectContent = (props: ProjectContentProps) => {
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                     </Breadcrumb>
+
                     <Text
                         color={'blue.200'}
                         textTransform={'uppercase'}
@@ -119,6 +120,9 @@ const ProjectContent = (props: ProjectContentProps) => {
                     </HStack>
 
                     <Box mt={20}>
+                        <Blockquote mt={10}>
+                            {projectData['description']}
+                        </Blockquote>
                         <MarkdownRender markdown={markdown} />
                     </Box>
                 </Stack>
