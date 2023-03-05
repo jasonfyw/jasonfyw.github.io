@@ -5,11 +5,18 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import { projectData } from '../../data/projectData';
 import ProjectCard from '../../components/Projects/ProjectCard';
 import LinkIconButton from '../../components/Projects/LinkIconButton';
+import { ColorModeSwitcher } from '../../ColorModeSwitcher';
 
 
 const ProjectsPage = () => {
     return (
         <>
+            <ColorModeSwitcher
+                top={0}
+                right={8}
+                position={'absolute'}
+
+            />
             <Center pb={0} mt={10}>
                 <Breadcrumb
                     spacing='8px'
