@@ -35,7 +35,7 @@ const ProjectContent = (props: ProjectContentProps) => {
                     .then(res => setMarkdown(res))
                     .catch(err => console.log(err));
             })
-            .catch(err => console.log(err));
+            .catch(err => {});
     })
 
     return (
