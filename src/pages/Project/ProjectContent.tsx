@@ -45,7 +45,7 @@ const ProjectContent = (props: ProjectContentProps) => {
     return (
         <>
             <Box
-                h={'350px'}
+                h={'275px'}
                 w={'100vw'}
                 bg={'gray.100'}
                 mt={-6}
@@ -54,7 +54,7 @@ const ProjectContent = (props: ProjectContentProps) => {
                 <Link href={projectData['headerLink']} isExternal>
                     <Image
                         src={projectData['imageSrc']}
-                        height={'350px'}
+                        height={'275px'}
                         width={'100%'}
                         fit={'cover'}
                         backgroundPosition={'30px top'}
@@ -79,7 +79,9 @@ const ProjectContent = (props: ProjectContentProps) => {
                         </BreadcrumbItem>
 
                         <BreadcrumbItem isCurrentPage>
-                            <BreadcrumbLink href='#'>Contact</BreadcrumbLink>
+                            <BreadcrumbLink href={`#/projects/${projectData['id']}`}>
+                                {projectData['name']}
+                            </BreadcrumbLink>
                         </BreadcrumbItem>
                     </Breadcrumb>
                     <Text
