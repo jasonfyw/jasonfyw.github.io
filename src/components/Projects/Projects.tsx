@@ -9,6 +9,7 @@ import {
 import ProjectCard from './ProjectCard';
 import { Element } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
+import LinkIconButton from './LinkIconButton';
 import { projectData } from '../../data/projectData';
 
 
@@ -30,7 +31,12 @@ const Projects: FC = () => {
                                         tags={data['tags'] || []}
                                         imageSrc={data['imageSrc'] || ''}
                                         description={data['description'] || ''}
-                                        links={data['links'] || []}
+                                        links={data['links']?.map((link) => (
+                                            <LinkIconButton
+                                                href={link.link}
+                                                icon={link.icon}
+                                            />
+                                        ))}
                                         headerLink={data['headerLink'] || ''}
                                     />
                                 </WrapItem>

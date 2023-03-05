@@ -19,7 +19,7 @@ interface ProjectCardProps {
     tags: Array<ReactElement>,
     imageSrc: string,
     description: string,
-    links: Array<ReactElement>,
+    links?: Array<ReactElement>,
     headerLink: string
 }
 
