@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
     Box,
     Container,
@@ -15,6 +16,7 @@ import {
 
 import { ProjectT } from '../../data/projectData'
 import { FiGithub } from "react-icons/fi";
+import MarkdownRender from "./MarkdownRender";
 
 
 interface ProjectContentProps {
@@ -23,6 +25,18 @@ interface ProjectContentProps {
 
 const ProjectContent = (props: ProjectContentProps) => {
     const projectData = props.projectData
+    const [markdown, setMarkdown] = useState<string>('')
+
+    useEffect(() => {
+        import(`../../data/projectWriteups/${projectData['id']}.md`)
+            .then(res => {
+                fetch(res.default)
+                    .then(res => res.text())
+                    .then(res => setMarkdown(res))
+                    .catch(err => console.log(err));
+            })
+            .catch(err => console.log(err));
+    })
 
     return (
         <>
@@ -68,8 +82,8 @@ const ProjectContent = (props: ProjectContentProps) => {
                         {projectData['tagline']}
                     </Text>
                     <HStack>
-                        {projectData['links']?.map(link => (
-                            <LinkBox>
+                        {projectData['links']?.map((link, i) => (
+                            <LinkBox key={i}>
                                 <LinkOverlay href={link.link} isExternal>
                                     <Button rightIcon={link.icon} colorScheme='teal' variant='outline'>
                                         {
@@ -80,6 +94,10 @@ const ProjectContent = (props: ProjectContentProps) => {
                             </LinkBox>
                         ))}
                     </HStack>
+
+                    <Box mt={20}>
+                        <MarkdownRender markdown={markdown} />
+                    </Box>
                 </Stack>
             </Container>
         </>
