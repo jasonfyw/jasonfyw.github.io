@@ -9,17 +9,20 @@ import {
     HStack,
     Flex,
     Spacer,
-    Link
+    Link,
+    Button,
+    LinkOverlay
 } from '@chakra-ui/react';
 import Fade from 'react-reveal/Fade';
 
 interface ProjectCardProps {
     name: string,
     type: string,
+    id: string,
     tags: Array<ReactElement>,
     imageSrc: string,
     description: string,
-    links: Array<ReactElement>,
+    links?: Array<ReactElement>,
     headerLink: string
 }
 
@@ -82,7 +85,21 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                     <Text color={'gray.500'}>
                         {props.description}
                     </Text>
-                    
+                    <Box>
+                        <LinkOverlay href={`#/projects/${props.id}`}>
+                            <Button
+                                variant={'outline'}
+                                colorScheme={'cyan'}
+                                aria-label={`Read more about ${props.name}`}
+                                fontSize={'1rem'}
+                                size={'sm'}
+                                pb={1}
+                                mt={2}
+                            >
+                                Read more
+                            </Button>
+                        </LinkOverlay>
+                    </Box>
                 </Stack>
             </Box>
         </Fade>

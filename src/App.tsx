@@ -1,24 +1,20 @@
 import * as React from "react"
 import { ChakraProvider } from "@chakra-ui/react"
 import theme from "./theme"
-import Nav from "./components/Nav"
-import Intro from "./components/Intro"
-import About from "./components/About"
 import Footer from "./components/Footer"
-import Projects from "./components/Projects"
-import Skills from "./components/Skills"
-import Resume from "./components/Resume"
-import Contact from "./components/Contact"
+import { Route, Routes } from "react-router"
+import Main from "./pages/Main/Main"
+import Project from "./pages/Project/Project"
+import ProjectsPage from "./pages/ProjectsPage/ProjectsPage"
+
 
 export const App = () => (
     <ChakraProvider theme={theme}>
-        <Nav />
-        <Intro />
-        <About />
-        <Skills />
-        <Projects />
-        <Resume />
-        <Contact />
+        <Routes>
+            <Route index path='/' element={<Main/>} />
+            <Route path='/projects' element={<ProjectsPage/>} />
+            <Route path='/projects/:id' element={<Project />} />
+        </Routes>
 
         <Footer />
     </ChakraProvider>
