@@ -28,6 +28,7 @@ const Projects: FC = () => {
                                     <ProjectCard
                                         name={data['name'] || ''}
                                         type={data['type'] || ''}
+                                        id={data['id'] || ''}
                                         tags={data['tags'] || []}
                                         imageSrc={data['imageSrc'] || ''}
                                         description={data['description'] || ''}
