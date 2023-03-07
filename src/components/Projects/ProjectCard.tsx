@@ -10,8 +10,7 @@ import {
     Flex,
     Spacer,
     Link,
-    Button,
-    LinkOverlay
+    Button
 } from '@chakra-ui/react';
 import Fade from 'react-reveal/Fade';
 
