@@ -86,7 +86,12 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                         {props.description}
                     </Text>
                     <Box>
-                        <LinkOverlay href={`#/projects/${props.id}`}>
+                        <Link
+                            href={`#/projects/${props.id}`}
+                            _hover={{
+                                textDecor: 'none'
+                            }}
+                        >
                             <Button
                                 variant={'outline'}
                                 colorScheme={'cyan'}
@@ -98,7 +103,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                             >
                                 Read more
                             </Button>
-                        </LinkOverlay>
+                        </Link>
                     </Box>
                 </Stack>
             </Box>
