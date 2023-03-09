@@ -5,10 +5,14 @@ import {
     Icon,
     useColorModeValue,
     Flex,
-    Spacer
+    Spacer,
+    IconButton
 } from '@chakra-ui/react';
 import { FaHeart } from 'react-icons/fa';
 import Socials from '../global/Socials';
+import { ChevronUpIcon } from '@chakra-ui/icons';
+const Scroll = require('react-scroll');
+const scroll = Scroll.animateScroll;
 
 const Footer: FC = () => {
     return (
@@ -19,6 +23,19 @@ const Footer: FC = () => {
                 </Text>
                 <Spacer/>
                 <Socials color={useColorModeValue('#5a657c', '#9199a9')} size='1.25rem' />
+                <IconButton
+                    colorScheme='teal'
+                    variant='outline'
+                    onClick={() => {
+                        scroll.scrollToTop({ duration: 350 })
+                    }}
+                    icon={<ChevronUpIcon fontSize={20}/>}
+                    aria-label='Scroll to top'
+                    borderRadius={'full'}
+                    border={'2px'}
+                    ml={8}
+                >
+                </IconButton>
             </Flex>
         </Box>
     );
