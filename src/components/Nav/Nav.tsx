@@ -31,7 +31,7 @@ const NavLink = ({ children, to, onClose }: { children: ReactNode, to: string, o
             to={to}
             spy={true}
             smooth={true}
-            duration={500}
+            duration={250}
             onClick={onClose}
             offset={-80}
         >
