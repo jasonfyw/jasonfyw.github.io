@@ -1,3 +1,13 @@
+/* 
+Styles for displaying markdown
+*/
 .markdown>* {
     all: revert;
+}
+/* 
+Styles for displaying active scroll spy links
+*/
+.active {
+    transition: 0.3s;
+    border-bottom: 2px solid rgb(154, 228, 217);
 }
