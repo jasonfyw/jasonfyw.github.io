@@ -32,8 +32,15 @@ const Socials: FC<SocialsProps> = (props) => {
     return (
         <HStack spacing={6}>
             {
-                socialsData.map((social) => (
-                    <Link aria-label={social.aria} href={social.href} fontSize={props.size ? props.size : '1.5rem'} color={props.color} isExternal>
+                socialsData.map((social, i) => (
+                    <Link
+                        key={i}
+                        aria-label={social.aria}
+                        href={social.href}
+                        fontSize={props.size ? props.size : '1.5rem'}
+                        color={props.color}
+                        isExternal
+                    >
                         {social.icon}
                     </Link>
                 ))
