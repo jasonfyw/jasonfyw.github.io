@@ -6,7 +6,8 @@ import {
     Wrap,
     WrapItem,
     Button,
-    useMediaQuery
+    useMediaQuery,
+    Box
 } from '@chakra-ui/react';
 import ProjectCard from './ProjectCard';
 import { Element } from 'react-scroll';
@@ -23,7 +24,7 @@ const Projects: FC = () => {
 
     return (
         <Element name='projects'>
-            <Container maxW={'10xl'} p={6.75} mt={20}>
+            <Container maxW={'10xl'} p={6.75} mt={20} mb={[10, 20]}>
                 <VStack spacing={8}>
                     <Fade>
                         <Heading as='h2'>Featured Projects</Heading>
@@ -58,7 +59,6 @@ const Projects: FC = () => {
                             variant={'solid'}
                             colorScheme={'teal'}
                             size={'lg'}
-                            mb={10}
                             onClick={() => {
                                 scroll.scrollToTop({ duration: 450 })
                             }}
