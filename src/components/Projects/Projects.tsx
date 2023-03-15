@@ -14,6 +14,8 @@ import Fade from 'react-reveal/Fade';
 import LinkIconButton from './LinkIconButton';
 import { projectData } from '../../data/projectData';
 import { Link } from 'react-router-dom';
+const Scroll = require('react-scroll');
+const scroll = Scroll.animateScroll;
 
 
 const Projects: FC = () => {
@@ -57,6 +59,9 @@ const Projects: FC = () => {
                             colorScheme={'teal'}
                             size={'lg'}
                             mb={10}
+                            onClick={() => {
+                                scroll.scrollToTop({ duration: 450 })
+                            }}
                         >
                             View All
                         </Button>
