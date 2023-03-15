@@ -6,8 +6,7 @@ import {
     Wrap,
     WrapItem,
     Button,
-    useMediaQuery,
-    Box
+    useMediaQuery
 } from '@chakra-ui/react';
 import ProjectCard from './ProjectCard';
 import { Element } from 'react-scroll';
