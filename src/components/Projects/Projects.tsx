@@ -5,7 +5,8 @@ import {
     Heading,
     Wrap,
     WrapItem,
-    Button
+    Button,
+    useMediaQuery
 } from '@chakra-ui/react';
 import ProjectCard from './ProjectCard';
 import { Element } from 'react-scroll';
@@ -16,6 +17,8 @@ import { Link } from 'react-router-dom';
 
 
 const Projects: FC = () => {
+    const [isMobile] = useMediaQuery('(min-width: 764px)')
+
     return (
         <Element name='projects'>
             <Container maxW={'10xl'} p={6.75} mt={20}>
@@ -25,7 +28,7 @@ const Projects: FC = () => {
                     </Fade>
                     <Wrap spacing='20px' justify='center'>
                         {
-                            projectData.slice(0, 6).map((data) => (
+                            projectData.slice(0, isMobile ? 6 : 3).map((data) => (
                                 <WrapItem p={5}>
                                     <ProjectCard
                                         name={data['name'] || ''}
