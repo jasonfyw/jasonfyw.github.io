@@ -35,9 +35,10 @@ const ProjectsPage = () => {
             </Center>
             <Wrap spacing='20px' justify='center' pb={0}>
                 {
-                    projectData.map((data) => (
+                    projectData.map((data, i) => (
                         <WrapItem p={5}>
                             <ProjectCard
+                                key={i}
                                 name={data['name'] || ''}
                                 type={data['type'] || ''}
                                 id={data['id'] || ''}
