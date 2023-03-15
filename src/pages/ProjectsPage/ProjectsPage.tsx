@@ -6,11 +6,13 @@ import { projectData } from '../../data/projectData';
 import ProjectCard from '../../components/Projects/ProjectCard';
 import LinkIconButton from '../../components/Projects/LinkIconButton';
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
+import BackButton from './BackButton';
 
 
 const ProjectsPage = () => {
     return (
         <>
+            <BackButton />
             <ColorModeSwitcher
                 top={0}
                 right={8}
