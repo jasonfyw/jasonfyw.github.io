@@ -6,11 +6,13 @@ import { projectData } from '../../data/projectData';
 import ProjectCard from '../../components/Projects/ProjectCard';
 import LinkIconButton from '../../components/Projects/LinkIconButton';
 import { ColorModeSwitcher } from '../../ColorModeSwitcher';
+import BackButton from './BackButton';
 
 
 const ProjectsPage = () => {
     return (
         <>
+            <BackButton />
             <ColorModeSwitcher
                 top={0}
                 right={8}
@@ -35,9 +37,10 @@ const ProjectsPage = () => {
             </Center>
             <Wrap spacing='20px' justify='center' pb={0}>
                 {
-                    projectData.map((data) => (
+                    projectData.map((data, i) => (
                         <WrapItem p={5}>
                             <ProjectCard
+                                key={i}
                                 name={data['name'] || ''}
                                 type={data['type'] || ''}
                                 id={data['id'] || ''}

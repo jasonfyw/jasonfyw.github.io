@@ -30,38 +30,6 @@ export interface ProjectT {
 
 export const projectData: ProjectT[] = [
     {
-        name: 'Twitter Geo-Sentiment',
-        id: 'twitter-geo-sentiment',
-        type: 'Web app',
-        tagline: 'Analyse and visualise regional sentiment on Twitter',
-        tags: [<PythonBadge />, <ReactBadge />, <MongoBadge />],
-        imageSrc: '/twitter-geo-sentiment.png',
-        description: 'A web tool allowing queries analysing and visualising regional sentiment towards given topics on Twitter during a specific time frame. A custom-trained Naive Bayes model is used to perform sentiment analysis on aggregated data,.',
-        links: [
-            {
-                link: 'https://github.com/jasonfyw/twitter-geo-sentiment',
-                icon: <FiGithub />
-            }
-        ],
-        headerLink: 'https://github.com/jasonfyw/twitter-geo-sentiment'
-    },
-    {
-        name: 'Orbital Simulation',
-        id: 'orbital-sim',
-        type: 'Physics simulation',
-        tagline: 'A PyGame simulation accurately modelling planetary orbits in space',
-        tags: [<PythonBadge />],
-        imageSrc: '/orbital-sim.png',
-        description: 'An implementation of Newtonian physics in PyGame using positional data from the JPL Horizons database to simulate and record data on the past and future movements of celestial bodies in our solar system and beyond.',
-        links: [
-            {
-                link: 'https://github.com/jasonfyw/orbital-sim',
-                icon: <FiGithub />
-            }
-        ],
-        headerLink: 'https://github.com/jasonfyw/orbital-sim'
-    },
-    {
         name: 'Street Savvy',
         id: 'street-savvy',
         type: 'Web app',
@@ -76,6 +44,22 @@ export const projectData: ProjectT[] = [
             }
         ],
         headerLink: 'https://github.com/jasonfyw/street-savvy'
+    },
+    {
+        name: 'Twitter Geo-Sentiment',
+        id: 'twitter-geo-sentiment',
+        type: 'Web app',
+        tagline: 'Analyse and visualise regional sentiment on Twitter',
+        tags: [<PythonBadge />, <ReactBadge />, <MongoBadge />],
+        imageSrc: '/twitter-geo-sentiment.png',
+        description: 'A web tool allowing queries analysing and visualising regional sentiment towards given topics on Twitter during a specific time frame. A custom-trained Naive Bayes model is used to perform sentiment analysis on aggregated data,.',
+        links: [
+            {
+                link: 'https://github.com/jasonfyw/twitter-geo-sentiment',
+                icon: <FiGithub />
+            }
+        ],
+        headerLink: 'https://github.com/jasonfyw/twitter-geo-sentiment'
     },
     {
         name: 'Fourier Series Animation',
@@ -98,6 +82,22 @@ export const projectData: ProjectT[] = [
         headerLink: 'https://jasonfyw.com/fourier-series/'
     },
     {
+        name: 'Orbital Simulation',
+        id: 'orbital-sim',
+        type: 'Physics simulation',
+        tagline: 'A PyGame simulation accurately modelling planetary orbits in space',
+        tags: [<PythonBadge />],
+        imageSrc: '/orbital-sim.png',
+        description: 'An implementation of Newtonian physics in PyGame using positional data from the JPL Horizons database to simulate and record data on the past and future movements of celestial bodies in our solar system and beyond.',
+        links: [
+            {
+                link: 'https://github.com/jasonfyw/orbital-sim',
+                icon: <FiGithub />
+            }
+        ],
+        headerLink: 'https://github.com/jasonfyw/orbital-sim'
+    },
+    {
         name: 'PLISMUN',
         id: 'plismun',
         type: 'Website',
@@ -118,22 +118,6 @@ export const projectData: ProjectT[] = [
         headerLink: 'https://plismun.com'
     },
     {
-        name: 'Blogging Application',
-        id: 'blogging-app',
-        type: 'Web app',
-        tagline: 'Java blogging application built using CLEAN architecture and SOLID principles',
-        tags: [<JavaBadge />],
-        imageSrc: '/blogging-app.png',
-        description: 'Our group project for CSC207 - a blogging website where users can post text content and follow other accounts. Designed and built according to CLEAN architecture and SOLID principles.',
-        links: [
-            {
-                link: 'https://github.com/jasonfyw/csc207-blogging-app',
-                icon: <FiGithub />
-            }
-        ],
-        headerLink: 'https://github.com/jasonfyw/csc207-blogging-app'
-    },
-    {
         name: 'Linky',
         id: 'linky',
         type: 'Web app',
@@ -152,5 +136,21 @@ export const projectData: ProjectT[] = [
             }
         ],
         headerLink: 'https://lnky.to'
+    },
+    {
+        name: 'Blogging Application',
+        id: 'blogging-app',
+        type: 'Web app',
+        tagline: 'Java blogging application built using CLEAN architecture and SOLID principles',
+        tags: [<JavaBadge />],
+        imageSrc: '/blogging-app.png',
+        description: 'Our group project for CSC207 - a blogging website where users can post text content and follow other accounts. Designed and built according to CLEAN architecture and SOLID principles.',
+        links: [
+            {
+                link: 'https://github.com/jasonfyw/csc207-blogging-app',
+                icon: <FiGithub />
+            }
+        ],
+        headerLink: 'https://github.com/jasonfyw/csc207-blogging-app'
     }
 ]

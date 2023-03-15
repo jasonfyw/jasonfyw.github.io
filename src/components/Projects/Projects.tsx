@@ -4,26 +4,33 @@ import {
     Container,
     Heading,
     Wrap,
-    WrapItem
+    WrapItem,
+    Button,
+    useMediaQuery
 } from '@chakra-ui/react';
 import ProjectCard from './ProjectCard';
 import { Element } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 import LinkIconButton from './LinkIconButton';
 import { projectData } from '../../data/projectData';
+import { Link } from 'react-router-dom';
+const Scroll = require('react-scroll');
+const scroll = Scroll.animateScroll;
 
 
 const Projects: FC = () => {
+    const [isMobile] = useMediaQuery('(min-width: 764px)')
+
     return (
         <Element name='projects'>
             <Container maxW={'10xl'} p={6.75} mt={20}>
                 <VStack spacing={8}>
                     <Fade>
-                        <Heading as='h2'>Projects</Heading>
+                        <Heading as='h2'>Featured Projects</Heading>
                     </Fade>
-                    <Wrap spacing='20px' justify='center' pb={10}>
+                    <Wrap spacing='20px' justify='center'>
                         {
-                            projectData.map((data) => (
+                            projectData.slice(0, isMobile ? 6 : 3).map((data) => (
                                 <WrapItem p={5}>
                                     <ProjectCard
                                         name={data['name'] || ''}
@@ -45,7 +52,20 @@ const Projects: FC = () => {
                         }
 
                     </Wrap>
-                
+                    
+                    <Link to={'/projects'}>
+                        <Button
+                            variant={'solid'}
+                            colorScheme={'teal'}
+                            size={'lg'}
+                            mb={10}
+                            onClick={() => {
+                                scroll.scrollToTop({ duration: 450 })
+                            }}
+                        >
+                            View All
+                        </Button>
+                    </Link>
                 </VStack>
             </Container>
         </Element>
