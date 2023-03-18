@@ -4,6 +4,14 @@ Styles for displaying markdown
 .markdown>* {
     all: revert;
 }
+.markdown a {
+    color: rgb(142, 209, 199);
+    border-bottom: 2px solid rgb(142, 209, 199);
+    transition: 0.4s;
+}
+.markdown a:hover {
+    color: rgb(126, 171, 165);
+}
 /* 
 Styles for displaying active scroll spy links
 */
