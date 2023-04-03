@@ -35,7 +35,7 @@ export const projectData: ProjectT[] = [
         type: 'Web app',
         tagline: 'Suggests places to visit tailored using your preferences',
         tags: [<ReactBadge />, <FirebaseBadge />, <PythonBadge />],
-        imageSrc: '/street-savvy.png',
+        imageSrc: '/street-savvy.jpg',
         description: 'A web app that suggests places to visit in Toronto based on your preferences using a custom recommendation engine and data from the Google Places API. Submitted to UofTHacks X.',
         links: [
             {
@@ -51,7 +51,7 @@ export const projectData: ProjectT[] = [
         type: 'Web app',
         tagline: 'Analyse and visualise regional sentiment on Twitter',
         tags: [<PythonBadge />, <ReactBadge />, <MongoBadge />],
-        imageSrc: '/twitter-geo-sentiment.png',
+        imageSrc: '/twitter-geo-sentiment.jpg',
         description: 'A web tool allowing queries analysing and visualising regional sentiment towards given topics on Twitter during a specific time frame. A custom-trained Naive Bayes model is used to perform sentiment analysis on aggregated data,.',
         links: [
             {
@@ -103,7 +103,7 @@ export const projectData: ProjectT[] = [
         type: 'Website',
         tagline: 'The official website for PLISMUN',
         tags: [<PHPBadge />, <MySQLBadge />],
-        imageSrc: '/plismun.png',
+        imageSrc: '/plismun.jpg',
         description: 'A platform for my high school\'s annual international MUN conference, built from the ground up providing a delegate application system, admin tools, analytics, and resource hub. It managed hundreds of users from dozens of countries.',
         links: [
             {
@@ -143,7 +143,7 @@ export const projectData: ProjectT[] = [
         type: 'Web app',
         tagline: 'Java blogging application built using CLEAN architecture and SOLID principles',
         tags: [<JavaBadge />],
-        imageSrc: '/blogging-app.png',
+        imageSrc: '/blogging-app.jpg',
         description: 'Our group project for CSC207 - a blogging website where users can post text content and follow other accounts. Designed and built according to CLEAN architecture and SOLID principles.',
         links: [
             {
