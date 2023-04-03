@@ -23,7 +23,7 @@ const About: FC = () => {
                         <Image
                             borderRadius='full'
                             boxSize='150px'
-                            src='https://raw.githubusercontent.com/jasonfyw/jasonfyw/main/media/headshot.png'
+                            src='https://raw.githubusercontent.com/jasonfyw/jasonfyw/main/media/headshot.jpg'
                             border={`3px solid ${useColorModeValue('#1E2428', '#ECEFF4')}`}
                         />
                             <VStack spacing={4} p={[10, 4]} pl={[10, 50]}>
