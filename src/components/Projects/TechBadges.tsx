@@ -31,3 +31,7 @@ export const NodeBadge = () => {
 export const FirebaseBadge = () => {
     return <Badge colorScheme={'orange'}>Firebase</Badge>
 }
+
+export const AssemblyBadge = () => {
+    return <Badge colorScheme={'orange'}>Assembly</Badge>
+}

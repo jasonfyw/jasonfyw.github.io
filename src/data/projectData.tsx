@@ -6,7 +6,8 @@ import {
     NodeBadge,
     PHPBadge,
     PythonBadge,
-    ReactBadge
+    ReactBadge,
+    AssemblyBadge
 } from '../components/Projects/TechBadges';
 import { FiGithub, FiLink } from 'react-icons/fi';
 import { ReactElement } from 'react';
@@ -152,5 +153,21 @@ export const projectData: ProjectT[] = [
             }
         ],
         headerLink: 'https://github.com/jasonfyw/csc207-blogging-app'
+    },
+    {
+        name: 'Breakout in MIPS',
+        id: 'breakout-asm',
+        type: 'Game',
+        tagline: 'Atari Breakout implemented in MIPS Assembly for CSC258',
+        tags: [<AssemblyBadge />],
+        imageSrc: '/breakout-asm.png',
+        description: 'Using MIPS Assembly to implement an Atari Breakout clone with features such as game controls, multiple lives, displaying score, and more.',
+        links: [
+            {
+                link: 'https://github.com/jasonfyw/csc258-project',
+                icon: <FiGithub />
+            }
+        ],
+        headerLink: 'https://github.com/jasonfyw/csc258-project'
     }
 ]
