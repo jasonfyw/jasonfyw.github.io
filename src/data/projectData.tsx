@@ -53,7 +53,7 @@ export const projectData: ProjectT[] = [
         tagline: 'Analyse and visualise regional sentiment on Twitter',
         tags: [<PythonBadge />, <ReactBadge />, <MongoBadge />],
         imageSrc: '/twitter-geo-sentiment.jpg',
-        description: 'A web tool allowing queries analysing and visualising regional sentiment towards given topics on Twitter during a specific time frame. A custom-trained Naive Bayes model is used to perform sentiment analysis on aggregated data,.',
+        description: 'A web tool allowing queries analysing and visualising regional sentiment towards given topics on Twitter during a specific time frame. A custom-trained Naive Bayes model is used to perform sentiment analysis on aggregated data.',
         links: [
             {
                 link: 'https://github.com/jasonfyw/twitter-geo-sentiment',
