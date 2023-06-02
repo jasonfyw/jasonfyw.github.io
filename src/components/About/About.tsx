@@ -6,7 +6,9 @@ import {
     Image,
     VStack,
     Text,
-    useColorModeValue
+    useColorModeValue,
+    Flex,
+    Center
 } from '@chakra-ui/react';
 import { Element } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
@@ -28,24 +30,36 @@ const About: FC = () => {
                         />
                             <VStack spacing={4} p={[10, 4]} pl={[10, 50]}>
                                 <Fade bottom cascade duration={500}>
-                                    <Text>
-                                        Hi, I'm Jason and I'm a second year co-op student at the <b>University of Toronto</b> with a passion for <b>Software Engineering</b> and all things technology.
-                                    </Text>
+                                    <Flex>
+                                        <Center p={4}>👋🏼</Center>
+                                        <Text>
+                                            Hi, I'm Jason and I'm a second year co-op student at the <b>University of Toronto</b> with a passion for <b>Software Engineering</b> and all things technology.
+                                        </Text>
+                                    </Flex>
                                 </Fade>
                                 <Fade bottom cascade duration={500}>
-                                    <Text>
-                                        I'm currently pursuing a <b>Specialist in Computer Science (ASIP co-op)</b> and <b>Major in Cognitive Science</b>, graduating class of 2025.
-                                    </Text>
+                                    <Flex>
+                                        <Center p={4}>🎓</Center>
+                                        <Text>
+                                            I'm currently pursuing an HBSc with a <b>Specialist in Computer Science (ASIP co-op)</b> and <b>Major in Cognitive Science</b>, graduating class of 2025.
+                                        </Text>
+                                    </Flex>
                                 </Fade>
                                 <Fade bottom cascade duration={500}>
-                                    <Text>
-                                    I'm experienced in full-stack web development - particularly with <b>Typescript</b> and <b>Python</b>. React is my frontend tool of choice and I've worked in backend with <b>Node, Java, Python,</b> and <b>Golang</b>. 
-                                    </Text>
+                                    <Flex>
+                                        <Center p={4}>🚀</Center>
+                                        <Text>
+                                        I'm experienced in full-stack web development - particularly with <b>Typescript</b> and <b>Python</b>. React is my frontend tool of choice and I've worked in backend with <b>Node, Java, Python,</b> and <b>Golang</b>. 
+                                        </Text>
+                                    </Flex>
                                 </Fade>
                                 <Fade bottom cascade duration={500}>
-                                    <Text>
-                                        In addition to Software Engineering, I am also interested in machine learning and the confluence of artificial intelligence and cognitive science.
-                                    </Text>
+                                    <Flex>
+                                        <Center p={4}>🧠</Center>
+                                        <Text>
+                                            In addition to Software Engineering, I am also interested in machine learning and the confluence of artificial intelligence and cognitive science.
+                                        </Text>
+                                    </Flex>
                                 </Fade>
                             </VStack>
                     </Stack>
