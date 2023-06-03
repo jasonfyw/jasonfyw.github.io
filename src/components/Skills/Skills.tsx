@@ -28,7 +28,10 @@ import {
     SiNodedotjs,
     SiPostgresql,
     SiC,
-    SiFirebase
+    SiFirebase,
+    SiCsharp,
+    SiDotnet,
+    SiAmazonaws
 } from 'react-icons/si';
 import { Element } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
@@ -67,10 +70,12 @@ const Skills: FC = () => {
                                         <SkillItem icon={SiHtml5} name='HTML/CSS' />
                                         <SkillItem icon={SiGo} name='Golang' />
                                         <SkillItem icon={SiC} name='C' />
+                                        <SkillItem icon={SiCsharp} name='C#' />
                                     </SkillSection>
                                     <SkillSection title={'Frameworks'}>
                                         <SkillItem icon={SiReact} name='ReactJS' />
                                         <SkillItem icon={SiNodedotjs} name='NodeJS' />
+                                        <SkillItem icon={SiDotnet} name='.NET Core' />
                                         <SkillItem icon={SiScikitlearn} name='Scikit-learn' />
                                         <SkillItem icon={SiFlask} name='Flask' />
                                         <SkillItem icon={SiBootstrap} name='Bootstrap' />
@@ -100,6 +105,7 @@ const Skills: FC = () => {
                                         <SkillItem icon={SiLatex} name='LaTeX' />
                                         <SkillItem icon={SiDocker} name='Docker' />
                                         <SkillItem icon={SiVisualstudiocode} name='VS Code' />
+                                        <SkillItem icon={SiAmazonaws} name='AWS' />
                                     </SkillSection>
                                 </Stack>
                             </Stack>
