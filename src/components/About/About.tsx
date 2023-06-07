@@ -28,40 +28,48 @@ const About: FC = () => {
                             src='https://raw.githubusercontent.com/jasonfyw/jasonfyw/main/media/headshot.jpg'
                             border={`3px solid ${useColorModeValue('#1E2428', '#ECEFF4')}`}
                         />
-                            <VStack spacing={4} p={[10, 4]} pl={[10, 50]}>
-                                <Fade bottom cascade duration={500}>
-                                    <Flex>
-                                        <Center p={4}>👋🏼</Center>
-                                        <Text>
-                                            Hi, I'm Jason and I'm a second year co-op student at the <b>University of Toronto</b> with a passion for <b>Software Engineering</b> and all things technology.
-                                        </Text>
-                                    </Flex>
-                                </Fade>
-                                <Fade bottom cascade duration={500}>
-                                    <Flex>
-                                        <Center p={4}>🎓</Center>
-                                        <Text>
-                                            I'm currently pursuing an HBSc with a <b>Specialist in Computer Science (ASIP co-op)</b> and <b>Major in Cognitive Science</b>, graduating class of 2025.
-                                        </Text>
-                                    </Flex>
-                                </Fade>
-                                <Fade bottom cascade duration={500}>
-                                    <Flex>
-                                        <Center p={4}>🚀</Center>
-                                        <Text>
-                                        I'm experienced in full-stack web development - particularly with <b>Typescript</b> and <b>Python</b>. React is my frontend tool of choice and I've worked in backend with <b>Node, Java, Python,</b> and <b>Golang</b>. 
-                                        </Text>
-                                    </Flex>
-                                </Fade>
-                                <Fade bottom cascade duration={500}>
-                                    <Flex>
-                                        <Center p={4}>🧠</Center>
-                                        <Text>
-                                            In addition to Software Engineering, I am also interested in machine learning and the confluence of artificial intelligence and cognitive science.
-                                        </Text>
-                                    </Flex>
-                                </Fade>
-                            </VStack>
+                        <VStack spacing={4} p={[10, 4]} pl={[10, 50]}>
+                            <Fade bottom cascade duration={500}>
+                                <Flex>
+                                    <Center p={4}>👋🏼</Center>
+                                    <Text>
+                                        Hi, I'm Jason and I'm a second year co-op student at the <b>University of Toronto</b> with a passion for <b>Software Engineering</b> and all things technology!
+                                    </Text>
+                                </Flex>
+                            </Fade>
+                            <Fade bottom cascade duration={500}>
+                                <Flex>
+                                    <Center p={4}>🎓</Center>
+                                    <Text>
+                                        I'm pursuing an HBSc with a <b>Specialist in Computer Science (ASIP co-op)</b> and <b>Major in Cognitive Science</b>, graduating class of 2025.
+                                    </Text>
+                                </Flex>
+                            </Fade>
+                            <Fade bottom cascade duration={500}>
+                                <Flex>
+                                    <Center p={4}>👨🏻‍💻</Center>
+                                    <Text>
+                                        I'm currently a <b>Software Engineering Intern at NerveX</b> for Summer 2023 as well as a <b>Web Developer at the University of Toronto Machine Intelligence Student Team (UTMIST)</b>
+                                    </Text>
+                                </Flex>
+                            </Fade>
+                            <Fade bottom cascade duration={500}>
+                                <Flex>
+                                    <Center p={4}>🚀</Center>
+                                    <Text>
+                                    I'm experienced in full-stack web development - particularly with <b>Typescript</b> and <b>Python</b>. React is my frontend tool of choice and I've worked in backend with <b>Node, Java, Python,</b> and <b>Golang</b>. 
+                                    </Text>
+                                </Flex>
+                            </Fade>
+                            <Fade bottom cascade duration={500}>
+                                <Flex>
+                                    <Center p={4}>🧠</Center>
+                                    <Text>
+                                        In addition to Software Engineering, I am also interested in the confluence of artificial intelligence and cognitive science, as well as photography!
+                                    </Text>
+                                </Flex>
+                            </Fade>
+                        </VStack>
                     </Stack>
                 </VStack>
             </Container>
