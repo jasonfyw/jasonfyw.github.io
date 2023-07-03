@@ -23,7 +23,7 @@ const Projects: FC = () => {
 
     return (
         <Element name='projects'>
-            <Container maxW={'10xl'} p={6.75} mt={20} mb={[10, 20]}>
+            <Container maxW={'10xl'} p={6.75} mt={20} mb={[10, 20]} px={[0, 10]}>
                 <VStack spacing={8}>
                     <Fade>
                         <Heading as='h2'>Featured Projects</Heading>
