@@ -2,9 +2,11 @@ This interactive React web app demonstrates how an arbitrary user-inputted line 
 
 Alternatively, users can upload an image and the app will use the Canny edge detection algorithm to generate a function from the edges in the image, which can then be animated by the Fourier series.
 
-## Tech stack
+## Technical specifications
 
-- **ReactJS** with Typescript and ChakraUI
+- **ReactJS** with **Typescript** and **ChakraUI**
+- **P3.js** for animations
+- **Github Actions** for CI/CD
 
 ## About the Fourier series
 
