@@ -1,9 +1,0 @@
-The former official website for the annual Park Lane International School MUN conference, in operation from 2018-2022. Information regarding the conference was available through this website, as well as providing a platform for prospective delegates, chairs and delegations to apply.
-
-Park Lane International School Model United Nations (PLISMUN), is a conference where students aged 13 - 18 discuss topics of global importance by representing countries in a simulation of select committees of the United Nations. PLISMUN has welcomed 500+ students from over a dozen countries around the world to discuss pressing and relevant world issues.
-
-## Tech stack
-
-- **HTML/CSS** styled with custom Bootstrap
-- **PHP** for database interactions and rendering logic
-- **MySQL** for storing all data relevant to the conference
