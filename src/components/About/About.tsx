@@ -8,7 +8,8 @@ import {
     Text,
     useColorModeValue,
     Flex,
-    Center
+    Center,
+    Link
 } from '@chakra-ui/react';
 import { Element } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
@@ -49,7 +50,7 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>👨🏻‍💻</Center>
                                     <Text>
-                                        I'm currently a <b>Software Engineering Intern at NerveX</b> for Summer 2023 as well as a <b>Web Developer at the University of Toronto Machine Intelligence Student Team (UTMIST)</b>
+                                        Over the course of Summer 2023, I was a <b>Software Engineering Intern at NerveX</b> working in full-stack development.
                                     </Text>
                                 </Flex>
                             </Fade>
@@ -65,7 +66,20 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>🧠</Center>
                                     <Text>
-                                        In addition to Software Engineering, I am also interested in the confluence of artificial intelligence and cognitive science, as well as photography!
+                                        In addition to Software Engineering, I am also interested in the confluence of artificial intelligence and cognitive science, as well as photography! Check out my&nbsp;
+                                        <Link
+                                            href="https://photo.jasonfyw.com"
+                                            isExternal
+                                            fontWeight={'semibold'}
+                                            borderBottom={'2px solid rgb(154, 228, 217)'}
+                                            transition={'0.2s'}
+                                            _hover={{
+                                                textDecor: 'none',
+                                                opacity: 0.9
+                                            }}
+                                        >
+                                            photography portfolio
+                                        </Link>.
                                     </Text>
                                 </Flex>
                             </Fade>
