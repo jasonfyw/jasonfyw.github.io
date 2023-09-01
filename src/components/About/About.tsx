@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react';
 import { Element } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
+import headshot from '../../media/headshot.jpg'
 
 const About: FC = () => {
     return (
@@ -26,7 +27,7 @@ const About: FC = () => {
                         <Image
                             borderRadius='full'
                             boxSize='150px'
-                            src='https://raw.githubusercontent.com/jasonfyw/jasonfyw/main/media/headshot.jpg'
+                            src={headshot}
                             border={`3px solid ${useColorModeValue('#1E2428', '#ECEFF4')}`}
                         />
                         <VStack spacing={4} p={[10, 4]} pl={[10, 50]}>
