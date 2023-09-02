@@ -35,7 +35,7 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>👋🏼</Center>
                                     <Text>
-                                        Hi, I'm Jason and I'm a second year co-op student at the <b>University of Toronto</b> with a passion for <b>Software Engineering</b> and all things technology!
+                                        Hi, I'm Jason and I'm a third year co-op student at the <b>University of Toronto</b> with a passion for <b>Software Engineering</b> and all things technology!
                                     </Text>
                                 </Flex>
                             </Fade>
@@ -51,7 +51,7 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>👨🏻‍💻</Center>
                                     <Text>
-                                        Over the course of Summer 2023, I was a <b>Software Engineering Intern at NerveX</b> working in full-stack development.
+                                        Over the course of Summer 2023, I was a <b>Software Engineering Intern at NerveX</b> working in full-stack development. I am currently seeking an internship starting Summer 2024!
                                     </Text>
                                 </Flex>
                             </Fade>
@@ -59,7 +59,7 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>🚀</Center>
                                     <Text>
-                                    I'm experienced in full-stack web development - particularly with <b>Typescript</b> and <b>Python</b>. React is my frontend tool of choice and I've worked in backend with <b>Node, Java, Python,</b> and <b>Golang</b>. 
+                                        I'm experienced in full-stack web development - particularly with <b>Typescript</b> and <b>Python</b>. <b>ReactJS</b> is my frontend tool of choice and I've worked in backend with <b>NodeJS, .NET Core, Java, Python,</b> and <b>Golang</b>. 
                                     </Text>
                                 </Flex>
                             </Fade>
