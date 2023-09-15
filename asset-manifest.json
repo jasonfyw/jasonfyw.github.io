@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3c2db1ae.css",
-    "main.js": "/static/js/main.1624282d.js",
+    "main.js": "/static/js/main.4531bb72.js",
     "static/js/422.d5d74b90.chunk.js": "/static/js/422.d5d74b90.chunk.js",
     "static/js/578.2774dbe3.chunk.js": "/static/js/578.2774dbe3.chunk.js",
     "static/js/718.b6e7616c.chunk.js": "/static/js/718.b6e7616c.chunk.js",
@@ -49,6 +49,7 @@
     "static/media/KaTeX_Size1-Regular.ttf": "/static/media/KaTeX_Size1-Regular.6de7d4b539221a49e9e2.ttf",
     "static/media/KaTeX_SansSerif-Bold.woff2": "/static/media/KaTeX_SansSerif-Bold.95591a929f0d32aa282a.woff2",
     "static/media/KaTeX_SansSerif-Italic.woff2": "/static/media/KaTeX_SansSerif-Italic.7d393d382f3e7fb1c637.woff2",
+    "static/media/headshot.jpg": "/static/media/headshot.c57b04fdca15f08053f6.jpg",
     "static/media/KaTeX_Size2-Regular.ttf": "/static/media/KaTeX_Size2-Regular.57f5c1837853986ea1db.ttf",
     "static/media/KaTeX_Fraktur-Bold.woff2": "/static/media/KaTeX_Fraktur-Bold.931d67ea207ab37ee693.woff2",
     "static/media/KaTeX_Fraktur-Regular.woff2": "/static/media/KaTeX_Fraktur-Regular.172d3529b26f8cedef6b.woff2",
@@ -78,10 +79,10 @@
     "static/media/linky.md": "/static/media/linky.f56455433636236fb7a2.md",
     "static/media/blogging-application.md": "/static/media/blogging-application.ae7383187bc07be9e5da.md",
     "main.3c2db1ae.css.map": "/static/css/main.3c2db1ae.css.map",
-    "main.1624282d.js.map": "/static/js/main.1624282d.js.map"
+    "main.4531bb72.js.map": "/static/js/main.4531bb72.js.map"
   },
   "entrypoints": [
     "static/css/main.3c2db1ae.css",
-    "static/js/main.1624282d.js"
+    "static/js/main.4531bb72.js"
   ]
 }
