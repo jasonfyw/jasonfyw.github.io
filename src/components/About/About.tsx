@@ -79,7 +79,7 @@ const About: FC = () => {
                                                 opacity: 0.9
                                             }}
                                         >
-                                            photography portfolio
+                                            photography portfolio to learn more about my creative work.
                                         </Link>.
                                     </Text>
                                 </Flex>
