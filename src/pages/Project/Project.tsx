@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import { ProjectT, projectData as allProjectData } from '../../data/projectData';
+import { projectData as allProjectData } from '../../data/projectData';
+import { ProjectT } from '../../data/types';
 import { useEffect, useState } from "react";
 import { Center, Text } from "@chakra-ui/react";
 import ProjectContent from "./ProjectContent";
