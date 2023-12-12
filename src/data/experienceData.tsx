@@ -1,11 +1,5 @@
-interface ExperienceData {
-    title: string,
-    company: string,
-    location: string,
-    dates: string,
-    description: string,
-    logoSrc?: string | null,
-}
+import { ExperienceData } from './types'
+
 
 export const experienceData: ExperienceData[] = [
     {
