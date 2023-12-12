@@ -7,6 +7,7 @@ import {
 import Fade from 'react-reveal/Fade';
 import { Element } from 'react-scroll';
 import ExperienceCard from './ExperienceCard';
+import { experienceData } from '../../data/experienceData';
 
 const Experience = () => {
     return (
@@ -16,13 +17,21 @@ const Experience = () => {
                     <Fade>
                         <Heading as='h2'>Experience</Heading>
                     </Fade>
-                    <ExperienceCard
-                        title={'Software Engineer Intern'}
-                        company={'NerveX Neurotechnologies'}
-                        location={'Toronto, ON'}
-                        dates={'May 2023 - Present'}
-                        description={'Enhanced API efficiency, developed a medical charting library, and streamlined data pipelines using modern technologies like .NET Core, ReactJS, TypeScript, Docker, and AWS Lambda.'}
-                    />
+                    {
+                        experienceData.map((experience, i) => {
+                            return (
+                                <Fade bottom cascade duration={500} key={i}>
+                                    <ExperienceCard
+                                        title={experience.title}
+                                        company={experience.company}
+                                        location={experience.location}
+                                        dates={experience.dates}
+                                        description={experience.description}
+                                    />
+                                </Fade>
+                            );
+                        })
+                    }
                 </VStack>
             </Container>
         </Element>
