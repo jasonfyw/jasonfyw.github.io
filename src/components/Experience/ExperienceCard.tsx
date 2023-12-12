@@ -8,6 +8,7 @@ import {
     useColorModeValue,
     Avatar,
     Center,
+    Box,
 } from '@chakra-ui/react';
 
 interface ExperienceCardProps {
@@ -20,6 +21,8 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCard = (props: ExperienceCardProps) => {
+    const avatarBorderColor = useColorModeValue('gray.700', 'white');
+    
     return (
         <Stack
             direction={'column'}
@@ -36,7 +39,9 @@ const ExperienceCard = (props: ExperienceCardProps) => {
                 {
                     props.logoSrc && (
                         <Center mb={{ base: 2, md: 0 }}>
-                            <Avatar src={props.logoSrc} />
+                            <Box borderRadius={'full'} border={'1px'} borderColor={avatarBorderColor}>
+                                <Avatar src={props.logoSrc} />
+                            </Box>
                         </Center>
                     )
                 }
@@ -46,8 +51,8 @@ const ExperienceCard = (props: ExperienceCardProps) => {
                 </Stack>
                 <Spacer />
                 <Stack textAlign={{ base: 'center', md: 'right'}}>
-                    <Heading as='h5' size='sm' pt={[2, 0]}>{ props.dates }</Heading>
-                    <Heading as='h5' size='sm'>{ props.location }</Heading>
+                    <Heading as='h5' size={'xs'} pt={[2, 0]}>{ props.dates }</Heading>
+                    <Heading as='h5' size={'xs'}>{ props.location }</Heading>
                 </Stack>
             </Flex>
             <Text size='sm' color='gray.500'>{ props.description }</Text>
