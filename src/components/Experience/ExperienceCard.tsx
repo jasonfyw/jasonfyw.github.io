@@ -33,15 +33,15 @@ const ExperienceCard = (props: ExperienceCardProps) => {
             <Flex direction={['column', 'row']} w={'full'}>
                 <Stack>
                     <Heading as='h3' size='md'>{ props.title }</Heading>
-                    <Heading as='h4' size='sm'>{ props.company }</Heading>
+                    <Heading as='h4' size='sm' color={'blue.200'}>{ props.company }</Heading>
                 </Stack>
                 <Spacer />
                 <Stack textAlign={['center', 'right']}>
-                    <Heading as='i' size='sm' pt={[2, 0]} fontWeight={400}>{ props.dates }</Heading>
-                    <Heading as='i' size='sm' fontWeight={400}>{ props.location }</Heading>
+                    <Heading as='h5' size='sm' pt={[2, 0]}>{ props.dates }</Heading>
+                    <Heading as='h5' size='sm'>{ props.location }</Heading>
                 </Stack>
             </Flex>
-            <Text size='sm'>{ props.description }</Text>
+            <Text size='sm' color='gray.500'>{ props.description }</Text>
         </Stack>
     );
 };
