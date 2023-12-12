@@ -27,6 +27,7 @@ const Experience = () => {
                                         location={experience.location}
                                         dates={experience.dates}
                                         description={experience.description}
+                                        logoSrc={experience.logoSrc}
                                     />
                                 </Fade>
                             );
