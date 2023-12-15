@@ -103,6 +103,21 @@ export const projectData: ProjectT[] = [
         headerLink: 'https://plismun.com'
     },
     {
+        name: 'Photography Portfolio',
+        id: 'photography-portfolio',
+        type: 'Website',
+        tagline: 'A portfolio website for my photography',
+        tags: [<ReactBadge />],
+        imageSrc: '/photography-portfolio.png',
+        description: 'A portfolio website for my photography work, built with React and Typescript and styled with ChakraUI. Features a custom-built gallery, e-commerce functionality, and 3D map integration with Mapbox.',
+        links: [
+            {
+                link: 'https://photo.jasonfyw.com/',
+                icon: <FiLink />
+            }
+        ]
+    },
+    {
         name: 'Linky',
         id: 'linky',
         type: 'Web app',
