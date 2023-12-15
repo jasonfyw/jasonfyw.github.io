@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.3c2db1ae.css",
-    "main.js": "/static/js/main.9a1d12b0.js",
+    "main.js": "/static/js/main.28e48841.js",
     "static/js/422.d5d74b90.chunk.js": "/static/js/422.d5d74b90.chunk.js",
     "static/js/578.2774dbe3.chunk.js": "/static/js/578.2774dbe3.chunk.js",
     "static/js/718.b6e7616c.chunk.js": "/static/js/718.b6e7616c.chunk.js",
     "static/js/341.bfc2d01d.chunk.js": "/static/js/341.bfc2d01d.chunk.js",
+    "static/js/211.c6e7ea0e.chunk.js": "/static/js/211.c6e7ea0e.chunk.js",
     "static/js/860.bd8e6296.chunk.js": "/static/js/860.bd8e6296.chunk.js",
     "static/js/220.e4f2c4c5.chunk.js": "/static/js/220.e4f2c4c5.chunk.js",
     "static/js/321.d349c7f1.chunk.js": "/static/js/321.d349c7f1.chunk.js",
@@ -76,13 +77,14 @@
     "static/media/orbital-sim.md": "/static/media/orbital-sim.b91da2727e5f48139146.md",
     "static/media/twitter-geo-sentiment.md": "/static/media/twitter-geo-sentiment.58348df50f3d882b4d37.md",
     "static/media/street-savvy.md": "/static/media/street-savvy.b95f2f9dc822e8981af9.md",
+    "static/media/photography-portfolio.md": "/static/media/photography-portfolio.123706455b0afe2cedf6.md",
     "static/media/linky.md": "/static/media/linky.f56455433636236fb7a2.md",
     "static/media/blogging-application.md": "/static/media/blogging-application.ae7383187bc07be9e5da.md",
     "main.3c2db1ae.css.map": "/static/css/main.3c2db1ae.css.map",
-    "main.9a1d12b0.js.map": "/static/js/main.9a1d12b0.js.map"
+    "main.28e48841.js.map": "/static/js/main.28e48841.js.map"
   },
   "entrypoints": [
     "static/css/main.3c2db1ae.css",
-    "static/js/main.9a1d12b0.js"
+    "static/js/main.28e48841.js"
   ]
 }
