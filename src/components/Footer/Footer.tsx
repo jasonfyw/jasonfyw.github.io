@@ -6,11 +6,13 @@ import {
     useColorModeValue,
     Flex,
     Spacer,
-    IconButton
+    IconButton,
+    Stack
 } from '@chakra-ui/react';
 import { FaHeart } from 'react-icons/fa';
 import Socials from '../global/Socials';
 import { ChevronUpIcon } from '@chakra-ui/icons';
+import { ColorModeSwitcher } from '../../ColorModeSwitcher';
 const Scroll = require('react-scroll');
 const scroll = Scroll.animateScroll;
 
@@ -23,19 +25,28 @@ const Footer: FC = () => {
                 </Text>
                 <Spacer/>
                 <Socials color={useColorModeValue('#5a657c', '#9199a9')} size='1.25rem' />
-                <IconButton
-                    colorScheme='teal'
-                    variant='outline'
-                    onClick={() => {
-                        scroll.scrollToTop({ duration: 350 })
-                    }}
-                    icon={<ChevronUpIcon fontSize={20}/>}
-                    aria-label='Scroll to top'
-                    borderRadius={'full'}
-                    border={'2px'}
-                    ml={8}
-                >
-                </IconButton>
+                <Stack direction={['column', 'row']} spacing={4} align={'center'} ml={8}>
+                    <IconButton
+                        colorScheme='teal'
+                        variant='outline'
+                        onClick={() => {
+                            scroll.scrollToTop({ duration: 350 })
+                        }}
+                        icon={<ChevronUpIcon fontSize={20}/>}
+                        aria-label='Scroll to top'
+                        borderRadius={'full'}
+                        border={'2px'}
+                    >
+                    </IconButton>
+                    <ColorModeSwitcher
+                        justifySelf='flex-end'
+                        borderRadius='full'
+                        color={useColorModeValue('teal.600', 'teal.200')}
+                        borderColor={useColorModeValue('teal.600', 'teal.200')}
+                        border={'2px'}
+                        variant='outline'
+                    />
+                </Stack>
             </Flex>
         </Box>
     );
