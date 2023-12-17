@@ -11,6 +11,7 @@ import {
 import { FaHeart } from 'react-icons/fa';
 import Socials from '../global/Socials';
 import { ChevronUpIcon } from '@chakra-ui/icons';
+import { ColorModeSwitcher } from '../../ColorModeSwitcher';
 const Scroll = require('react-scroll');
 const scroll = Scroll.animateScroll;
 
@@ -36,6 +37,14 @@ const Footer: FC = () => {
                     ml={8}
                 >
                 </IconButton>
+                <ColorModeSwitcher
+                    justifySelf='flex-end'
+                    borderRadius='full'
+                    color={useColorModeValue('teal.600', 'teal.200')}
+                    borderColor={useColorModeValue('teal.600', 'teal.200')}
+                    border={'2px'}
+                    variant='outline'
+                />
             </Flex>
         </Box>
     );
