@@ -10,7 +10,6 @@ import {
     Button,
     Link
 } from '@chakra-ui/react';
-import ParticlesBg from 'particles-bg';
 import ReactTypingEffect from 'react-typing-effect';
 import Fade from 'react-reveal/Fade';
 import Socials from '../global/Socials';
@@ -70,17 +69,6 @@ const Intro: FC = () => {
                 </VStack>
                 <Box mt={[10, '10vh']}>
                     <DownArrow/>
-                </Box>
-                {/* <ParticlesBg type="cobweb" num={250} color="#5E81AC" bg={true} />  */}
-                <Box position='fixed' h='100vh' w='100vw' zIndex={-100} top={0} left={0} bg='red'
-                    background={`url("data:image/svg+xml,${encodeURIComponent(`
-                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="100%" height="100%" fill="none"/>
-                        <circle cx="5" cy="5" r="1" fill="${useColorModeValue('#dadada', '#444')}"/>
-                        </svg>
-                    `) }")`}
-                    backgroundSize="30px 30px" color='white'>
-
                 </Box>
             </Container>
         </Element>

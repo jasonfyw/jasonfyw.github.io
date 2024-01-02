@@ -7,6 +7,7 @@ import Resume from "../../components/Resume"
 import Contact from "../../components/Contact"
 import Nav from '../../components/Nav';
 import Experience from '../../components/Experience';
+import Background from '../../components/Background';
 
 const Main = () => {
     return (
@@ -19,6 +20,7 @@ const Main = () => {
             <Projects />
             <Resume />
             <Contact />
+            <Background />
         </>
     );
 }
