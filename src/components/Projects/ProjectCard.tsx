@@ -31,12 +31,13 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
             <Box 
                 maxW={'325px'}
                 w={'full'}
-                bg={useColorModeValue('white', 'gray.900')}
+                bg={useColorModeValue('rgba(255, 255, 255, 0.5)', 'rgba(23, 25, 35, 0.6)')}
                 opacity={0.9}
                 boxShadow={'xl'}
-                rounded={'md'}
+                rounded={'xl'}
                 p={6}
                 overflow={'hidden'}
+                backdropFilter={useColorModeValue('blur(1px)', 'blur(2.5px)')}
             >
                 
                 <Box

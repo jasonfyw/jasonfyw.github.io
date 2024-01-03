@@ -27,12 +27,13 @@ const Contact: FC = () => {
                         <Box
                             maxW={'85vw'}
                             w={'xl'}
-                            bg={useColorModeValue('white', 'gray.900')}
+                            bg={useColorModeValue('rgba(255, 255, 255, 0.5)', 'rgba(23, 25, 35, 0.6)')}
                             boxShadow={'xl'}
                             rounded={'md'}
                             p={6}
                             pb={8}
                             overflow={'hidden'}
+                            backdropFilter={useColorModeValue('blur(1px)', 'blur(2.5px)')}
                         >
                             <Flex textAlign={'center'}>
                                 <Container w='50%'>
