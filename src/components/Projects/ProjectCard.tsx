@@ -35,6 +35,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                 opacity={0.9}
                 boxShadow={'xl'}
                 rounded={'3xl'}
+                mb={3}
                 p={6}
                 overflow={'hidden'}
                 backdropFilter={useColorModeValue('blur(1px)', 'blur(2.5px)')}
