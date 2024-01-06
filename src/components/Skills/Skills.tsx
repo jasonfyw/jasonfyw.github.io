@@ -38,6 +38,7 @@ import { Element } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
 import SkillSection from './SkillSection';
 import SkillItem from './SkillItem';
+import Card from '../generics/Card';
 
 const Skills: FC = () => {
     return (
@@ -50,68 +51,60 @@ const Skills: FC = () => {
                     <Fade bottom cascade duration={500}>
                         <Box>
                             <Stack direction={'row'}>
-                                <Stack
-                                    direction={['column', 'row']}
-                                    divider={
-                                        <StackDivider borderColor={useColorModeValue('gray.300', 'gray.600')} />
-                                    }
-                                    spacing={8}
-                                    align={'flex-start'}
-                                    bg={useColorModeValue('rgba(255, 255, 255, 0.5)', 'rgba(23, 25, 35, 0.6)')}
-                                    opacity={0.9}
-                                    p={5}
-                                    rounded={'xl'}
-                                    boxShadow={'lg'}
-                                    backdropFilter={useColorModeValue('blur(1px)', 'blur(2.5px)')}
-                                >
-                                    <SkillSection title={'Languages'}>
-                                        <SkillItem icon={SiPython} name='Python' />
-                                        <SkillItem icon={SiTypescript} name='Typescript' />
-                                        <SkillItem icon={SiJava} name='Java' />
-                                        <SkillItem icon={SiPhp} name='PHP' />
-                                        <SkillItem icon={SiHtml5} name='HTML/CSS' />
-                                        <SkillItem icon={SiGo} name='Golang' />
-                                        <SkillItem icon={SiC} name='C' />
-                                        <SkillItem icon={SiCsharp} name='C#' />
-                                    </SkillSection>
-                                    <SkillSection title={'Frameworks'}>
-                                        <SkillItem icon={SiReact} name='ReactJS' />
-                                        <SkillItem icon={SiNodedotjs} name='NodeJS' />
-                                        <SkillItem icon={SiDotnet} name='.NET Core' />
-                                        <SkillItem icon={SiFlask} name='Flask' />
-                                        <SkillItem icon={SiChakraui} name='ChakraUI' />
-                                        <SkillItem icon={SiBootstrap} name='Bootstrap' />
-                                        <SkillItem icon={SiTailwindcss} name='Tailwind CSS' />
-                                    </SkillSection>
-                                </Stack>
-                                <Stack
-                                    direction={['column', 'row']}
-                                    divider={
-                                        <StackDivider borderColor={useColorModeValue('gray.300', 'gray.600')} />
-                                    }
-                                    spacing={8}
-                                    align={'flex-start'}
-                                    bg={useColorModeValue('rgba(255, 255, 255, 0.5)', 'rgba(23, 25, 35, 0.6)')}
-                                    opacity={0.9}
-                                    p={5}
-                                    rounded={'xl'}
-                                    boxShadow={'lg'}
-                                    backdropFilter={useColorModeValue('blur(1px)', 'blur(2.5px)')}
-                                >
-                                    <SkillSection title={'Databases'}>
-                                        <SkillItem icon={SiMysql} name='MySQL' />
-                                        <SkillItem icon={SiPostgresql} name='PostgreSQL' />
-                                        <SkillItem icon={SiMongodb} name='MongoDB' />
-                                        <SkillItem icon={SiFirebase} name='Firestore' />
-                                    </SkillSection>
-                                    <SkillSection title={'Other tools'}>
-                                        <SkillItem icon={SiGit} name='Git' />
-                                        <SkillItem icon={SiLatex} name='LaTeX' />
-                                        <SkillItem icon={SiDocker} name='Docker' />
-                                        <SkillItem icon={SiVisualstudiocode} name='VS Code' />
-                                        <SkillItem icon={SiAmazonaws} name='AWS' />
-                                    </SkillSection>
-                                </Stack>
+                                <Card>
+                                    <Stack
+                                        direction={['column', 'row']}
+                                        divider={
+                                            <StackDivider borderColor={useColorModeValue('gray.300', 'gray.600')} />
+                                        }
+                                        spacing={8}
+                                        align={'flex-start'}
+                                    >
+                                        <SkillSection title={'Languages'}>
+                                            <SkillItem icon={SiPython} name='Python' />
+                                            <SkillItem icon={SiTypescript} name='Typescript' />
+                                            <SkillItem icon={SiJava} name='Java' />
+                                            <SkillItem icon={SiPhp} name='PHP' />
+                                            <SkillItem icon={SiHtml5} name='HTML/CSS' />
+                                            <SkillItem icon={SiGo} name='Golang' />
+                                            <SkillItem icon={SiC} name='C' />
+                                            <SkillItem icon={SiCsharp} name='C#' />
+                                        </SkillSection>
+                                        <SkillSection title={'Frameworks'}>
+                                            <SkillItem icon={SiReact} name='ReactJS' />
+                                            <SkillItem icon={SiNodedotjs} name='NodeJS' />
+                                            <SkillItem icon={SiDotnet} name='.NET Core' />
+                                            <SkillItem icon={SiFlask} name='Flask' />
+                                            <SkillItem icon={SiChakraui} name='ChakraUI' />
+                                            <SkillItem icon={SiBootstrap} name='Bootstrap' />
+                                            <SkillItem icon={SiTailwindcss} name='Tailwind CSS' />
+                                        </SkillSection>
+                                    </Stack>
+                                </Card>
+                                <Card>
+                                    <Stack
+                                        direction={['column', 'row']}
+                                        divider={
+                                            <StackDivider borderColor={useColorModeValue('gray.300', 'gray.600')} />
+                                        }
+                                        spacing={8}
+                                        align={'flex-start'}
+                                    >
+                                        <SkillSection title={'Databases'}>
+                                            <SkillItem icon={SiMysql} name='MySQL' />
+                                            <SkillItem icon={SiPostgresql} name='PostgreSQL' />
+                                            <SkillItem icon={SiMongodb} name='MongoDB' />
+                                            <SkillItem icon={SiFirebase} name='Firestore' />
+                                        </SkillSection>
+                                        <SkillSection title={'Other tools'}>
+                                            <SkillItem icon={SiGit} name='Git' />
+                                            <SkillItem icon={SiLatex} name='LaTeX' />
+                                            <SkillItem icon={SiDocker} name='Docker' />
+                                            <SkillItem icon={SiVisualstudiocode} name='VS Code' />
+                                            <SkillItem icon={SiAmazonaws} name='AWS' />
+                                        </SkillSection>
+                                    </Stack>
+                                </Card>
                             </Stack>
                         </Box>
                     </Fade>

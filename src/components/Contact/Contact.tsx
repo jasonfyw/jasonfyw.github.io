@@ -8,12 +8,11 @@ import {
     Badge,
     Text,
     Spacer,
-    Box,
-    useColorModeValue
 } from '@chakra-ui/react';
 import { Element } from 'react-scroll';
 import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import Card from '../generics/Card';
 
 const Contact: FC = () => {
     return (
@@ -24,16 +23,11 @@ const Contact: FC = () => {
                         <Heading as='h2'>Contact me</Heading>
                     </Fade>
                     <Flip bottom>
-                        <Box
+                        <Card
                             maxW={'85vw'}
                             w={'xl'}
-                            bg={useColorModeValue('rgba(255, 255, 255, 0.5)', 'rgba(23, 25, 35, 0.6)')}
-                            boxShadow={'xl'}
-                            rounded={'xl'}
-                            p={6}
                             pb={8}
                             overflow={'hidden'}
-                            backdropFilter={useColorModeValue('blur(1px)', 'blur(2.5px)')}
                         >
                             <Flex textAlign={'center'}>
                                 <Container w='50%'>
@@ -50,7 +44,7 @@ const Contact: FC = () => {
                                     </Link>
                                 </Container>
                             </Flex>
-                        </Box>
+                        </Card>
                     </Flip>
                 </VStack>
             </Container>
