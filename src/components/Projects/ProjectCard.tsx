@@ -31,31 +31,43 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
             <Box 
                 maxW={'325px'}
                 w={'full'}
-                bg={useColorModeValue('white', 'gray.900')}
+                bg={useColorModeValue('rgba(255, 255, 255, 0.5)', 'rgba(23, 25, 35, 0.6)')}
                 opacity={0.9}
                 boxShadow={'xl'}
-                rounded={'md'}
+                rounded={'3xl'}
+                mb={3}
                 p={6}
                 overflow={'hidden'}
+                backdropFilter={useColorModeValue('blur(1px)', 'blur(2.5px)')}
             >
                 
                 <Box
                     h={'175px'}
                     bg={'gray.100'}
-                    mt={-6}
-                    mx={-6}
+                    mt={0}
+                    mx={0}
+                    rounded={'2xl'}
                     mb={6}
-                    pos={'relative'}>
+                    pos={'relative'}
+                    overflow={'hidden'}
+                >
                     <Link href={props.headerLink} isExternal>
                         <Image
+                            rounded={'2xl'}
                             src={props.imageSrc}
                             height={'175px'}
                             width={'100%'}
                             fit={'cover'}
+                            filter={'blur(0.75px)'}
+                            transform={'scale(1.1)'}
+                            transition={'0.3s ease-in-out'}
+                            _hover={{
+                                transform: 'scale(1.15)'
+                            }}
                         />
                     </Link>
                 </Box>
-                <Stack>
+                <Stack px={1}>
                     <Text
                         color={'blue.200'}
                         textTransform={'uppercase'}

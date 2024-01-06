@@ -57,11 +57,12 @@ const Skills: FC = () => {
                                     }
                                     spacing={8}
                                     align={'flex-start'}
-                                    bg={useColorModeValue('white', 'gray.900')}
+                                    bg={useColorModeValue('rgba(255, 255, 255, 0.5)', 'rgba(23, 25, 35, 0.6)')}
                                     opacity={0.9}
                                     p={5}
                                     rounded={'xl'}
                                     boxShadow={'lg'}
+                                    backdropFilter={useColorModeValue('blur(1px)', 'blur(2.5px)')}
                                 >
                                     <SkillSection title={'Languages'}>
                                         <SkillItem icon={SiPython} name='Python' />
@@ -90,11 +91,12 @@ const Skills: FC = () => {
                                     }
                                     spacing={8}
                                     align={'flex-start'}
-                                    bg={useColorModeValue('white', 'gray.900')}
+                                    bg={useColorModeValue('rgba(255, 255, 255, 0.5)', 'rgba(23, 25, 35, 0.6)')}
                                     opacity={0.9}
                                     p={5}
                                     rounded={'xl'}
                                     boxShadow={'lg'}
+                                    backdropFilter={useColorModeValue('blur(1px)', 'blur(2.5px)')}
                                 >
                                     <SkillSection title={'Databases'}>
                                         <SkillItem icon={SiMysql} name='MySQL' />

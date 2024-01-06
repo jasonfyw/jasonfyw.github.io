@@ -10,7 +10,6 @@ import {
     Button,
     Link
 } from '@chakra-ui/react';
-import ParticlesBg from 'particles-bg';
 import ReactTypingEffect from 'react-typing-effect';
 import Fade from 'react-reveal/Fade';
 import Socials from '../global/Socials';
@@ -71,7 +70,6 @@ const Intro: FC = () => {
                 <Box mt={[10, '10vh']}>
                     <DownArrow/>
                 </Box>
-                <ParticlesBg type="cobweb" num={250} color="#5E81AC" bg={true} /> 
             </Container>
         </Element>
     );
