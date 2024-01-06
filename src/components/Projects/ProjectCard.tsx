@@ -13,6 +13,7 @@ import {
     Button
 } from '@chakra-ui/react';
 import Fade from 'react-reveal/Fade';
+import Card from '../generics/Card';
 
 interface ProjectCardProps {
     name: string,
@@ -28,17 +29,12 @@ interface ProjectCardProps {
 const ProjectCard: FC<ProjectCardProps> = (props) => {
     return (
         <Fade bottom duration={500}>
-            <Box 
+            <Card 
                 maxW={'325px'}
                 w={'full'}
-                bg={useColorModeValue('rgba(255, 255, 255, 0.5)', 'rgba(23, 25, 35, 0.6)')}
-                opacity={0.9}
-                boxShadow={'xl'}
-                rounded={'3xl'}
                 mb={3}
-                p={6}
                 overflow={'hidden'}
-                backdropFilter={useColorModeValue('blur(1px)', 'blur(2.5px)')}
+                rounded={'3xl'}
             >
                 
                 <Box
@@ -117,7 +113,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                         </Link>
                     </Box>
                 </Stack>
-            </Box>
+            </Card>
         </Fade>
     );
 };
