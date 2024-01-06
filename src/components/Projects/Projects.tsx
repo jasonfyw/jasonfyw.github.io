@@ -24,11 +24,11 @@ const Projects: FC = () => {
     return (
         <Element name='projects'>
             <Container maxW={'10xl'} p={6.75} mt={20} mb={[10, 20]} px={[0, 10]}>
-                <VStack spacing={8}>
+                <VStack spacing={0}>
                     <Fade>
                         <Heading as='h2'>Featured Projects</Heading>
                     </Fade>
-                    <Wrap spacing='20px' justify='center'>
+                    <Wrap spacing={0} justify='center'>
                         {
                             projectData.slice(0, isMobile ? 6 : 3).map((data) => (
                                 <WrapItem p={5}>
