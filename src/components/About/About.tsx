@@ -59,7 +59,7 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>🚀</Center>
                                     <Text>
-                                        I'm experienced in full-stack web development - particularly with <b>Typescript</b> and <b>Python</b>. <b>ReactJS</b> is my frontend tool of choice and I've worked in backend with <b>NodeJS, .NET Core, Java, Python,</b> and <b>Golang</b>. 
+                                        I'm experienced in full-stack web development - particularly with <b>Typescript</b> and <b>Python</b>. <b>ReactJS</b> is my frontend framework of choice and I've worked in backend with <b>NodeJS, .NET Core, Java, Python,</b> and <b>Golang</b>. 
                                     </Text>
                                 </Flex>
                             </Fade>
