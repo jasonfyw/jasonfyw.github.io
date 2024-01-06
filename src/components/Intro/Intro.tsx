@@ -8,14 +8,15 @@ import {
     useColorModeValue,
     Box,
     Button,
-    Link
+    Link,
+    Icon
 } from '@chakra-ui/react';
 import ReactTypingEffect from 'react-typing-effect';
 import Fade from 'react-reveal/Fade';
 import Socials from '../global/Socials';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { Element } from 'react-scroll';
 import DownArrow from './DownArrow';
+import { FiArrowUpRight } from 'react-icons/fi';
 
 const Intro: FC = () => {
 
@@ -57,7 +58,7 @@ const Intro: FC = () => {
                             variant={'outline'}
                             colorScheme={'cyan'}
                             aria-label={'View Resume'}
-                            rightIcon={<ExternalLinkIcon fontSize={15} mt={0.5}/>}
+                            rightIcon={<Icon as={FiArrowUpRight} fontSize={18} mt={'3px'} />}
                             rounded={'full'}
                             border={'2px'}
                             pb={1}
