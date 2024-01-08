@@ -7,13 +7,30 @@ import {
     PHPBadge,
     PythonBadge,
     ReactBadge,
-    AssemblyBadge
+    AssemblyBadge,
+    DjangoBadge
 } from '../components/Projects/TechBadges';
 import { FiGithub, FiLink } from 'react-icons/fi';
 import { ProjectT } from './types';
 
 
 export const projectData: ProjectT[] = [
+    {
+        name: 'PetPal',
+        id: 'petpal',
+        type: 'Web app',
+        tagline: 'A pet adoption platform for animal shelters',
+        tags: [<ReactBadge />, <DjangoBadge />, <MySQLBadge />],
+        imageSrc: '/petpal.png',
+        description: 'A pet adoption platform for animal shelters and prospective adopters featuring an admin dashboard, a customized application process, a REST API, and a frontend built with Tailwind.',
+        links: [
+            {
+                link: 'https://github.com/leowrites/PetPal',
+                icon: <FiGithub />
+            }
+        ],
+        headerLink: 'https://github.com/leowrites/PetPal'
+    },
     {
         name: 'Street Savvy',
         id: 'street-savvy',
