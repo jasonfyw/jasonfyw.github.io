@@ -37,5 +37,9 @@ export const AssemblyBadge = () => {
 }
 
 export const DjangoBadge = () => {
-    return <Badge colorScheme={'blue'}>Django</Badge>
+    return <Badge colorScheme={'green'}>Django</Badge>
+}
+
+export const TypescriptBadge = () => {
+    return <Badge colorScheme={'blue'}>Typescript</Badge>
 }
