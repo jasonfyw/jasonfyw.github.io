@@ -7,7 +7,9 @@ import {
     PHPBadge,
     PythonBadge,
     ReactBadge,
-    AssemblyBadge
+    AssemblyBadge,
+    DjangoBadge,
+    TypescriptBadge
 } from '../components/Projects/TechBadges';
 import { FiGithub, FiLink } from 'react-icons/fi';
 import { ProjectT } from './types';
@@ -15,11 +17,27 @@ import { ProjectT } from './types';
 
 export const projectData: ProjectT[] = [
     {
+        name: 'PetPal',
+        id: 'petpal',
+        type: 'Web app',
+        tagline: 'A pet adoption platform for animal shelters',
+        tags: [<ReactBadge />, <DjangoBadge />, <MySQLBadge />],
+        imageSrc: '/petpal.png',
+        description: 'A pet adoption platform for animal shelters and prospective adopters featuring an admin dashboard, a customized application process, a REST API, and a frontend built with Tailwind.',
+        links: [
+            {
+                link: 'https://github.com/leowrites/PetPal',
+                icon: <FiGithub />
+            }
+        ],
+        headerLink: 'https://github.com/leowrites/PetPal'
+    },
+    {
         name: 'Street Savvy',
         id: 'street-savvy',
         type: 'Web app',
         tagline: 'Suggests places to visit tailored using your preferences',
-        tags: [<ReactBadge />, <FirebaseBadge />, <PythonBadge />],
+        tags: [<ReactBadge />, <TypescriptBadge />, <FirebaseBadge />, <PythonBadge />],
         imageSrc: '/street-savvy.jpg',
         description: 'A web app that suggests places to visit in Toronto based on your preferences using a custom recommendation engine and data from the Google Places API. Submitted to UofTHacks X.',
         links: [
@@ -51,7 +69,7 @@ export const projectData: ProjectT[] = [
         id: 'fourier-series',
         type: 'Web app',
         tagline: 'Demonstrating the Fourier series by approximating user-inputted line drawings',
-        tags: [<ReactBadge />],
+        tags: [<ReactBadge />, <TypescriptBadge />],
         imageSrc: '/fourier-series.png',
         description: 'An interactive React web app that demonstrates how an arbitrary user-inputted line drawing can be approximated using the Fourier series. Animations are rendered by the P5 library using efficiently implemented computations.',
         links: [
@@ -107,7 +125,7 @@ export const projectData: ProjectT[] = [
         id: 'photography-portfolio',
         type: 'Website',
         tagline: 'A portfolio website for my photography',
-        tags: [<ReactBadge />],
+        tags: [<ReactBadge />, <TypescriptBadge />],
         imageSrc: '/photography-portfolio.png',
         description: 'A portfolio website for my photography work, built with React and Typescript and styled with ChakraUI. Features a custom-built gallery, e-commerce functionality, and 3D map integration with Mapbox.',
         links: [
@@ -122,7 +140,7 @@ export const projectData: ProjectT[] = [
         id: 'linky',
         type: 'Web app',
         tagline: 'A modern, lightweight link shortener',
-        tags: [<ReactBadge />, <NodeBadge />, <MongoBadge />],
+        tags: [<ReactBadge />, <TypescriptBadge />, <NodeBadge />, <MongoBadge />],
         imageSrc: '/linky.png',
         description: 'A lightweight and simple to use link shortener web app with a NodeJS REST API and a frontend built with ChakraUI. Features additional functions like QR codes and alternative URL formats.',
         links: [

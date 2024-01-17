@@ -35,3 +35,11 @@ export const FirebaseBadge = () => {
 export const AssemblyBadge = () => {
     return <Badge colorScheme={'orange'}>Assembly</Badge>
 }
+
+export const DjangoBadge = () => {
+    return <Badge colorScheme={'green'}>Django</Badge>
+}
+
+export const TypescriptBadge = () => {
+    return <Badge colorScheme={'blue'}>Typescript</Badge>
+}
