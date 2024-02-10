@@ -32,7 +32,8 @@ import {
     SiDotnet,
     SiAmazonaws,
     SiTailwindcss,
-    SiChakraui
+    SiChakraui,
+    SiDjango
 } from 'react-icons/si';
 import { Element } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
@@ -75,6 +76,7 @@ const Skills: FC = () => {
                                             <SkillItem icon={SiNodedotjs} name='NodeJS' />
                                             <SkillItem icon={SiDotnet} name='.NET Core' />
                                             <SkillItem icon={SiFlask} name='Flask' />
+                                            <SkillItem icon={SiDjango} name='Django' />
                                             <SkillItem icon={SiChakraui} name='ChakraUI' />
                                             <SkillItem icon={SiBootstrap} name='Bootstrap' />
                                             <SkillItem icon={SiTailwindcss} name='Tailwind CSS' />
