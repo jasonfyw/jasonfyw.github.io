@@ -33,7 +33,8 @@ import {
     SiAmazonaws,
     SiTailwindcss,
     SiChakraui,
-    SiDjango
+    SiDjango,
+    SiPostman
 } from 'react-icons/si';
 import { Element } from 'react-scroll';
 import Fade from 'react-reveal/Fade';
@@ -104,6 +105,7 @@ const Skills: FC = () => {
                                             <SkillItem icon={SiDocker} name='Docker' />
                                             <SkillItem icon={SiVisualstudiocode} name='VS Code' />
                                             <SkillItem icon={SiAmazonaws} name='AWS' />
+                                            <SkillItem icon={SiPostman} name='Postman' />
                                         </SkillSection>
                                     </Stack>
                                 </Card>
