@@ -61,6 +61,7 @@
         ]
     },
     "devDependencies": {
-        "@types/react-typing-effect": "^2.0.3"
+        "@types/react-typing-effect": "^2.0.3",
+        "prettier": "^3.2.5"
     }
 }
