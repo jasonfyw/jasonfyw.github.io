@@ -21,11 +21,11 @@ const BackButton = () => {
             window.removeEventListener('scroll', handleScroll)
         }
     }, [])
-    
+
     return (
         <Link to={'/'}>
             <IconButton
-                icon={<ArrowBackIcon/>}
+                icon={<ArrowBackIcon />}
                 aria-label='Back to homepage'
                 variant={'outline'}
                 colorScheme={'teal'}

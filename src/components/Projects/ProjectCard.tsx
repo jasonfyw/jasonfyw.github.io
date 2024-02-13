@@ -1,4 +1,4 @@
-import { FC, ReactElement } from 'react';
+import { FC, ReactElement } from 'react'
 import {
     Box,
     useColorModeValue,
@@ -10,33 +10,32 @@ import {
     Flex,
     Spacer,
     Link,
-    Button
-} from '@chakra-ui/react';
-import Fade from 'react-reveal/Fade';
-import Card from '../generics/Card';
+    Button,
+} from '@chakra-ui/react'
+import Fade from 'react-reveal/Fade'
+import Card from '../generics/Card'
 
 interface ProjectCardProps {
-    name: string,
-    type: string,
-    id: string,
-    tags: Array<ReactElement>,
-    imageSrc: string,
-    description: string,
-    links?: Array<ReactElement>,
+    name: string
+    type: string
+    id: string
+    tags: Array<ReactElement>
+    imageSrc: string
+    description: string
+    links?: Array<ReactElement>
     headerLink: string
 }
 
-const ProjectCard: FC<ProjectCardProps> = (props) => {
+const ProjectCard: FC<ProjectCardProps> = props => {
     return (
         <Fade bottom duration={500}>
-            <Card 
+            <Card
                 maxW={'325px'}
                 w={'full'}
                 mb={3}
                 overflow={'hidden'}
                 rounded={'3xl'}
             >
-                
                 <Box
                     h={'175px'}
                     bg={'gray.100'}
@@ -58,7 +57,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                             transform={'scale(1.1)'}
                             transition={'0.3s ease-in-out'}
                             _hover={{
-                                transform: 'scale(1.15)'
+                                transform: 'scale(1.15)',
                             }}
                         />
                     </Link>
@@ -82,21 +81,15 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                             {props.name}
                         </Heading>
                         <Spacer />
-                        <HStack>
-                            {props.links}
-                        </HStack>
+                        <HStack>{props.links}</HStack>
                     </Flex>
-                    <HStack>
-                        {props.tags}
-                    </HStack>
-                    <Text color={'gray.500'}>
-                        {props.description}
-                    </Text>
+                    <HStack>{props.tags}</HStack>
+                    <Text color={'gray.500'}>{props.description}</Text>
                     <Box>
                         <Link
                             href={`#/projects/${props.id}`}
                             _hover={{
-                                textDecor: 'none'
+                                textDecor: 'none',
                             }}
                         >
                             <Button
@@ -115,7 +108,7 @@ const ProjectCard: FC<ProjectCardProps> = (props) => {
                 </Stack>
             </Card>
         </Fade>
-    );
-};
+    )
+}
 
-export default ProjectCard;
+export default ProjectCard

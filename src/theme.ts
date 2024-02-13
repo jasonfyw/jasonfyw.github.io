@@ -1,5 +1,3 @@
-
-
 import { extendTheme } from '@chakra-ui/react'
 
 const config = extendTheme({
@@ -12,19 +10,19 @@ const customTheme = extendTheme({
         colors: {
             bg: {
                 default: '#ECEFF4',
-                _dark: '#1E2428'
-            }
-        }
+                _dark: '#1E2428',
+            },
+        },
     },
     styles: {
         global: {
             'html, body': {
                 fontFamily: 'mundial, sans-serif',
                 fontWeight: 300,
-                fontStyle: 'normal'
-            }
-        }
-    }
+                fontStyle: 'normal',
+            },
+        },
+    },
 })
 
 const theme = extendTheme(config, customTheme)
