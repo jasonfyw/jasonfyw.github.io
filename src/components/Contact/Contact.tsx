@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC } from 'react'
 import {
     Container,
     VStack,
@@ -8,11 +8,11 @@ import {
     Badge,
     Text,
     Spacer,
-} from '@chakra-ui/react';
-import { Element } from 'react-scroll';
-import Flip from 'react-reveal/Flip';
-import Fade from 'react-reveal/Fade';
-import Card from '../generics/Card';
+} from '@chakra-ui/react'
+import { Element } from 'react-scroll'
+import Flip from 'react-reveal/Flip'
+import Fade from 'react-reveal/Fade'
+import Card from '../generics/Card'
 
 const Contact: FC = () => {
     return (
@@ -23,24 +23,27 @@ const Contact: FC = () => {
                         <Heading as='h2'>Contact me</Heading>
                     </Fade>
                     <Flip bottom>
-                        <Card
-                            maxW={'85vw'}
-                            w={'xl'}
-                            pb={8}
-                            overflow={'hidden'}
-                        >
+                        <Card maxW={'85vw'} w={'xl'} pb={8} overflow={'hidden'}>
                             <Flex textAlign={'center'}>
                                 <Container w='50%'>
-                                    <Link href="mailto:jason@jasonfyw.com">
-                                        <Badge colorScheme='green'>Personal</Badge>
-                                        <Text textDecoration={'underline'}>jason@jasonfyw.com</Text>
+                                    <Link href='mailto:jason@jasonfyw.com'>
+                                        <Badge colorScheme='green'>
+                                            Personal
+                                        </Badge>
+                                        <Text textDecoration={'underline'}>
+                                            jason@jasonfyw.com
+                                        </Text>
                                     </Link>
                                 </Container>
                                 <Spacer />
                                 <Container w='50%'>
-                                    <Link href="mailto:jsn.wang@mail.utoronto.ca">
-                                        <Badge colorScheme='orange'>Academic</Badge>
-                                        <Text textDecoration={'underline'}>jsn.wang@mail.utoronto.ca</Text>
+                                    <Link href='mailto:jsn.wang@mail.utoronto.ca'>
+                                        <Badge colorScheme='orange'>
+                                            Academic
+                                        </Badge>
+                                        <Text textDecoration={'underline'}>
+                                            jsn.wang@mail.utoronto.ca
+                                        </Text>
                                     </Link>
                                 </Container>
                             </Flex>
@@ -49,7 +52,7 @@ const Contact: FC = () => {
                 </VStack>
             </Container>
         </Element>
-    );
-};
+    )
+}
 
-export default Contact;
+export default Contact

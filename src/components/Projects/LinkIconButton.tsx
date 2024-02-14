@@ -1,12 +1,12 @@
-import { FC, ReactElement } from "react"
-import { IconButton, Link } from "@chakra-ui/react"
+import { FC, ReactElement } from 'react'
+import { IconButton, Link } from '@chakra-ui/react'
 
 interface LinkIconButtonProps {
-    href: string,
+    href: string
     icon: ReactElement
 }
 
-const LinkIconButton: FC<LinkIconButtonProps> = (props) => {
+const LinkIconButton: FC<LinkIconButtonProps> = props => {
     return (
         <Link href={props.href} isExternal>
             <IconButton

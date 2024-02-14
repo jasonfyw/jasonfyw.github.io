@@ -1,13 +1,9 @@
-import React from 'react';
-import {
-    Container,
-    Heading,
-    VStack,
-} from '@chakra-ui/react';
-import Fade from 'react-reveal/Fade';
-import { Element } from 'react-scroll';
-import ExperienceCard from './ExperienceCard';
-import { experienceData } from '../../data/experienceData';
+import React from 'react'
+import { Container, Heading, VStack } from '@chakra-ui/react'
+import Fade from 'react-reveal/Fade'
+import { Element } from 'react-scroll'
+import ExperienceCard from './ExperienceCard'
+import { experienceData } from '../../data/experienceData'
 
 const Experience = () => {
     return (
@@ -17,26 +13,24 @@ const Experience = () => {
                     <Fade>
                         <Heading as='h2'>Experience</Heading>
                     </Fade>
-                    {
-                        experienceData.map((experience, i) => {
-                            return (
-                                <Fade bottom cascade duration={500} key={i}>
-                                    <ExperienceCard
-                                        title={experience.title}
-                                        company={experience.company}
-                                        location={experience.location}
-                                        dates={experience.dates}
-                                        description={experience.description}
-                                        logoSrc={experience.logoSrc}
-                                    />
-                                </Fade>
-                            );
-                        })
-                    }
+                    {experienceData.map((experience, i) => {
+                        return (
+                            <Fade bottom cascade duration={500} key={i}>
+                                <ExperienceCard
+                                    title={experience.title}
+                                    company={experience.company}
+                                    location={experience.location}
+                                    dates={experience.dates}
+                                    description={experience.description}
+                                    logoSrc={experience.logoSrc}
+                                />
+                            </Fade>
+                        )
+                    })}
                 </VStack>
             </Container>
         </Element>
-    );
-};
+    )
+}
 
-export default Experience;
+export default Experience

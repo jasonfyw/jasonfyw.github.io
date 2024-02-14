@@ -1,5 +1,5 @@
-import { Box, useColorModeValue } from '@chakra-ui/react';
-import React from 'react';
+import { Box, useColorModeValue } from '@chakra-ui/react'
+import React from 'react'
 
 const Background = () => {
     const dotPattern = encodeURIComponent(`
@@ -24,11 +24,11 @@ const Background = () => {
             left={0}
             bg='red'
             background={`url("data:image/svg+xml,${dotPattern}"), ${gradient}`}
-            backgroundSize="30px 30px, cover"
-            backgroundRepeat="repeat, no-repeat"
+            backgroundSize='30px 30px, cover'
+            backgroundRepeat='repeat, no-repeat'
             color='white'
         />
-    );
-};
+    )
+}
 
-export default Background;
+export default Background
