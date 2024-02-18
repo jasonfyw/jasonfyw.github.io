@@ -58,7 +58,7 @@ const About: FC = () => {
                                             co-op)
                                         </b>{' '}
                                         and <b>Major in Cognitive Science</b>,
-                                        graduating class of 2025.
+                                        graduating class of 2026.
                                     </Text>
                                 </Flex>
                             </Fade>

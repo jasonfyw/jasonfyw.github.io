@@ -51,7 +51,7 @@ const Intro: FC = () => {
                             letterSpacing={1.1}
                         >
                             Computer Science + Cognitive Science @ University of
-                            Toronto '25
+                            Toronto '26
                         </Text>
                         <Box p={4}>
                             <Socials
