@@ -22,7 +22,6 @@ const Contact: FC = () => {
                     <Fade>
                         <Heading as='h2'>Contact me</Heading>
                     </Fade>
-                    <Flip bottom>
                         <Card maxW={'85vw'} w={'xl'} pb={8} overflow={'hidden'}>
                             <Flex textAlign={'center'}>
                                 <Container w='50%'>
@@ -48,7 +47,6 @@ const Contact: FC = () => {
                                 </Container>
                             </Flex>
                         </Card>
-                    </Flip>
                 </VStack>
             </Container>
         </Element>
