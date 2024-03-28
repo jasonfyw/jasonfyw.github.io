@@ -71,9 +71,7 @@ const About: FC = () => {
                                             Software Engineering Intern at
                                             NerveX
                                         </b>{' '}
-                                        working in full-stack development. I am
-                                        currently seeking an internship starting
-                                        Summer 2024!
+                                        working in full-stack development. I also have experience as a developer at various student organizations and startups.
                                     </Text>
                                 </Flex>
                             </Fade>
@@ -117,7 +115,6 @@ const About: FC = () => {
                                             photography portfolio to learn more
                                             about my creative work.
                                         </Link>
-                                        .
                                     </Text>
                                 </Flex>
                             </Fade>
