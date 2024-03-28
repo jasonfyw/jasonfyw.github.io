@@ -1,4 +1,7 @@
 import { ExperienceData } from './types'
+import nerveXLogo from '../media/nervex_logo.jpeg'
+import blueprintLogo from '../media/blueprint_logo.jpeg'
+import helloFairLogo from '../media/hellofair_logo.jpeg'
 
 export const experienceData: ExperienceData[] = [
     {
@@ -8,8 +11,7 @@ export const experienceData: ExperienceData[] = [
         dates: 'May 2023 - Present',
         description:
             'Enhanced API efficiency, developed a medical charting library, and streamlined data pipelines using modern technologies like .NET Core, ReactJS, TypeScript, Docker, and AWS Lambda.',
-        logoSrc:
-            'https://media.licdn.com/dms/image/D560BAQExY-V4d9amfQ/company-logo_200_200/0/1684625011088/nervex_logo?e=1710374400&v=beta&t=ofN27UkpTnAC6fAKVHb8pfGcC2vAO64OnJofwVMKv8k',
+        logoSrc: nerveXLogo,
     },
     {
         title: 'Senior Project Developer',
@@ -18,8 +20,7 @@ export const experienceData: ExperienceData[] = [
         dates: 'September 2023 - Present',
         description:
             'Spearheaded the development of a full-stack web and mobile application for the Center For Dreams, a non-profit focusing on educational and social integration programs for individuals with developmental disabilities.',
-        logoSrc:
-            'https://media.licdn.com/dms/image/C4E0BAQFGaJZzEyRmVA/company-logo_200_200/0/1630623786048?e=1710374400&v=beta&t=CWIxqomkL9pGSvvv74RrHc_wyAvdKkjS84uddYM3HXs',
+        logoSrc: blueprintLogo
     },
     {
         title: 'Web Developer',
@@ -38,6 +39,6 @@ export const experienceData: ExperienceData[] = [
         description:
             'Developed a prototype paper-trading web application using NextJS and Golang with live price information and trading functionality with mock accounts stored in MongoDB.',
         logoSrc:
-            'https://media.licdn.com/dms/image/C4E0BAQEXf4eK93tg0A/company-logo_200_200/0/1630637565905/hellofair_logo?e=1710374400&v=beta&t=SvWGEXFdeV7oV1hq4Nm84ybXXIKVfqmG-8qFttQ5dfc',
+            helloFairLogo,
     },
 ]
