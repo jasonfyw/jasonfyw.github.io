@@ -43,8 +43,7 @@ const About: FC = () => {
                                         Hi, I'm Jason and I'm a third year co-op
                                         student at the{' '}
                                         <b>University of Toronto</b> with a
-                                        passion for <b>Software Engineering</b>{' '}
-                                        and all things technology!
+                                        passion for <b>Software Engineering</b>
                                     </Text>
                                 </Flex>
                             </Fade>
@@ -66,12 +65,12 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>👨🏻‍💻</Center>
                                     <Text>
-                                        Over the course of Summer 2023, I was a{' '}
+                                        I am currently a <b>Software Developer at theScore</b> and I have previously held a position as a{' '}
                                         <b>
                                             Software Engineering Intern at
                                             NerveX
                                         </b>{' '}
-                                        working in full-stack development. I also have experience as a developer at various student organizations and startups.
+                                        working in full-stack development. I also have experience as a developer at various student organizations, including <b>UofT Blueprint, UTMIST,</b> and <b>UofT AI</b>.
                                     </Text>
                                 </Flex>
                             </Fade>
@@ -85,8 +84,7 @@ const About: FC = () => {
                                         <b>ReactJS</b> is my frontend framework
                                         of choice and I've worked in backend
                                         with{' '}
-                                        <b>NodeJS, .NET Core, Java, Python,</b>{' '}
-                                        and <b>Golang</b>.
+                                        <b>NodeJS, .NET Core, Java,</b> and <b>Python</b>.
                                     </Text>
                                 </Flex>
                             </Fade>
