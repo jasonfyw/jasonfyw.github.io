@@ -40,10 +40,10 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>👋🏼</Center>
                                     <Text>
-                                        Hi, I'm Jason and I'm a third year co-op
+                                        Hi, I'm Jason and I'm a fourth year co-op
                                         student at the{' '}
                                         <b>University of Toronto</b> with a
-                                        passion for <b>Software Engineering</b>
+                                        passion for <b>Software Engineering</b>.
                                     </Text>
                                 </Flex>
                             </Fade>
