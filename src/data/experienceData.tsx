@@ -12,7 +12,7 @@ export const experienceData: ExperienceData[] = [
         location: 'Toronto, ON',
         dates: 'May 2024 - Present',
         description:
-            'Contributing to the front-end development of software for the Retail Web Team for deployment across devices in PENN Entertainment retail properties.',
+            'Contributing to the front-end development of software for the Retail Web Team for deployment across devices in PENN Entertainment retail properties and improving performance, observability, and developer experience across front-end applications for the Platform Web Team.',
         logoSrc: theScoreLogo
     },
     {

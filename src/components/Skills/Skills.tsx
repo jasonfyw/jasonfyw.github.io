@@ -34,6 +34,10 @@ import {
     SiChakraui,
     SiDjango,
     SiPostman,
+    SiDatadog,
+    SiStorybook,
+    SiGraphql,
+    SiNextdotjs,
 } from 'react-icons/si'
 import { Element } from 'react-scroll'
 import Fade from 'react-reveal/Fade'
@@ -79,6 +83,7 @@ const Skills: FC = () => {
                                 </SkillSection>
                                 <SkillSection title={'Frameworks'}>
                                     <SkillItem icon={SiReact} name='ReactJS' />
+                                    <SkillItem icon={SiNextdotjs} name='NextJS' />
                                     <SkillItem
                                         icon={SiNodedotjs}
                                         name='NodeJS'
@@ -132,6 +137,10 @@ const Skills: FC = () => {
                                         icon={SiFirebase}
                                         name='Firestore'
                                     />
+                                    <SkillItem
+                                        icon={SiGraphql}
+                                        name='GraphQL'
+                                    />
                                 </SkillSection>
                                 <SkillSection title={'Other tools'}>
                                     <SkillItem icon={SiGit} name='Git' />
@@ -145,6 +154,14 @@ const Skills: FC = () => {
                                     <SkillItem
                                         icon={SiPostman}
                                         name='Postman'
+                                    />
+                                    <SkillItem
+                                        icon={SiDatadog}
+                                        name='Datadog'
+                                    />
+                                    <SkillItem
+                                        icon={SiStorybook}
+                                        name='Storybook'
                                     />
                                 </SkillSection>
                             </Stack>
