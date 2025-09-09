@@ -40,7 +40,7 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>👋🏼</Center>
                                     <Text>
-                                        Hi, I'm Jason and I'm a fourth year co-op
+                                        Hi, I'm Jason and I'm a final year co-op
                                         student at the{' '}
                                         <b>University of Toronto</b> with a
                                         passion for <b>Software Engineering</b>.
@@ -65,7 +65,7 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>👨🏻‍💻</Center>
                                     <Text>
-                                        I am currently a <b>Software Developer at theScore</b> and I have previously held a position as a{' '}
+                                        I have interned as a <b>Software Developer at theScore</b>, as well as a{' '}
                                         <b>
                                             Software Engineering Intern at
                                             NerveX
@@ -81,7 +81,7 @@ const About: FC = () => {
                                         I'm experienced in full-stack web
                                         development - particularly with{' '}
                                         <b>Typescript</b> and <b>Python</b>.{' '}
-                                        <b>ReactJS</b> is my frontend framework
+                                        <b>ReactJS/NextJS</b> is my frontend framework
                                         of choice and I've worked in backend
                                         with{' '}
                                         <b>NodeJS, .NET Core, Java,</b> and <b>Python</b>.
