@@ -4,6 +4,14 @@ export const ReactBadge = () => {
     return <Badge colorScheme={'teal'}>ReactJS</Badge>
 }
 
+export const NextBadge = () => {
+    return <Badge colorScheme={'teal'}>NextJS</Badge>
+}
+
+export const FastAPIBadge = () => {
+    return <Badge colorScheme={'green'}>FastAPI</Badge>
+}
+
 export const PythonBadge = () => {
     return <Badge colorScheme={'blue'}>Python</Badge>
 }
