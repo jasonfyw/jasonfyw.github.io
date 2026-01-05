@@ -1,20 +1,37 @@
 import {
     FirebaseBadge,
-    JavaBadge,
     MongoBadge,
     MySQLBadge,
-    NodeBadge,
-    PHPBadge,
     PythonBadge,
     ReactBadge,
     AssemblyBadge,
     DjangoBadge,
     TypescriptBadge,
+    NextBadge,
+    FastAPIBadge,
+    PostgreSQLBadge,
 } from '../components/Projects/TechBadges'
 import { FiGithub, FiLink } from 'react-icons/fi'
 import { ProjectT } from './types'
 
 export const projectData: ProjectT[] = [
+    {
+        name: 'FinQuest',
+        id: 'finquest',
+        type: 'Web app',
+        tagline: 'A financial education platform for Gen Z',
+        tags: [<NextBadge />, <TypescriptBadge />, <FastAPIBadge />, <PostgreSQLBadge />],
+        imageSrc: '/finquest.png',
+        description:
+            'A gamified, AI-powered financial education platform for Gen Z featuring portfolio management with realtime financial data and interactive, personalized quizzes.',
+        links: [
+            {
+                link: 'https://github.com/dcsil/FinQuest',
+                icon: <FiGithub />,
+            },
+        ],
+        headerLink: 'https://github.com/dcsil/FinQuest',
+    },
     {
         name: 'PetPal',
         id: 'petpal',
@@ -26,11 +43,11 @@ export const projectData: ProjectT[] = [
             'A pet adoption platform for animal shelters and prospective adopters featuring an admin dashboard, a customized application process, a REST API, and a frontend built with Tailwind.',
         links: [
             {
-                link: 'https://github.com/leowrites/PetPal',
+                link: 'https://github.com/leowrites/PetPal/tree/main/P3',
                 icon: <FiGithub />,
             },
         ],
-        headerLink: 'https://github.com/leowrites/PetPal',
+        headerLink: 'https://github.com/leowrites/PetPal/tree/main/P3',
     },
     {
         name: 'Street Savvy',
@@ -111,27 +128,27 @@ export const projectData: ProjectT[] = [
         ],
         headerLink: 'https://github.com/jasonfyw/orbital-sim',
     },
-    {
-        name: 'PLISMUN',
-        id: 'plismun',
-        type: 'Website',
-        tagline: 'The official website for PLISMUN',
-        tags: [<PHPBadge />, <MySQLBadge />],
-        imageSrc: '/plismun.jpg',
-        description:
-            "A platform for my high school's annual international MUN conference, built from the ground up providing a delegate application system, admin tools, analytics, and resource hub. It managed hundreds of users from dozens of countries.",
-        links: [
-            {
-                link: 'https://github.com/jasonfyw/plismun',
-                icon: <FiGithub />,
-            },
-            {
-                link: 'https://plismun.com',
-                icon: <FiLink />,
-            },
-        ],
-        headerLink: 'https://plismun.com',
-    },
+    // {
+    //     name: 'PLISMUN',
+    //     id: 'plismun',
+    //     type: 'Website',
+    //     tagline: 'The official website for PLISMUN',
+    //     tags: [<PHPBadge />, <MySQLBadge />],
+    //     imageSrc: '/plismun.jpg',
+    //     description:
+    //         "A platform for my high school's annual international MUN conference, built from the ground up providing a delegate application system, admin tools, analytics, and resource hub. It managed hundreds of users from dozens of countries.",
+    //     links: [
+    //         {
+    //             link: 'https://github.com/jasonfyw/plismun',
+    //             icon: <FiGithub />,
+    //         },
+    //         {
+    //             link: 'https://plismun.com',
+    //             icon: <FiLink />,
+    //         },
+    //     ],
+    //     headerLink: 'https://plismun.com',
+    // },
     {
         name: 'Photography Portfolio',
         id: 'photography-portfolio',
@@ -148,50 +165,50 @@ export const projectData: ProjectT[] = [
             },
         ],
     },
-    {
-        name: 'Linky',
-        id: 'linky',
-        type: 'Web app',
-        tagline: 'A modern, lightweight link shortener',
-        tags: [
-            <ReactBadge />,
-            <TypescriptBadge />,
-            <NodeBadge />,
-            <MongoBadge />,
-        ],
-        imageSrc: '/linky.png',
-        description:
-            'A lightweight and simple to use link shortener web app with a NodeJS REST API and a frontend built with ChakraUI. Features additional functions like QR codes and alternative URL formats.',
-        links: [
-            {
-                link: 'https://github.com/jasonfyw/linky',
-                icon: <FiGithub />,
-            },
-            {
-                link: 'https://lnky.to',
-                icon: <FiLink />,
-            },
-        ],
-        headerLink: 'https://lnky.to',
-    },
-    {
-        name: 'Blogging Application',
-        id: 'blogging-app',
-        type: 'Web app',
-        tagline:
-            'Java blogging application built using CLEAN architecture and SOLID principles',
-        tags: [<JavaBadge />],
-        imageSrc: '/blogging-app.jpg',
-        description:
-            'Our group project for CSC207 - a blogging website where users can post text content and follow other accounts. Designed and built according to CLEAN architecture and SOLID principles.',
-        links: [
-            {
-                link: 'https://github.com/jasonfyw/csc207-blogging-app',
-                icon: <FiGithub />,
-            },
-        ],
-        headerLink: 'https://github.com/jasonfyw/csc207-blogging-app',
-    },
+    // {
+    //     name: 'Linky',
+    //     id: 'linky',
+    //     type: 'Web app',
+    //     tagline: 'A modern, lightweight link shortener',
+    //     tags: [
+    //         <ReactBadge />,
+    //         <TypescriptBadge />,
+    //         <NodeBadge />,
+    //         <MongoBadge />,
+    //     ],
+    //     imageSrc: '/linky.png',
+    //     description:
+    //         'A lightweight and simple to use link shortener web app with a NodeJS REST API and a frontend built with ChakraUI. Features additional functions like QR codes and alternative URL formats.',
+    //     links: [
+    //         {
+    //             link: 'https://github.com/jasonfyw/linky',
+    //             icon: <FiGithub />,
+    //         },
+    //         {
+    //             link: 'https://lnky.to',
+    //             icon: <FiLink />,
+    //         },
+    //     ],
+    //     headerLink: 'https://lnky.to',
+    // },
+    // {
+    //     name: 'Blogging Application',
+    //     id: 'blogging-app',
+    //     type: 'Web app',
+    //     tagline:
+    //         'Java blogging application built using CLEAN architecture and SOLID principles',
+    //     tags: [<JavaBadge />],
+    //     imageSrc: '/blogging-app.jpg',
+    //     description:
+    //         'Our group project for CSC207 - a blogging website where users can post text content and follow other accounts. Designed and built according to CLEAN architecture and SOLID principles.',
+    //     links: [
+    //         {
+    //             link: 'https://github.com/jasonfyw/csc207-blogging-app',
+    //             icon: <FiGithub />,
+    //         },
+    //     ],
+    //     headerLink: 'https://github.com/jasonfyw/csc207-blogging-app',
+    // },
     {
         name: 'Breakout in MIPS',
         id: 'breakout-asm',
