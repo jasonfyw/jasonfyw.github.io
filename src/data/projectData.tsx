@@ -20,7 +20,7 @@ export const projectData: ProjectT[] = [
         id: 'finquest',
         type: 'Web app',
         tagline: 'A financial education platform for Gen Z',
-        tags: [<NextBadge />, <TypescriptBadge />, <FastAPIBadge />, <PostgreSQLBadge />],
+        tags: [<NextBadge />, <TypescriptBadge />, <FastAPIBadge />],
         imageSrc: '/finquest.png',
         description:
             'A gamified, AI-powered financial education platform for Gen Z featuring portfolio management with realtime financial data and interactive, personalized quizzes.',
