@@ -9,7 +9,6 @@ import {
     TypescriptBadge,
     NextBadge,
     FastAPIBadge,
-    PostgreSQLBadge,
 } from '../components/Projects/TechBadges'
 import { FiGithub, FiLink } from 'react-icons/fi'
 import { ProjectT } from './types'
