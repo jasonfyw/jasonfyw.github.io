@@ -28,6 +28,10 @@ export const MySQLBadge = () => {
     return <Badge colorScheme={'orange'}>MySQL</Badge>
 }
 
+export const PostgreSQLBadge = () => {
+    return <Badge colorScheme={'blue'}>PostgreSQL</Badge>
+}
+
 export const MongoBadge = () => {
     return <Badge colorScheme={'green'}>MongoDB</Badge>
 }

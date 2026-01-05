@@ -9,6 +9,7 @@ import {
     TypescriptBadge,
     NextBadge,
     FastAPIBadge,
+    PostgreSQLBadge,
 } from '../components/Projects/TechBadges'
 import { FiGithub, FiLink } from 'react-icons/fi'
 import { ProjectT } from './types'
@@ -19,7 +20,7 @@ export const projectData: ProjectT[] = [
         id: 'finquest',
         type: 'Web app',
         tagline: 'A financial education platform for Gen Z',
-        tags: [<NextBadge />, <FastAPIBadge />],
+        tags: [<NextBadge />, <TypescriptBadge />, <FastAPIBadge />, <PostgreSQLBadge />],
         imageSrc: '/finquest.png',
         description:
             'A gamified, AI-powered financial education platform for Gen Z featuring portfolio management with realtime financial data and interactive, personalized quizzes.',
