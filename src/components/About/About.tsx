@@ -40,8 +40,7 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>👋🏼</Center>
                                     <Text>
-                                        Hi, I'm Jason and I'm a final year co-op
-                                        student at the{' '}
+                                        Hi, I'm Jason and I'm a final year student at the{' '}
                                         <b>University of Toronto</b> with a
                                         passion for <b>Software Engineering</b>.
                                     </Text>
@@ -65,12 +64,7 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>👨🏻‍💻</Center>
                                     <Text>
-                                        I have interned as a <b>Software Developer at theScore</b>, as well as a{' '}
-                                        <b>
-                                            Software Engineering Intern at
-                                            NerveX
-                                        </b>{' '}
-                                        working in full-stack development. I also have experience as a developer at various student organizations, including <b>UofT Blueprint, UTMIST,</b> and <b>UofT AI</b>.
+                                        I am currently interning as a Software Engineer at <b>Deep Genomics</b>, with previous Software Development experiences at <b>theScore</b>, <b>NerveX</b>, and the <b>University of Toronto</b>. I also have experience as a developer at various student organizations, including <b>UofT Blueprint, UTMIST,</b> and <b>UofT AI</b>.
                                     </Text>
                                 </Flex>
                             </Fade>
