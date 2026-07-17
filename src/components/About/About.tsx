@@ -40,23 +40,8 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>👋🏼</Center>
                                     <Text>
-                                        Hi, I'm Jason and I'm a final year student at the{' '}
-                                        <b>University of Toronto</b> with a
-                                        passion for <b>Software Engineering</b>.
-                                    </Text>
-                                </Flex>
-                            </Fade>
-                            <Fade bottom cascade duration={500}>
-                                <Flex>
-                                    <Center p={4}>🎓</Center>
-                                    <Text>
-                                        I'm pursuing an HBSc with a{' '}
-                                        <b>
-                                            Specialist in Computer Science (ASIP
-                                            co-op)
-                                        </b>{' '}
-                                        and <b>Major in Cognitive Science</b>,
-                                        graduating class of 2026.
+                                        Hi, I'm Jason! I'm a software engineer and recent graduate of the{' '}
+                                        <b>University of Toronto</b> where I studied Computer Science and Cognitive Science.
                                     </Text>
                                 </Flex>
                             </Fade>
@@ -64,7 +49,7 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>👨🏻‍💻</Center>
                                     <Text>
-                                        I am currently interning as a Software Engineer at <b>Deep Genomics</b>, with previous Software Development experiences at <b>theScore</b>, <b>NerveX</b>, and the <b>University of Toronto</b>. I also have experience as a developer at various student organizations, including <b>UofT Blueprint, UTMIST,</b> and <b>UofT AI</b>.
+                                        I am currently a Software Engineer at <b>Amazon</b> working in Ads. I have also had previous Software Development experiences at <b>theScore</b>, <b>Deep Genomics</b>, and the <b>University of Toronto</b>.
                                     </Text>
                                 </Flex>
                             </Fade>
@@ -72,13 +57,7 @@ const About: FC = () => {
                                 <Flex>
                                     <Center p={4}>🚀</Center>
                                     <Text>
-                                        I'm experienced in full-stack web
-                                        development - particularly with{' '}
-                                        <b>Typescript</b> and <b>Python</b>.{' '}
-                                        <b>ReactJS/NextJS</b> is my frontend framework
-                                        of choice and I've worked in backend
-                                        with{' '}
-                                        <b>NodeJS, .NET Core, Java,</b> and <b>Python</b>.
+                                        I'm experienced in working on large scale, data-intensive systems. I am passionate about building products that help people live better lives.
                                     </Text>
                                 </Flex>
                             </Fade>

@@ -37,11 +37,6 @@ const Intro: FC = () => {
                             cursor='_'
                         />
                     </Heading>
-                    <HStack spacing={6}>
-                        {['🇨🇦', '🇨🇳', '🇨🇿'].map(c => (
-                            <Heading fontSize={'1.75rem'}>{c}</Heading>
-                        ))}
-                    </HStack>
                     <Fade bottom cascade>
                         <Text
                             fontSize={'1.5rem'}
@@ -50,8 +45,7 @@ const Intro: FC = () => {
                             textAlign='center'
                             letterSpacing={1.1}
                         >
-                            Computer Science + Cognitive Science @ University of
-                            Toronto '26
+                            Software Engineer and UofT CS Alum
                         </Text>
                         <Box p={4}>
                             <Socials
