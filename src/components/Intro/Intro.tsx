@@ -2,7 +2,6 @@ import { FC } from 'react'
 import {
     Container,
     Heading,
-    HStack,
     Text,
     VStack,
     useColorModeValue,
