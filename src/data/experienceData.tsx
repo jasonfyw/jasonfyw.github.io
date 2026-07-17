@@ -4,19 +4,29 @@ import blueprintLogo from '../media/blueprint_logo.jpeg'
 import mieLogo from '../media/uoftmie_logo.jpeg'
 import theScoreLogo from '../media/thescore_logo.jpeg'
 import deepGenomicsLogo from '../media/dg_logo.jpeg'
+import amazonLogo from '../media/amazon_logo.jpeg'
 
 export const experienceData: ExperienceData[] = [
     {
-        title: 'Software Developer',
+        title: 'Software Engineer',
+        company: 'Amazon',
+        location: 'Toronto, ON',
+        dates: 'June 2026 - Present',
+        description:
+            'Accelerating the capabilities the Amazon Ads reporting platforms.',
+        logoSrc: amazonLogo
+    },
+    {
+        title: 'Software Engineer Intern',
         company: 'Deep Genomics',
         location: 'Toronto, ON',
-        dates: 'January 2026 - Present',
+        dates: 'January 2026 - June 2026',
         description:
             'Building internal data tools for scientists and ML researchers to accelerate genome research and analysis.',
         logoSrc: deepGenomicsLogo
     },
     {
-        title: 'Software Developer',
+        title: 'Software Developer Co-op',
         company: 'theScore',
         location: 'Toronto, ON',
         dates: 'May 2024 - August 2025',

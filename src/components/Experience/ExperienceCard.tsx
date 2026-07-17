@@ -25,12 +25,13 @@ const ExperienceCard = (props: ExperienceCardProps) => {
     const avatarBorderColor = useColorModeValue('gray.700', 'white')
 
     return (
-        <Card>
+        <Card w={'full'}>
             <Stack
                 direction={'column'}
                 spacing={4}
                 align={'flex-start'}
                 textAlign={{ base: 'center', md: 'left' }}
+                w={'full'}
             >
                 <Flex
                     direction={{ base: 'column', md: 'row' }}

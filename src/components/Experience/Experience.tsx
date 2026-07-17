@@ -9,13 +9,21 @@ const Experience = () => {
     return (
         <Element name='experience'>
             <Container maxW={'5xl'} p={6.75} mt={[20, 10]}>
-                <VStack spacing={8} px={[4, 24]}>
+                <VStack spacing={8} px={[4, 24]} align={'stretch'}>
                     <Fade>
-                        <Heading as='h2'>Experience</Heading>
+                        <Heading as='h2' textAlign={'center'}>
+                            Experience
+                        </Heading>
                     </Fade>
                     {experienceData.map((experience, i) => {
                         return (
-                            <Fade bottom cascade duration={500} key={i}>
+                            <Fade
+                                bottom
+                                cascade
+                                duration={500}
+                                key={i}
+                                style={{ width: '100%' }}
+                            >
                                 <ExperienceCard
                                     title={experience.title}
                                     company={experience.company}
