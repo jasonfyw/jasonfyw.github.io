@@ -41,7 +41,7 @@ const About: FC = () => {
                                     <Center p={4}>👋🏼</Center>
                                     <Text>
                                         Hi, I'm Jason! I'm a software engineer and recent graduate of the{' '}
-                                        <b>University of Toronto</b> where I studied Computer Science and Cognitive Science.
+                                        <b>University of Toronto</b> where I studied <b>Computer Science</b> and <b>Cognitive Science</b>.
                                     </Text>
                                 </Flex>
                             </Fade>
