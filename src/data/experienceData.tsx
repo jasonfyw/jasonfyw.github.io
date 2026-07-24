@@ -13,7 +13,7 @@ export const experienceData: ExperienceData[] = [
         location: 'Toronto, ON',
         dates: 'June 2026 - Present',
         description:
-            'Accelerating the capabilities the Amazon Ads reporting platforms.',
+            'Accelerating and enhancing the capabilities of the Amazon Ads programmatic ad reporting platforms.',
         logoSrc: amazonLogo
     },
     {
@@ -22,7 +22,7 @@ export const experienceData: ExperienceData[] = [
         location: 'Toronto, ON',
         dates: 'January 2026 - June 2026',
         description:
-            'Building internal data tools for scientists and ML researchers to accelerate genome research and analysis.',
+            'Developing internal data tooling and infrastructure for scientists and ML researchers to accelerate genome research and analysis.',
         logoSrc: deepGenomicsLogo
     },
     {
@@ -31,7 +31,7 @@ export const experienceData: ExperienceData[] = [
         location: 'Toronto, ON',
         dates: 'May 2024 - August 2025',
         description:
-            'Contributing to the front-end development of software for the Retail Web Team for deployment across devices in PENN Entertainment retail properties and improving performance, observability, and developer experience across front-end applications for the Platform Web Team.',
+            'Building software for the Retail Web team across PENN Entertainment retail properties and improving performance, observability, and developer experience across front-end applications for the Platform Web team.',
         logoSrc: theScoreLogo
     },
     {
@@ -40,7 +40,7 @@ export const experienceData: ExperienceData[] = [
         location: 'Toronto, ON',
         dates: 'January 2024 - April 2024',
         description:
-            'Designed and developed a web application for morLab, led by Professor Dionne Aleman, to provide a user-friendly UI to create, view, and manage advanced and customizable pandemic simulations.',
+            'Designed and developed a platform for managing and executing advanced pandemic simulations for morLab, led by Professor Dionne Aleman.',
         logoSrc: mieLogo
     },
     {
@@ -58,7 +58,7 @@ export const experienceData: ExperienceData[] = [
         location: 'Toronto, ON',
         dates: 'May 2023 - January 2024',
         description:
-            'Enhanced API efficiency, developed a medical charting library, and streamlined data pipelines using modern technologies like .NET Core, ReactJS, TypeScript, Docker, and AWS Lambda.',
+            'Enhanced API efficiency, developed a medical charting library, and streamlined data pipelines across digital telemedicine platforms.',
         logoSrc: nerveXLogo,
     },
 ]
