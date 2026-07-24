@@ -44,7 +44,7 @@ const Intro: FC = () => {
                             textAlign='center'
                             letterSpacing={1.1}
                         >
-                            Software Engineer and UofT CS Alum
+                            Software Engineer &<br /> University of Toronto CS Alum
                         </Text>
                         <Box p={4}>
                             <Socials
@@ -52,7 +52,7 @@ const Intro: FC = () => {
                             />
                         </Box>
                     </Fade>
-                    <Link
+                    {/* <Link
                         href={'/Resume_Jason_Wang.pdf'}
                         isExternal
                         _hover={{ textDecor: 'none' }}
@@ -75,7 +75,7 @@ const Intro: FC = () => {
                         >
                             Resume
                         </Button>
-                    </Link>
+                    </Link> */}
                 </VStack>
                 <Box mt={[10, '10vh']}>
                     <DownArrow />
