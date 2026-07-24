@@ -6,16 +6,12 @@ import {
     VStack,
     useColorModeValue,
     Box,
-    Button,
-    Link,
-    Icon,
 } from '@chakra-ui/react'
 import ReactTypingEffect from 'react-typing-effect'
 import Fade from 'react-reveal/Fade'
 import Socials from '../global/Socials'
 import { Element } from 'react-scroll'
 import DownArrow from './DownArrow'
-import { FiArrowUpRight } from 'react-icons/fi'
 
 const Intro: FC = () => {
     return (
