@@ -24,19 +24,17 @@ const Contact: FC = () => {
                     <Card maxW={'85vw'} w={'xl'} pb={8} overflow={'hidden'}>
                         <Flex textAlign={'center'}>
                             <Container w='50%'>
-                                <Link href='mailto:jason@jasonfyw.com'>
-                                    <Badge colorScheme='green'>Personal</Badge>
-                                    <Text textDecoration={'underline'}>
-                                        jason@jasonfyw.com
-                                    </Text>
-                                </Link>
+                                <Badge colorScheme='orange'>Email</Badge>
+                                <Text textDecoration={'underline'}>
+                                    jsn.wang [at] alumni.utoronto.ca
+                                </Text>
                             </Container>
                             <Spacer />
                             <Container w='50%'>
-                                <Link href='mailto:jsn.wang@mail.utoronto.ca'>
-                                    <Badge colorScheme='orange'>Academic</Badge>
+                                <Link href='https://www.linkedin.com/in/jasonfyw/'>
+                                    <Badge colorScheme='blue'>LinkedIn</Badge>
                                     <Text textDecoration={'underline'}>
-                                        jsn.wang@mail.utoronto.ca
+                                        linkedin.com/in/jasonfyw
                                     </Text>
                                 </Link>
                             </Container>

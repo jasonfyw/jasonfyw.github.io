@@ -22,7 +22,7 @@ const Socials: FC<SocialsProps> = props => {
         {
             aria: 'Email',
             icon: <FiMail />,
-            href: 'mailto:jason@jasonfyw.com',
+            href: 'mailto:jsn.wang@alumni.utoronto.ca',
         },
     ]
     return (
