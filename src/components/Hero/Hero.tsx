@@ -3,7 +3,7 @@ import { Box, Flex, Heading, Text, chakra, keyframes } from '@chakra-ui/react'
 import Nav from '../Nav'
 import Socials from '../global/Socials'
 import ScrollLink from '../global/ScrollLink'
-import { AsciiEngine, AsciiShape, shapeLabels } from './asciiEngine'
+import { AsciiEngine, AsciiShape } from './asciiEngine'
 
 const blink = keyframes`50% { opacity: 0; }`
 
@@ -207,7 +207,7 @@ const Hero: FC<HeroProps> = ({
                         bg='brand.accent'
                         flex='none'
                     />
-                    <span>now — Software Engineer, Amazon Ads · Toronto</span>
+                    <span>Software Engineer, Amazon Ads · Toronto</span>
                 </Flex>
                 <Socials />
             </Flex>
@@ -224,13 +224,6 @@ const Hero: FC<HeroProps> = ({
                 color='brand.faint'
                 sx={{ '@media (max-width: 720px)': { display: 'none' } }}
             >
-                <span aria-hidden='true'>
-                    fig.01 —{' '}
-                    <Text as='span' color='brand.accent'>
-                        {shapeLabels[shape]}
-                    </Text>{' '}
-                    · move cursor to tilt
-                </span>
                 <ScrollLink to='about' color='brand.muted' py='6px'>
                     ↓ scroll to about
                 </ScrollLink>

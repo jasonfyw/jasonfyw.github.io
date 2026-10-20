@@ -6,13 +6,6 @@ shape) so the animation never triggers React re-renders.
 
 export type AsciiShape = 'torus' | 'planet' | 'orbits' | 'jw'
 
-export const shapeLabels: Record<AsciiShape, string> = {
-    torus: 'torus.render',
-    planet: 'planet.render',
-    orbits: 'orbits.sim',
-    jw: 'jw.fourier',
-}
-
 interface AsciiEngineOptions {
     hero: HTMLElement
     probe: HTMLElement
