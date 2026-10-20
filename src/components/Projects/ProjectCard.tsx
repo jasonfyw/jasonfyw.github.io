@@ -1,5 +1,12 @@
 import { FC } from 'react'
-import { Flex, Heading, Link, Text } from '@chakra-ui/react'
+import {
+    Flex,
+    Heading,
+    Link,
+    LinkBox,
+    LinkOverlay,
+    Text,
+} from '@chakra-ui/react'
 import { Link as RouterLink } from 'react-router-dom'
 import { FiArrowUpRight, FiGithub } from 'react-icons/fi'
 import { ProjectT } from '../../data/types'
@@ -8,10 +15,13 @@ interface ProjectCardProps {
     project: ProjectT
 }
 
+// The whole card links to the project page; LinkBox keeps the icon links
+// above the overlay so they still open the external links
 const ProjectCard: FC<ProjectCardProps> = ({ project }) => (
-    <Flex
+    <LinkBox
         as='article'
-        direction='column'
+        display='flex'
+        flexDirection='column'
         gap='12px'
         p='24px'
         bg='brand.surface'
@@ -24,6 +34,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => (
             transform: 'translateY(-2px)',
         }}
         sx={{
+            '&:hover .chakra-linkbox__overlay': { color: 'brand.accent' },
             '@media (prefers-reduced-motion: reduce)': { transition: 'none' },
         }}
     >
@@ -55,6 +66,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => (
                         alignItems='center'
                         justifyContent='center'
                         color='brand.muted'
+                        _hover={{ color: '#FFFFFF' }}
                     >
                         {link.kind === 'github' ? (
                             <FiGithub size={17} />
@@ -73,14 +85,13 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => (
             lineHeight={1.6}
             color='brand.heading'
         >
-            <Link
+            <LinkOverlay
                 as={RouterLink}
                 to={`/projects/${project.id}`}
                 color='brand.heading'
-                _hover={{ textDecoration: 'none', color: 'brand.accent' }}
             >
                 {project.name}
-            </Link>
+            </LinkOverlay>
         </Heading>
         <Text m={0} color='brand.body'>
             {project.tagline}
@@ -109,7 +120,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ project }) => (
                 </Text>
             ))}
         </Flex>
-    </Flex>
+    </LinkBox>
 )
 
 export default ProjectCard

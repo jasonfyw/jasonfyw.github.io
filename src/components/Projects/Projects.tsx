@@ -1,6 +1,7 @@
 import { FC, useState } from 'react'
-import { Button, Flex, Grid } from '@chakra-ui/react'
+import { Flex, Grid, chakra } from '@chakra-ui/react'
 import SectionHeading from '../global/SectionHeading'
+import { scrollToId } from '../global/ScrollLink'
 import ProjectCard from './ProjectCard'
 import { projectData } from '../../data/projectData'
 
@@ -25,6 +26,12 @@ const Projects: FC = () => {
     const [showAll, setShowAll] = useState(false)
     const hasMore = projectData.length > PREVIEW_COUNT
 
+    const toggle = () => {
+        // Collapsing removes the cards being read, so return to the section
+        if (showAll) scrollToId('projects')
+        setShowAll(!showAll)
+    }
+
     return (
         <Flex
             as='section'
@@ -35,14 +42,14 @@ const Projects: FC = () => {
         >
             <SectionHeading label='03 / projects' title='Projects' />
             <ProjectGrid limit={showAll ? undefined : PREVIEW_COUNT} />
-            {hasMore && !showAll && (
-                <Button
-                    onClick={() => setShowAll(true)}
+            {hasMore && (
+                <chakra.button
+                    type='button'
+                    onClick={toggle}
+                    aria-expanded={showAll}
                     alignSelf='center'
                     h='44px'
                     px='18px'
-                    variant='unstyled'
-                    display='flex'
                     fontFamily='mono'
                     fontSize='13px'
                     fontWeight={400}
@@ -56,8 +63,8 @@ const Projects: FC = () => {
                         bg: 'brand.iconBgHover',
                     }}
                 >
-                    view more ↓
-                </Button>
+                    {showAll ? 'view less ↑' : 'view more ↓'}
+                </chakra.button>
             )}
         </Flex>
     )
