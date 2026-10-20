@@ -5,17 +5,15 @@ Styles for displaying markdown
     all: revert;
 }
 .markdown a {
-    color: rgb(142, 209, 199);
-    border-bottom: 2px solid rgb(142, 209, 199);
-    transition: 0.4s;
+    color: #F1F3F6;
+    text-decoration: none;
+    border-bottom: 1px solid #3A444D;
+    padding-bottom: 2px;
+    transition: border-color 0.2s;
 }
 .markdown a:hover {
-    color: rgb(126, 171, 165);
+    border-bottom-color: #E6E9EE;
 }
-/* 
-Styles for displaying active scroll spy links
-*/
-.active {
-    transition: 0.3s;
-    border-bottom: 2px solid rgb(154, 228, 217);
+.markdown code {
+    font-family: 'Geist Mono', ui-monospace, monospace;
 }

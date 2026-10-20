@@ -1,25 +1,29 @@
 import React from 'react'
-import Intro from '../../components/Intro'
+import { Flex } from '@chakra-ui/react'
+import Hero from '../../components/Hero'
 import About from '../../components/About'
-import Projects from '../../components/Projects'
-// import Skills from '../../components/Skills'
-import Contact from '../../components/Contact'
-import Nav from '../../components/Nav'
 import Experience from '../../components/Experience'
-import Background from '../../components/Background'
+import Projects from '../../components/Projects'
+import Contact from '../../components/Contact'
 
 const Main = () => {
     return (
         <>
-            <Nav />
-            <Intro />
-            <About />
-            {/* <Skills /> */}
-            <Experience />
-            <Projects />
-            <Contact />
-            {/* Background component */}
-            <Background />
+            <Hero />
+            <Flex
+                as='main'
+                direction='column'
+                gap='144px'
+                maxW='1120px'
+                mx='auto'
+                p='128px 32px 0'
+                sx={{ '@media (max-width: 600px)': { px: '16px' } }}
+            >
+                <About />
+                <Experience />
+                <Projects />
+                <Contact />
+            </Flex>
         </>
     )
 }

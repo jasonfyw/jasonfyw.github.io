@@ -1,46 +1,51 @@
-import { HStack, Link } from '@chakra-ui/react'
-import React, { FC } from 'react'
+import { FC } from 'react'
+import { Flex, Link } from '@chakra-ui/react'
 import { FiLinkedin, FiGithub, FiMail } from 'react-icons/fi'
 
-interface SocialsProps {
-    color: string
-    size?: string
-}
+const socialsData = [
+    {
+        aria: 'LinkedIn',
+        icon: <FiLinkedin size={18} />,
+        href: 'https://linkedin.com/in/jasonfyw/',
+    },
+    {
+        aria: 'GitHub',
+        icon: <FiGithub size={18} />,
+        href: 'https://github.com/jasonfyw',
+    },
+    {
+        aria: 'Email',
+        icon: <FiMail size={18} />,
+        href: 'mailto:jsn.wang@alumni.utoronto.ca',
+    },
+]
 
-const Socials: FC<SocialsProps> = props => {
-    const socialsData = [
-        {
-            aria: 'Linkedin',
-            icon: <FiLinkedin />,
-            href: 'https://linkedin.com/in/jasonfyw/',
-        },
-        {
-            aria: 'GitHub',
-            icon: <FiGithub />,
-            href: 'https://github.com/jasonfyw',
-        },
-        {
-            aria: 'Email',
-            icon: <FiMail />,
-            href: 'mailto:jsn.wang@alumni.utoronto.ca',
-        },
-    ]
-    return (
-        <HStack spacing={6}>
-            {socialsData.map((social, i) => (
-                <Link
-                    key={i}
-                    aria-label={social.aria}
-                    href={social.href}
-                    fontSize={props.size ? props.size : '1.5rem'}
-                    color={props.color}
-                    isExternal
-                >
-                    {social.icon}
-                </Link>
-            ))}
-        </HStack>
-    )
-}
+const Socials: FC = () => (
+    <Flex gap='10px'>
+        {socialsData.map(social => (
+            <Link
+                key={social.aria}
+                aria-label={social.aria}
+                href={social.href}
+                isExternal={!social.href.startsWith('mailto:')}
+                w='44px'
+                h='44px'
+                display='flex'
+                alignItems='center'
+                justifyContent='center'
+                border='1px solid'
+                borderColor='brand.borderStrong'
+                borderRadius='6px'
+                color='brand.body'
+                _hover={{
+                    borderColor: 'brand.iconBorderHover',
+                    bg: 'brand.iconBgHover',
+                }}
+            >
+                {social.icon}
+            </Link>
+        ))}
+    </Flex>
+)
 
 export default Socials

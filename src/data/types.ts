@@ -1,15 +1,13 @@
-import { ReactElement } from 'react'
-
 export interface LinkT {
     link: string
-    icon: ReactElement
+    kind: 'github' | 'live'
 }
 
 export interface ProjectT {
     name?: string
     id?: string
     type?: string
-    tags?: ReactElement[]
+    tags?: string[]
     tagline?: string
     imageSrc?: string
     description?: string
@@ -23,5 +21,4 @@ export interface ExperienceData {
     location: string
     dates: string
     description: string
-    logoSrc?: string | null
 }

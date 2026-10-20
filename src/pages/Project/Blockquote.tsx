@@ -4,10 +4,12 @@ const Blockquote = ({ children, ...props }) => {
     return (
         <Box
             {...props}
-            borderLeft={'6px solid'}
-            borderColor={'blue.200'}
-            px={8}
-            bg={'rgba(125, 161, 191, 0.2)'}
+            border='1px solid'
+            borderColor='brand.border'
+            borderRadius='8px'
+            bg='brand.surface'
+            color='brand.body'
+            px={6}
             py={4}
         >
             {children}

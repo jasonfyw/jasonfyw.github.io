@@ -1,100 +1,131 @@
-import { FC } from 'react'
-import {
-    Container,
-    Heading,
-    Stack,
-    Image,
-    VStack,
-    Text,
-    useColorModeValue,
-    Flex,
-    Center,
-    Link,
-} from '@chakra-ui/react'
-import { Element } from 'react-scroll'
-import Fade from 'react-reveal/Fade'
+import { FC, ReactNode } from 'react'
+import { Box, Flex, Grid, Image, Link, Text } from '@chakra-ui/react'
+import SectionHeading from '../global/SectionHeading'
 import headshot from '../../media/headshot.jpg'
 
-const About: FC = () => {
-    return (
-        <Element name='aboutme'>
-            <Container maxW={'5xl'} p={6.75} mt={[20, 10]}>
-                <VStack spacing={8}>
-                    <Fade>
-                        <Heading as='h2'>About me</Heading>
-                    </Fade>
-                    <Stack
-                        position='relative'
-                        alignItems='center'
-                        direction={['column', 'row']}
-                        textAlign={{ base: 'left', sm: 'justify', lg: 'left' }}
+const B: FC<{ children: ReactNode }> = ({ children }) => (
+    <Text as='b' fontWeight={500} color='brand.heading'>
+        {children}
+    </Text>
+)
+
+const rows: { label: string; content: ReactNode }[] = [
+    {
+        label: 'hello',
+        content: (
+            <>
+                Hi, I'm Jason! I'm a software engineer and recent graduate of
+                the <B>University of Toronto</B> where I studied{' '}
+                <B>Computer Science</B> and <B>Cognitive Science</B>.
+            </>
+        ),
+    },
+    {
+        label: 'now',
+        content: (
+            <>
+                I am currently a Software Engineer at <B>Amazon</B> working in
+                Ads. I have also had previous software development experience at{' '}
+                <B>theScore</B>, <B>Deep Genomics</B>, and the{' '}
+                <B>University of Toronto</B>.
+            </>
+        ),
+    },
+    {
+        label: 'focus',
+        content: (
+            <>
+                I'm experienced in working on large scale, data-intensive
+                systems. I am passionate about building products that help
+                people live better lives.
+            </>
+        ),
+    },
+    {
+        label: 'also',
+        content: (
+            <>
+                In addition to software engineering, I am also interested in the
+                confluence of artificial intelligence and cognitive science, as
+                well as photography! Check out my{' '}
+                <Link
+                    href='https://photo.jasonfyw.com'
+                    isExternal
+                    color='brand.heading'
+                    fontWeight={400}
+                    borderBottom='1px solid'
+                    borderColor='brand.borderHover'
+                    pb='2px'
+                    _hover={{
+                        textDecoration: 'none',
+                        borderColor: 'brand.text',
+                    }}
+                >
+                    photography portfolio
+                </Link>{' '}
+                to learn more about my creative work.
+            </>
+        ),
+    },
+]
+
+const About: FC = () => (
+    <Flex
+        as='section'
+        id='about'
+        direction='column'
+        gap='40px'
+        scrollMarginTop='32px'
+    >
+        <SectionHeading label='01 / about' title='About me' />
+        <Grid
+            templateColumns='200px minmax(0, 1fr)'
+            gap='56px'
+            alignItems='start'
+            sx={{
+                '@media (max-width: 960px)': {
+                    gridTemplateColumns: 'minmax(0, 1fr)',
+                },
+            }}
+        >
+            <Image
+                src={headshot}
+                alt='Portrait of Jason Wang'
+                w='200px'
+                h='200px'
+                objectFit='cover'
+                borderRadius='8px'
+                border='1px solid'
+                borderColor='brand.borderStrong'
+                filter='grayscale(1) contrast(1.05)'
+            />
+            <Box borderBottom='1px solid' borderColor='brand.divider'>
+                {rows.map(row => (
+                    <Grid
+                        key={row.label}
+                        templateColumns='72px minmax(0, 1fr)'
+                        gap='16px'
+                        py='18px'
+                        borderTop='1px solid'
+                        borderColor='brand.divider'
                     >
-                        <Image
-                            borderRadius='full'
-                            boxSize='150px'
-                            src={headshot}
-                            border={`3px solid ${useColorModeValue('#1E2428', '#ECEFF4')}`}
-                        />
-                        <VStack spacing={4} p={[10, 4]} pl={[10, 50]}>
-                            <Fade bottom cascade duration={500}>
-                                <Flex>
-                                    <Center p={4}>👋🏼</Center>
-                                    <Text>
-                                        Hi, I'm Jason! I'm a software engineer and recent graduate of the{' '}
-                                        <b>University of Toronto</b> where I studied <b>Computer Science</b> and <b>Cognitive Science</b>.
-                                    </Text>
-                                </Flex>
-                            </Fade>
-                            <Fade bottom cascade duration={500}>
-                                <Flex>
-                                    <Center p={4}>👨🏻‍💻</Center>
-                                    <Text>
-                                        I am currently a Software Engineer at <b>Amazon</b> working in Ads. I have also had previous Software Development experiences at <b>theScore</b>, <b>Deep Genomics</b>, and the <b>University of Toronto</b>.
-                                    </Text>
-                                </Flex>
-                            </Fade>
-                            <Fade bottom cascade duration={500}>
-                                <Flex>
-                                    <Center p={4}>🚀</Center>
-                                    <Text>
-                                        I'm experienced in working on large scale, data-intensive systems. I am passionate about building products that help people live better lives.
-                                    </Text>
-                                </Flex>
-                            </Fade>
-                            <Fade bottom cascade duration={500}>
-                                <Flex>
-                                    <Center p={4}>🧠</Center>
-                                    <Text>
-                                        In addition to Software Engineering, I
-                                        am also interested in the confluence of
-                                        artificial intelligence and cognitive
-                                        science, as well as photography! Check
-                                        out my&nbsp;
-                                        <Link
-                                            href='https://photo.jasonfyw.com'
-                                            isExternal
-                                            fontWeight={'semibold'}
-                                            borderBottom={
-                                                '2px solid rgb(154, 228, 217)'
-                                            }
-                                            transition={'0.2s'}
-                                            _hover={{
-                                                textDecor: 'none',
-                                                opacity: 0.9,
-                                            }}
-                                        >
-                                            photography portfolio to learn more
-                                            about my creative work.
-                                        </Link>
-                                    </Text>
-                                </Flex>
-                            </Fade>
-                        </VStack>
-                    </Stack>
-                </VStack>
-            </Container>
-        </Element>
-    )
-}
+                        <Text
+                            as='span'
+                            fontFamily='mono'
+                            fontSize='12px'
+                            color='brand.faint'
+                            pt='4px'
+                        >
+                            {row.label}
+                        </Text>
+                        <Text m={0} fontSize='17px' color='brand.body'>
+                            {row.content}
+                        </Text>
+                    </Grid>
+                ))}
+            </Box>
+        </Grid>
+    </Flex>
+)
 
 export default About

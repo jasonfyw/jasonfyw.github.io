@@ -1,138 +1,67 @@
-import { ReactNode, FC, useEffect, useRef } from 'react'
-import {
-    Box,
-    Flex,
-    HStack,
-    IconButton,
-    useDisclosure,
-    useColorModeValue,
-    Stack,
-    Text,
-} from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
-import { Link as ScrollLink } from 'react-scroll'
-import { ColorModeSwitcher } from '../../ColorModeSwitcher'
+import { FC } from 'react'
+import { Flex, Text } from '@chakra-ui/react'
+import ScrollLink from '../global/ScrollLink'
 
-const Links = ['About me', 'Experience', 'Projects', 'Contact']
+const links = ['about', 'experience', 'projects', 'contact']
 
-const NavLink = ({
-    children,
-    to,
-    onClose,
-}: {
-    children: ReactNode
-    to: string
-    onClose: () => void
-}) => (
-    <Box
-        px={2}
-        py={1}
-        rounded={'md'}
-        _hover={{
-            textDecoration: 'none',
-            bg: useColorModeValue('gray.200', 'gray.700'),
-            cursor: 'pointer',
-        }}
+// Sits on top of the hero; data-mask keeps the ASCII art clear of it
+const Nav: FC = () => (
+    <Flex
+        as='header'
+        position='absolute'
+        top={0}
+        left={0}
+        right={0}
+        maxW='1280px'
+        mx='auto'
+        py='16px'
+        px='32px'
+        boxSizing='border-box'
+        wrap='wrap'
+        align='center'
+        justify='space-between'
+        gap='8px'
+        sx={{ '@media (max-width: 600px)': { px: '16px' } }}
     >
         <ScrollLink
-            to={to}
-            spy={true}
-            smooth={true}
-            duration={250}
-            onClick={onClose}
-            offset={-80}
-            activeClass={'active'}
+            to='top'
+            data-mask='logo'
+            fontFamily='mono'
+            fontSize='15px'
+            fontWeight={500}
+            py='12px'
+            letterSpacing='-0.01em'
         >
-            {children}
+            jw
+            <Text as='span' color='brand.accent'>
+                _
+            </Text>
         </ScrollLink>
-    </Box>
-)
-
-const Nav: FC = () => {
-    const { isOpen, onOpen, onClose } = useDisclosure()
-
-    const ref = useRef<any>(null)
-
-    // lifecycle hook to close mobile navbar when there is a mousedown event
-    // outside of the navbar
-    useEffect(() => {
-        function handleClickOutside(event) {
-            if (ref.current && !ref.current.contains(event.target)) onClose()
-        }
-
-        document.addEventListener('mousedown', handleClickOutside)
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside)
-        }
-    }, [onClose, ref])
-
-    return (
-        <>
-            <Box
-                bg={useColorModeValue('gray.100', 'gray.900')}
-                px={4}
-                position={'fixed'}
-                top={0}
-                width={'100vw'}
-                zIndex={100}
-                ref={ref}
-            >
-                <Flex
-                    h={16}
-                    alignItems={'center'}
-                    justifyContent={'space-between'}
+        <Flex
+            as='nav'
+            aria-label='Primary'
+            data-mask='links'
+            wrap='wrap'
+            gap='4px'
+            fontFamily='mono'
+            fontSize='13px'
+            sx={{ '@media (max-width: 600px)': { gap: 0 } }}
+        >
+            {links.map(link => (
+                <ScrollLink
+                    key={link}
+                    to={link}
+                    color='brand.muted'
+                    py='12px'
+                    px='10px'
+                    borderRadius='4px'
+                    _hover={{ bg: 'brand.hover', color: '#FFFFFF' }}
                 >
-                    <IconButton
-                        size={'md'}
-                        icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-                        aria-label={'Open Menu'}
-                        display={{ md: 'none' }}
-                        onClick={isOpen ? onClose : onOpen}
-                    />
-                    <Flex alignItems={'center'} pl={4}>
-                        <NavLink to={'home'} onClose={onClose}>
-                            {/* <Box fontWeight={600}>Jason Wang</Box> */}
-                            <Text fontWeight={600}>Jason Wang</Text>
-                        </NavLink>
-                    </Flex>
-                    <HStack spacing={8} alignItems={'center'}>
-                        <HStack
-                            as={'nav'}
-                            spacing={6}
-                            display={{ base: 'none', md: 'flex' }}
-                        >
-                            {Links.map(link => (
-                                <NavLink
-                                    key={link}
-                                    to={link.toLowerCase().replace(/\s/g, '')}
-                                    onClose={onClose}
-                                >
-                                    {link}
-                                </NavLink>
-                            ))}
-                        </HStack>
-                        <ColorModeSwitcher justifySelf='flex-end' />
-                    </HStack>
-                </Flex>
-
-                {isOpen ? (
-                    <Box pb={4} display={{ md: 'none' }}>
-                        <Stack as={'nav'} spacing={4}>
-                            {Links.map(link => (
-                                <NavLink
-                                    key={link}
-                                    to={link.toLowerCase().replace(/\s/g, '')}
-                                    onClose={onClose}
-                                >
-                                    {link}
-                                </NavLink>
-                            ))}
-                        </Stack>
-                    </Box>
-                ) : null}
-            </Box>
-        </>
-    )
-}
+                    {link}
+                </ScrollLink>
+            ))}
+        </Flex>
+    </Flex>
+)
 
 export default Nav
