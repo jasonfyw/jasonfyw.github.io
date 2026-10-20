@@ -171,7 +171,9 @@ const Hero: FC<HeroProps> = ({
                     color='brand.body'
                     maxW='26ch'
                 >
-                    Software Engineer &amp; University of Toronto CS Alum
+                    Software Engineer &amp;
+                    <br />
+                    University of Toronto CS Alum
                 </Text>
             </Flex>
 

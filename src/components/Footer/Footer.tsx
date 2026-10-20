@@ -19,9 +19,7 @@ const Footer: FC = () => (
         borderColor='brand.divider'
         sx={{ '@media (max-width: 600px)': { px: '16px' } }}
     >
-        <span>
-            © {new Date().getFullYear()} Jason Wang — rendered in plain text
-        </span>
+        <span>© {new Date().getFullYear()} Jason Wang</span>
         <ScrollLink to='top' color='brand.muted' py='12px'>
             back to top ↑
         </ScrollLink>

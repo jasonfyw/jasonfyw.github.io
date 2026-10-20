@@ -35,23 +35,23 @@ export const projectData: ProjectT[] = [
         ],
         headerLink: 'https://github.com/leowrites/PetPal/tree/main/P3',
     },
-    {
-        name: 'Street Savvy',
-        id: 'street-savvy',
-        type: 'Web app',
-        tagline: 'Suggests places to visit tailored using your preferences',
-        tags: ['React', 'TypeScript', 'Firebase', 'Python'],
-        imageSrc: '/street-savvy.jpg',
-        description:
-            'A web app that suggests places to visit in Toronto based on your preferences using a custom recommendation engine and data from the Google Places API. Submitted to UofTHacks X.',
-        links: [
-            {
-                link: 'https://github.com/jasonfyw/street-savvy',
-                kind: 'github',
-            },
-        ],
-        headerLink: 'https://github.com/jasonfyw/street-savvy',
-    },
+    // {
+    //     name: 'Street Savvy',
+    //     id: 'street-savvy',
+    //     type: 'Web app',
+    //     tagline: 'Suggests places to visit tailored using your preferences',
+    //     tags: ['React', 'TypeScript', 'Firebase', 'Python'],
+    //     imageSrc: '/street-savvy.jpg',
+    //     description:
+    //         'A web app that suggests places to visit in Toronto based on your preferences using a custom recommendation engine and data from the Google Places API. Submitted to UofTHacks X.',
+    //     links: [
+    //         {
+    //             link: 'https://github.com/jasonfyw/street-savvy',
+    //             kind: 'github',
+    //         },
+    //     ],
+    //     headerLink: 'https://github.com/jasonfyw/street-savvy',
+    // },
     {
         name: 'Twitter Geo-Sentiment',
         id: 'twitter-geo-sentiment',

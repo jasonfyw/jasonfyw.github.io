@@ -33,14 +33,14 @@ export const experienceData: ExperienceData[] = [
         description:
             'Designed and developed a platform for managing and executing advanced pandemic simulations for morLab, led by Professor Dionne Aleman.',
     },
-    {
-        title: 'Senior Project Developer',
-        company: 'UofT Blueprint',
-        location: 'Toronto, ON',
-        dates: 'Sep 2023 — Apr 2024',
-        description:
-            'Spearheaded the development of a full-stack web and mobile application for the Center For Dreams, a non-profit focusing on educational and social integration programs for individuals with developmental disabilities.',
-    },
+    // {
+    //     title: 'Senior Project Developer',
+    //     company: 'UofT Blueprint',
+    //     location: 'Toronto, ON',
+    //     dates: 'Sep 2023 — Apr 2024',
+    //     description:
+    //         'Spearheaded the development of a full-stack web and mobile application for the Center For Dreams, a non-profit focusing on educational and social integration programs for individuals with developmental disabilities.',
+    // },
     {
         title: 'Software Engineer Intern',
         company: 'NerveX Neurotechnologies',
